@@ -2,7 +2,7 @@
 Social Buttons for Bulma
 ============================
 
-Social Buttons made in pure CSS based on
+Social Buttons based on
 [Bulma](http://bulma.io/) and
 [Font Awesome](http://fortawesome.github.io/Font-Awesome/)!
 
@@ -41,6 +41,7 @@ Examples
 --------
 
 ```html
+<!-- Github Button -->
 <a class="button is-medium is-github">
     <span class="icon">
       <i class="fab fa-github"></i>
@@ -48,6 +49,7 @@ Examples
     <span>GitHub</span>
 </a>
 
+<!-- Github Button Icon -->
 <a class="button is-medium is-github">
   <span class="fab fa-github"></span>
 </a>
