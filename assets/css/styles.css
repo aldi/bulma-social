@@ -75,11 +75,7 @@ body{
 	padding-top: 10px;
 }
 
-.cont-title {
-	color: #fff;
-}
-
-.cont-subtitle {
+.cont-title, .cont-subtitle {
 	color: #fff;
 }
 
