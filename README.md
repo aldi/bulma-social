@@ -4,7 +4,7 @@ Social Buttons for Bulma
 
 Social Buttons based on
 [Bulma](http://bulma.io/) and
-[Font Awesome](http://fortawesome.github.io/Font-Awesome/)!
+[Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 
 [Check the live demo!](http://aldi.github.io/bulma-social)
 
@@ -54,3 +54,7 @@ Examples
   <span class="fab fa-github"></span>
 </a>
 ```
+
+Licence
+-------
+MIT
