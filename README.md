@@ -36,6 +36,8 @@ Available classes
  - `is-vimeo`
  - `is-vk`
  - `is-yahoo`
+ 
+### Seperate button styles for each brand: Work in progress.
 
 Examples
 --------
@@ -57,4 +59,4 @@ Examples
 
 Licence
 -------
-#MIT
+MIT
