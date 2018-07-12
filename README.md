@@ -1,3 +1,4 @@
+![bulma-social-image](bulma-social.png)
 
 Social Buttons for Bulma
 ============================
