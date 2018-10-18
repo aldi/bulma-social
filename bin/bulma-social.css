@@ -49,6 +49,12 @@
 .is-github:active,.is-github.active,.open>.dropdown-toggle.is-github{background-image:none}
 .is-github.disabled:hover,.is-github[disabled]:hover,fieldset[disabled] .is-github:hover,.is-github.disabled:focus,.is-github[disabled]:focus,fieldset[disabled] .is-github:focus,.is-github.disabled.focus,.is-github[disabled].focus,fieldset[disabled] .is-github.focus{background-color:#444;border-color:rgba(0,0,0,0.2)}
 .is-github .badge{color:#444;background-color:#fff}
+.is-gitlab{color:#fff;background-color:#fc6d26;border-color:rgba(0,0,0,0.2)}.is-gitlab:focus,.is-gitlab.focus{color:#fff;background-color:#eb5a20;border-color:rgba(0,0,0,0.2)}
+.is-gitlab:hover{color:#fff;background-color:#eb5a20;border-color:rgba(0,0,0,0.2)}
+.is-gitlab:active,.is-gitlab.active,.open>.dropdown-toggle.is-gitlab{color:#fff;background-color:#eb5a20;border-color:rgba(0,0,0,0.2)}.is-gitlab:active:hover,.is-giitlab.active:hover,.open>.dropdown-toggle.is-gitlab:hover,.is-gitlab:active:focus,.is-gitlab.active:focus,.open>.dropdown-toggle.is-gitlab:focus,.is-gitlab:active.focus,.is-gitlab.active.focus,.open>.dropdown-toggle.is-gitlab.focus{color:#fff;background-color:#191919;border-color:rgba(0,0,0,0.2)}
+.is-gitlab:active,.is-gitlab.active,.open>.dropdown-toggle.is-gitlab{background-image:none}
+.is-gitlab.disabled:hover,.is-gitlab[disabled]:hover,fieldset[disabled] .is-gitlab:hover,.is-gitlab.disabled:focus,.is-gitlab[disabled]:focus,fieldset[disabled] .is-gitlab:focus,.is-gitlab.disabled.focus,.is-gitlab[disabled].focus,fieldset[disabled] .is-gitlab.focus{background-color:#fc6d26;border-color:rgba(0,0,0,0.2)}
+.is-gitlab .badge{color:#fc6d26;background-color:#fff}
 .is-google{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.is-google:focus,.is-google.focus{color:#fff;background-color:#c23321;border-color:rgba(0,0,0,0.2)}
 .is-google:hover{color:#fff;background-color:#c23321;border-color:rgba(0,0,0,0.2)}
 .is-google:active,.is-google.active,.open>.dropdown-toggle.is-google{color:#fff;background-color:#c23321;border-color:rgba(0,0,0,0.2)}.is-google:active:hover,.is-google.active:hover,.open>.dropdown-toggle.is-google:hover,.is-google:active:focus,.is-google.active:focus,.open>.dropdown-toggle.is-google:focus,.is-google:active.focus,.is-google.active.focus,.open>.dropdown-toggle.is-google.focus{color:#fff;background-color:#a32b1c;border-color:rgba(0,0,0,0.2)}
