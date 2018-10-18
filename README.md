@@ -23,6 +23,7 @@ Available classes
  - `is-flickr`
  - `is-foursquare`
  - `is-github`
+ - `is-gitlab`
  - `is-google`
  - `is-instagram`
  - `is-linkedin`
