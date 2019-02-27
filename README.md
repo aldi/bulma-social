@@ -38,7 +38,7 @@ Available classes
  - `is-vk`
  - `is-yahoo`
  
-### Seperate button styles for each brand: Work in progress.
+### Separate button styles for each brand: Work in progress.
 
 Examples
 --------
