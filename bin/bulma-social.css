@@ -1,7 +1,7 @@
 /*
  * Social Buttons for Bulma
  *
- * Copyright 2018 Aldi Duzha
+ * Copyright 2019 Aldi Duzha
  * Licensed under the MIT License
  *
  * https://github.com/aldi/bulma-social
@@ -133,3 +133,9 @@
 .is-yahoo:active,.is-yahoo.active,.open>.dropdown-toggle.is-yahoo{background-image:none}
 .is-yahoo.disabled:hover,.is-yahoo[disabled]:hover,fieldset[disabled] .is-yahoo:hover,.is-yahoo.disabled:focus,.is-yahoo[disabled]:focus,fieldset[disabled] .is-yahoo:focus,.is-yahoo.disabled.focus,.is-yahoo[disabled].focus,fieldset[disabled] .is-yahoo.focus{background-color:#720e9e;border-color:rgba(0,0,0,0.2)}
 .is-yahoo .badge{color:#720e9e;background-color:#fff}
+.is-youtube{color:#fff;background-color:#ff0000;border-color:rgba(0,0,0,0.2)}.is-youtube:focus,.is-youtube.focus{color:#fff;background-color:#de000a;border-color:rgba(0,0,0,0.2)}
+.is-youtube:hover{color:#fff;background-color:#de000a;border-color:rgba(0,0,0,0.2)}
+.is-youtube:active,.is-youtube.active,.open>.dropdown-toggle.is-youtube{color:#fff;background-color:#de000a;border-color:rgba(0,0,0,0.2)}.is-youtube:active:hover,.is-youtube.active:hover,.open>.dropdown-toggle.is-youtube:hover,.is-youtube:active:focus,.is-youtube.active:focus,.open>.dropdown-toggle.is-youtube:focus,.is-youtube:active.focus,.is-youtube.active.focus,.open>.dropdown-toggle.is-youtube.focus{color:#fff;background-color:#801419;border-color:rgba(0,0,0,0.2)}
+.is-youtube:active,.is-youtube.active,.open>.dropdown-toggle.is-youtube{background-image:none}
+.is-youtube.disabled:hover,.is-youtube[disabled]:hover,fieldset[disabled] .is-youtube:hover,.is-youtube.disabled:focus,.is-youtube[disabled]:focus,fieldset[disabled] .is-youtube:focus,.is-youtube.disabled.focus,.is-youtube[disabled].focus,fieldset[disabled] .is-youtube.focus{background-color:#ff0000;border-color:rgba(0,0,0,0.2)}
+.is-youtube .badge{color:#ff0000;background-color:#fff}
