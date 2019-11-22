@@ -37,6 +37,7 @@ Available classes
  - `is-vimeo`
  - `is-vk`
  - `is-yahoo`
+ - `is-youtube`
  
 ### Seperate button styles for each brand: Work in progress.
 

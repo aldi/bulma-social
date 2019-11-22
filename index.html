@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Social Buttons for Bulma" />
-	<meta property="og:description" content="Social Sign-In Buttons made in pure CSS based on Bulma and Font Awesome!" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://aldi.github.io/bulma-social/" />
-	<!-- <meta property="og:image" content="http://aldi.github.io/bulma-social/assets/img/bulma-social.png" /> -->
-
+    <meta name="author" content="aldi" />
+	<meta name="description" content="Social Sign-In Buttons made in pure CSS based on Bulma and Font Awesome!" />
+	<meta name="keywords" content="bulma, social, font-awesome, buttons, icons, socialmedia, addon, media, css, html">
+	<link rel="canonical" href="http://aldi.github.io/bulma-social"/>
 	<title>Social Buttons for Bulma</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous">
 	<link rel="stylesheet" href="bin/bulma-social.min.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -153,9 +152,16 @@
 
 					<a class="button is-vk">
 						<span class="icon">
-							<i class="fab fa-vk"></i>
+							<i class="fab fa-yahoo"></i>
 						</span>
 						<span>Sign in with Yahoo</span>
+					</a> <br>
+
+					<a class="button is-youtube">
+						<span class="icon">
+							<i class="fab fa-youtube"></i>
+						</span>
+						<span>Sign in with Youtube</span>
 					</a> <br>
 
 					<a class="button is-vimeo">
@@ -190,6 +196,7 @@
 					<a class="button is-vimeo"><span class="fab fa-vimeo-square"></span></a>
 					<a class="button is-vk"><span class="fab fa-vk"></span></a>
 					<a class="button is-yahoo"><span class="fab fa-yahoo"></span></a>
+					<a class="button is-youtube"><span class="fab fa-youtube"></span></a>
 				</div>
 			</div>
 
@@ -217,6 +224,7 @@
 					<li data-code="vimeo" data-icon="vimeo-square" data-name="Vimeo"><code>is-vimeo</code> <span class="social-hex">#1AB7EA</span></li>
 					<li data-code="vk" data-name="VK"><code>is-vk</code> <span class="social-hex">#587EA3</span></li>
 					<li data-code="yahoo" data-name="Yahoo!"><code>is-yahoo</code> <span class="social-hex">#720E9E</span></li>
+					<li data-code="youtube" data-name="Youtube"><code>is-youtube</code> <span class="social-hex">#FF0000</span></li>
 				</ul>
 			</div>
 			<div class="column is-4">
@@ -263,11 +271,11 @@
 				<p class="subtitle is-6"><code>is-medium</code></p>
 				<p class="subtitle is-6"><code>is-large</code></p>
 				</div>
-				<!-- <hr><div class="has-text-centered">
+				<hr><div class="has-text-centered">
 					<p class="subtitle is-4">Check them out in real projects</p>
 					<p class="subtitle is-6"><a href="https://aldi.github.io/awesome-bulma-templates" target="_blank">Awesome Bulma Templates</a></p>
 					<p class="subtitle is-6"><a href="https://github.com/aldi/projects/simple-quote-generator/" target="_blank">Simple Quote Generator</a></p>
-				</div> -->
+				</div>
 			</div>
 		</div>
 		<hr>
@@ -282,14 +290,14 @@
 		<figure class="highlight"><pre>
 <code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
 <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;title&gt;</span>Social Buttons for Bulma!<span class="nt">&lt;/title&gt;</span>
 <span class="cp">&lt;!-- Bulma CSS --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"</span><span class="nt">&gt;</span>
 <span class="cp">&lt;!-- Bulma-Social --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bulma-social.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bulma-social.min.css"</span><span class="nt">&gt;</span>
 <span class="cp">&lt;!-- Font Awesome --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">defer src=</span><span class="s">"https://use.fontawesome.com/releases/v5.0.7/js/all.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">defer src=</span><span class="s">"https://use.fontawesome.com/releases/v5.11.2/js/all.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;/head&gt;</span></code><button class="button is-small bd-copy">Copy</button></pre>
 </figure>
 </div>
@@ -303,7 +311,7 @@
 					<p class="title is-4">2. Include the CSS</p>
 					<p class="subtitle is-6 is-spaced">
 						Just include the
-						<code>bulma-social.css</code> file into your project.
+						<code>bulma-social.min.css</code> file into your project.
 					</p>
 					<p class="title is-4">3. Add some buttons!</p>
 					<p class="subtitle is-6 is-spaced">
@@ -352,7 +360,7 @@
 			</div>
 			<a href="https://github.com/aldi/bulma-social" title="Fork me on GitHub" class="github-corner"><svg width="80" height="80" viewbox="0 0 250 250"><title>Fork me on GitHub</title><path d="M0 0h250v250"></path><path d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px" class="octo-arm"></path><path d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor" class="octo-body"></path></svg><style> .github-corner svg{position:absolute;right:0;top:0;mix-blend-mode:darken;color:#ffffff;fill:#000000;}.github-corner:hover .octo-arm{animation:octocat-wave .56s;}@keyframes octocat-wave{0%, 100%{transform:rotate(0);}20%, 60%{transform:rotate(-20deg);}40%, 80%{transform:rotate(10deg);}}</style></a>
 			<!-- Font Awesome -->
-			<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+			<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
 			<!-- Clipboard.js -->
 			<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 			<!-- jQuery -->
