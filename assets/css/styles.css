@@ -2,24 +2,35 @@ body{
 	font-weight:300;
 	-webkit-font-smoothing:antialiased
 }
-.hero-body{
-	position:relative;
+.hero-body {
 	font-size:16px;
 	color:#fff;
 	color:rgba(255,255,255,0.75);
 	text-align:center;
 	border-radius:0;
 	padding-bottom:80px;
-	background: #FC466B;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background-repeat:repeat-x;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff720e9e', endColorstr='#ffdd4b39', GradientType=1)
+	background: #FC466B;
+	background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+	background: linear-gradient(-135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+@-webkit-keyframes gradientBG {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientBG {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes gradientBG {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
 
-.hero-body {
-	padding: 4em 1.5em;
-}
 .hero-body p a,.hero-body .hero-body-links a{
 	font-weight:500;
 	color:#fff
