@@ -1,48 +1,60 @@
-![bulma-social-image](bulma-social.png)
+# Bulma-Social
 
-Social Buttons for Bulma
-============================
+Social Sign-In Buttons made in pure CSS based on [Bulma](http://bulma.io/) and [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 
-Social Buttons based on
-[Bulma](http://bulma.io/) and
-[Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+[![npm](https://img.shields.io/npm/v/bulma-social.svg)](https://npmjs.com/package/bulma-social)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 
-[Check the live demo!](http://aldi.github.io/bulma-social)
+[Check out the live demo!](http://aldi.github.io/bulma-social)
 
-Installation
-------------
+![bulma-social-image](assets/images/bulma-social.png)
 
-Include the `bulma-social.css` or `bulma-social.min.css` in your project.
+## Installation
 
-Available classes
------------------
- - `is-adn`
- - `is-bitbucket`
- - `is-dropbox`
- - `is-facebook`
- - `is-flickr`
- - `is-foursquare`
- - `is-github`
- - `is-google`
- - `is-instagram`
- - `is-linkedin`
- - `is-microsoft`
- - `is-odnoklassniki`
- - `is-openid`
- - `is-pinterest`
- - `is-reddit`
- - `is-soundcloud`
- - `is-tumblr`
- - `is-twitter`
- - `is-vimeo`
- - `is-vk`
- - `is-yahoo`
- - `is-youtube`
- 
-### Separate button styles for each brand: Work in progress.
+### HTML
 
-Examples
---------
+Include the `bulma-social.min.css` in your project.
+
+### NPM
+
+```sh
+npm install bulma-social
+```
+
+After installation, you can import the CSS file into your project using this snippet:
+
+```sh
+import 'bulma-social/bin/bulma-social.min.css'
+```
+
+## Available classes
+
+- `is-adn`
+- `is-bitbucket`
+- `is-dropbox`
+- `is-facebook`
+- `is-flickr`
+- `is-foursquare`
+- `is-github`
+- `is-google`
+- `is-instagram`
+- `is-linkedin`
+- `is-microsoft`
+- `is-odnoklassniki`
+- `is-openid`
+- `is-pinterest`
+- `is-reddit`
+- `is-soundcloud`
+- `is-tumblr`
+- `is-twitter`
+- `is-vimeo`
+- `is-vk`
+- `is-yahoo`
+- `is-youtube`
+
+ Separate button styles for each brand: Work in progress...
+
+## Examples
 
 ```html
 <!-- Github Button -->
@@ -59,6 +71,6 @@ Examples
 </a>
 ```
 
-Licence
--------
-MIT
+## Licence 📜
+
+Code released under [the MIT license](https://github.com/aldi/bulma-social/blob/master/LICENSE).
