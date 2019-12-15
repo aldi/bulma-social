@@ -17,14 +17,9 @@ $(function () {
   });
   $($('li', '.social-class')[Math.floor($('li', '.social-class').length * Math.random())]).mouseenter();
 });
-
 document.addEventListener('DOMContentLoaded', function () {
-
-// Clipboard
-
 var $highlights = getAll('.highlight');
 var itemsProcessed = 0;
-
 if ($highlights.length > 0) {
   $highlights.forEach(function ($el) {
     var copyEl = '<button class="button is-small bd-copy">Copy</button>';
@@ -45,7 +40,6 @@ if ($highlights.length > 0) {
     }
   });
 }
-
 function addHighlightControls() {
   var $highlightButtons = getAll('.highlight .bd-copy, .highlight .bd-expand');
 
@@ -75,16 +69,11 @@ function addHighlightControls() {
     });
   });
 }
-
 new ClipboardJS('.bd-copy', {
   target: function(trigger) {
     return trigger.previousElementSibling.firstElementChild;
   }
 });
-
-
-  // Functions
-
   function getAll(selector) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
   }
