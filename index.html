@@ -274,7 +274,6 @@
 				<hr><div class="has-text-centered">
 					<p class="subtitle is-4">Check them out in real projects</p>
 					<p class="subtitle is-6"><a href="https://aldi.github.io/awesome-bulma-templates" target="_blank">Awesome Bulma Templates</a></p>
-					<p class="subtitle is-6"><a href="https://www.aldiduzha.com/projects/simple-quote-generator/" target="_blank">Simple Quote Generator</a></p>
 				</div>
 			</div>
 		</div>
@@ -284,10 +283,17 @@
 		<div class="container">
 			<div class="columns">
 				<div class="column is-8 is-offset-2">
-					<p class="title is-2 has-text-centered">How to use</p>
-					<p class="subtitle is-4 has-text-centered">A typical header would look like this:</p>
-	<div class="bd-example highlight-full header-code">
-		<figure class="highlight"><pre>
+					<p class="title is-2 has-text-centered">Installation</p>
+					<p class="title is-4 has-text-centered">1. NPM</p>
+					<p class="title is-5 has-text-centered">Run <code>npm install bulma-social</code></p>
+					<p class="title is-6 has-text-centered">After installation, you can import the CSS file into your project using this snippet:</p>
+					<p class="title is-5 has-text-centered"><code>import 'bulma-social/bin/bulma-social.min.css'</code>
+					</p>
+					
+					<p class="title is-4 has-text-centered">2. HTML</p>
+					<p class="subtitle is-5 has-text-centered">A typical header would look like this:</p>
+<div class="bd-example highlight-full header-code">
+<figure class="highlight"><pre>
 <code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
 <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
@@ -302,25 +308,20 @@
 </figure>
 </div>
 
-					<p class="title is-4">1. Include Bulma and Font Awesome</p>
-					<p class="subtitle is-6 is-spaced">
-						If you haven't done that already, include the latest
-						<a href="http://bulma.io/">Bulma</a>
-						and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> in your project.
-					</p>
-					<p class="title is-4">2. Include the CSS</p>
-					<p class="subtitle is-6 is-spaced">
-						Just include the
-						<code>bulma-social.min.css</code> file into your project.
-					</p>
-					<p class="title is-4">3. Add some buttons!</p>
-					<p class="subtitle is-6 is-spaced">
-						Start using the buttons as you would normally do with the
-						Bulma buttons that have an icon by adding the relevant
-						class. For example:
-					</p>
-					<div class="bd-example highlight-full header-code">
-						<figure class="highlight"><pre>
+<p class="title is-3 has-text-centered">Examples</p>
+<p class="subtitle is-6">
+	Start using the buttons as you would normally do adding additionaly the social class. For example:
+</p>
+<div class="column has-text-centered">
+<a class="button is-medium is-github">
+    <span class="icon">
+      <i class="fab fa-github"></i>
+    </span>
+    <span>GitHub</span>
+</a>
+</div>
+<div class="bd-example highlight-full header-code">
+<figure class="highlight"><pre>
 <code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-github"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -330,10 +331,15 @@
 </code><button class="button is-small bd-copy">Copy</button></pre>
 						</figure>
 					</div>
-						<p class="subtitle is-6">
-							Or if you just want the icon button, use it like this:
-						</p>
-						<div class="bd-example highlight-full header-code">
+					<p class="subtitle is-6">
+						Or if you just want the icon button, use it like this:
+					</p>
+					<div class="column has-text-centered">
+						<a class="button is-medium is-github">
+							<span class="fab fa-github"></span>
+						</a>
+					</div>
+					<div class="bd-example highlight-full header-code">
 						<figure class="highlight"><pre>
 <code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-github"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nt">&gt;</span><span class="nt">&lt;/span&gt;</span>
@@ -355,7 +361,7 @@
 					is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
 				</p>
 				<p>
-					Available in <a target="_blank" href="https://github.com/aldi/bulma-social"><i class="fab fa-github"></i></a>
+					Available in <a target="_blank" href="https://github.com/aldi/bulma-social"><i class="fab fa-github"></i></a> and <a target="_blank" href="https://www.npmjs.com/package/bulma-social"><i class="fab fa-npm"></i></a>
 				</p>
 			</div>
 			<a href="https://github.com/aldi/bulma-social" title="Fork me on GitHub" class="github-corner"><svg width="80" height="80" viewbox="0 0 250 250"><title>Fork me on GitHub</title><path d="M0 0h250v250"></path><path d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px" class="octo-arm"></path><path d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor" class="octo-body"></path></svg><style> .github-corner svg{position:absolute;right:0;top:0;mix-blend-mode:darken;color:#ffffff;fill:#000000;}.github-corner:hover .octo-arm{animation:octocat-wave .56s;}@keyframes octocat-wave{0%, 100%{transform:rotate(0);}20%, 60%{transform:rotate(-20deg);}40%, 80%{transform:rotate(10deg);}}</style></a>
