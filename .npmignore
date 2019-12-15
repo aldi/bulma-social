@@ -1,0 +1,4 @@
+# .npmignore
+assets
+bin/bulma-social.css
+index.html
