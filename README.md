@@ -52,7 +52,7 @@ import 'bulma-social/bin/bulma-social.min.css'
 - `is-yahoo`
 - `is-youtube`
 
- Separate button styles for each brand: Work in progress...
+ Separate button styles for each brand: Work in progress.
 
 ## Examples
 
