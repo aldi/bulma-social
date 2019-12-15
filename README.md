@@ -39,7 +39,7 @@ Available classes
  - `is-yahoo`
  - `is-youtube`
  
-### Seperate button styles for each brand: Work in progress.
+### Separate button styles for each brand: Work in progress.
 
 Examples
 --------
