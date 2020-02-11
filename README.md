@@ -36,6 +36,7 @@ import 'bulma-social/bin/bulma-social.min.css'
 - `is-flickr`
 - `is-foursquare`
 - `is-github`
+- `is-gitlab`
 - `is-google`
 - `is-instagram`
 - `is-linkedin`
@@ -67,7 +68,9 @@ import 'bulma-social/bin/bulma-social.min.css'
 
 <!-- Github Button Icon -->
 <a class="button is-medium is-github">
-  <span class="fab fa-github"></span>
+  <span class="icon">
+      <i class="fab fa-github"></i>
+  </span>
 </a>
 ```
 
