@@ -1,4 +1,6 @@
 # .npmignore
 assets
-bin/bulma-social.css
+bin/
+.git
+bulma-social.css
 index.html
