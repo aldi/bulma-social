@@ -2,7 +2,7 @@
   "name": "bulma-social",
   "description": "Social Sign-In Buttons made in pure CSS based on Bulma and Font Awesome!",
   "author": "aldi",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "bulma",
     "social",
@@ -21,9 +21,5 @@
   "dependencies": {
     "bulma": "^0.8.0",
     "@fortawesome/fontawesome-free": "^5.12.0"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com/",
-    "tag": "latest"
   }
 }
