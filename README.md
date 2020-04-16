@@ -11,20 +11,36 @@ Social Sign-In Buttons made in pure CSS based on [Bulma](http://bulma.io/) and [
 
 ## Installation
 
-### HTML
-
-Include the `bulma-social.min.css` in your project.
-
 ### NPM
 
 ```sh
 npm install bulma-social
 ```
 
-After installation, you can import the CSS file into your project using this snippet:
+After installation, you can import the CSS files into your project using these commands:
 
 ```sh
-import 'bulma-social/bin/bulma-social.min.css'
+import 'bulma/css/bulma.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bulma-social/bin/bulma-social.min.css';
+```
+
+### HTML (CDN)
+
+A typical header would look like this:
+
+```html
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Buttons for Bulma!</title>
+<!-- Bulma -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0/css/bulma.min.css">
+<!-- Font Awesome 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<!-- Bulma-Social -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+</head>
 ```
 
 ## Available classes
@@ -65,9 +81,11 @@ import 'bulma-social/bin/bulma-social.min.css'
     <span>GitHub</span>
 </a>
 
-<!-- Github Button Icon -->
+<!-- Github Icon Button -->
 <a class="button is-medium is-github">
-  <span class="fab fa-github"></span>
+    <span class="icon">
+      <i class="fab fa-github fa-lg"></i>
+    </span>
 </a>
 ```
 
