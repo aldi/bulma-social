@@ -74,7 +74,7 @@ fieldset[disabled] .is-adn.focus {
 
 .is-apple {
   color: #fff;
-  background-color: #444;
+  background-color: #000;
   border-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -128,12 +128,12 @@ fieldset[disabled] .is-apple:focus,
 .is-apple.disabled.focus,
 .is-apple[disabled].focus,
 fieldset[disabled] .is-apple.focus {
-  background-color: #444;
+  background-color: #000;
   border-color: rgba(0, 0, 0, 0.2);
 }
 
 .is-apple .badge {
-  color: #444;
+  color: #000;
   background-color: #fff;
 }
 
