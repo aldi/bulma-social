@@ -66,11 +66,6 @@ fieldset[disabled] .is-adn.focus {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-.is-adn .badge {
-  color: #d87a68;
-  background-color: #fff;
-}
-
 
 .is-apple {
   color: #fff;
