@@ -46,6 +46,7 @@ A typical header would look like this:
 ## Available classes
 
 - `is-adn`
+- `is-apple`
 - `is-bitbucket`
 - `is-dropbox`
 - `is-facebook`

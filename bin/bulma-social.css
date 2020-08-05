@@ -66,8 +66,69 @@ fieldset[disabled] .is-adn.focus {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-.is-adn .badge {
-  color: #d87a68;
+
+.is-apple {
+  color: #fff;
+  background-color: #000;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-apple:focus,
+.is-apple.focus {
+  color: #fff;
+  background-color: #2b2b2b;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-apple:hover {
+  color: #fff;
+  background-color: #2b2b2b;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-apple:active,
+.is-apple.active,
+.open > .dropdown-toggle.is-apple {
+  color: #fff;
+  background-color: #2b2b2b;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-apple:active:hover,
+.is-apple.active:hover,
+.open > .dropdown-toggle.is-apple:hover,
+.is-apple:active:focus,
+.is-apple.active:focus,
+.open > .dropdown-toggle.is-apple:focus,
+.is-apple:active.focus,
+.is-apple.active.focus,
+.open > .dropdown-toggle.is-apple.focus {
+  color: #fff;
+  background-color: #191919;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-apple:active,
+.is-apple.active,
+.open > .dropdown-toggle.is-apple {
+  background-image: none;
+}
+
+.is-apple.disabled:hover,
+.is-apple[disabled]:hover,
+fieldset[disabled] .is-apple:hover,
+.is-apple.disabled:focus,
+.is-apple[disabled]:focus,
+fieldset[disabled] .is-apple:focus,
+.is-apple.disabled.focus,
+.is-apple[disabled].focus,
+fieldset[disabled] .is-apple.focus {
+  background-color: #000;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-apple .badge {
+  color: #000;
   background-color: #fff;
 }
 
