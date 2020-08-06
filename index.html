@@ -12,7 +12,7 @@
 	<title>Bulma-Social - Social Buttons for Bulma</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0/css/bulma.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
-	<link rel="stylesheet" href="bin/bulma-social.min.css" />
+	<link rel="stylesheet" href="bin/bulma-social.css" />
 	<link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
@@ -20,7 +20,7 @@
 	<div class="hero">
 		<div class="hero-body">
 			<div class="container">
-				<p class="title is-2 cont-title">Social Buttons for Bulma <span class="tag">v1.1.1</span></p>
+				<p class="title is-2 cont-title">Social Buttons for Bulma <span class="tag">v1.2.0</span></p>
 				<p class="subtitle is-4 cont-subtitle">Social Sign-In Buttons based on <a
 						href="https://bulma.io/">Bulma</a> and <a
 						href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>!</p>
@@ -39,13 +39,6 @@
 				<p class="subtitle is-3 head-title">Buttons</p>
 				<hr />
 				<p class="buttons">
-					<a class="button is-adn">
-						<span class="icon">
-							<i class="fab fa-adn"></i>
-						</span>
-						<span>Sign in with App.net</span>
-					</a>
-					<br />
 					<a class="button is-apple">
 						<span class="icon">
 							<i class="fab fa-apple"></i>
@@ -102,18 +95,25 @@
 						<span>Sign in with GitLab</span>
 					</a>
 					<br />
-					<a class="button is-google">
-						<span class="icon">
-							<i class="fab fa-google"></i>
-						</span>
-						<span>Sign in with Google</span>
-					</a>
-					<br />
 					<a class="button is-instagram">
 						<span class="icon">
 							<i class="fab fa-instagram"></i>
 						</span>
 						<span>Sign in with Instagram</span>
+					</a>
+					<br />
+					<a class="button is-linkedin">
+						<span class="icon">
+							<i class="fab fa-linkedin"></i>
+						</span>
+						<span>Sign in with LinkedIn</span>
+					</a>
+					<br />
+					<a class="button is-microsoft">
+						<span class="icon">
+							<i class="fab fa-microsoft"></i>
+						</span>
+						<span>Sign in with Microsoft</span>
 					</a>
 					<br />
 					<a class="button is-odnoklassniki">
@@ -165,6 +165,13 @@
 						<span>Sign in with Twitter</span>
 					</a>
 					<br />
+					<a class="button is-vimeo">
+						<span class="icon">
+							<i class="fab fa-vimeo"></i>
+						</span>
+						<span>Sign in with Vimeo</span>
+					</a>
+					<br />
 					<a class="button is-vk">
 						<span class="icon">
 							<i class="fab fa-vk"></i>
@@ -172,7 +179,7 @@
 						<span>Sign in with VK</span>
 					</a>
 					<br />
-					<a class="button is-vk">
+					<a class="button is-yahoo">
 						<span class="icon">
 							<i class="fab fa-yahoo"></i>
 						</span>
@@ -186,19 +193,12 @@
 						<span>Sign in with Youtube</span>
 					</a>
 					<br />
-					<a class="button is-vimeo">
-						<span class="icon">
-							<i class="fab fa-vimeo"></i>
-						</span>
-						<span>Sign in with Vimeo</span>
-					</a>
-					<br />
 				</p>
 				<hr />
 				<div id="icons" class="text-center">
-					<a class="button is-medium is-adn">
+					<a class="button is-medium is-apple">
 						<span class="icon">
-							<i class="fab fa-adn fa-lg"></i>
+							<i class="fab fa-apple fa-lg"></i>
 						</span>
 					</a>
 					<a class="button is-medium is-bitbucket">
@@ -234,11 +234,6 @@
 					<a class="button is-medium is-gitlab">
 						<span class="icon">
 							<i class="fab fa-gitlab fa-lg"></i>
-						</span>
-					</a>
-					<a class="button is-medium is-google">
-						<span class="icon">
-							<i class="fab fa-google fa-lg"></i>
 						</span>
 					</a>
 					<a class="button is-medium is-instagram">
@@ -311,11 +306,6 @@
 							<i class="fab fa-youtube fa-lg"></i>
 						</span>
 					</a>
-					<a class="button is-medium is-github">
-						<span class="icon">
-							<i class="fab fa-github fa-lg"></i>
-						</span>
-					</a>
 				</div>
 			</div>
 
@@ -323,83 +313,77 @@
 				<p class="subtitle is-3 head-title has-text-centered">Available Classes</p>
 				<hr />
 				<ul class="social-class list-unstyled">
-					<li data-code="adn" data-name="App.net">
-						<code>is-adn</code> <span class="social-hex">#D87A68</span>
-					</li>
 					<li data-code="apple" data-name="Apple">
-						<code>is-apple</code> <span class="social-hex">#000</span>
+						<code>.is-apple</code> <span class="social-hex">#000000</span>
 					</li>
 					<li data-code="bitbucket" data-name="Bitbucket">
-						<code>is-bitbucket</code> <span class="social-hex">#205081</span>
+						<code>.is-bitbucket</code> <span class="social-hex">#205081</span>
 					</li>
 					<li data-code="dropbox" data-name="Dropbox">
-						<code>is-dropbox</code> <span class="social-hex">#1087DD</span>
+						<code>.is-dropbox</code> <span class="social-hex">#1087DD</span>
 					</li>
 					<li data-code="facebook" data-name="Facebook">
-						<code>is-facebook</code> <span class="social-hex">#3B5998</span>
+						<code>.is-facebook</code> <span class="social-hex">#3B5998</span>
 					</li>
 					<li data-code="flickr" data-name="Flickr">
-						<code>is-flickr</code> <span class="social-hex">#2BA9E1</span>
+						<code>.is-flickr</code> <span class="social-hex">#2BA9E1</span>
 					</li>
 					<li data-code="foursquare" data-name="Foursquare">
-						<code>is-foursquare</code> <span class="social-hex">#f94877</span>
+						<code>.is-foursquare</code> <span class="social-hex">#f94877</span>
 					</li>
 					<li data-code="github" data-name="GitHub">
-						<code>is-github</code> <span class="social-hex">#444444</span>
+						<code>.is-github</code> <span class="social-hex">#444444</span>
 					</li>
 					<li data-code="gitlab" data-name="GitLab">
-						<code>is-gitlab</code> <span class="social-hex">#fc6d26</span>
-					</li>
-					<li data-code="google" data-name="Google">
-						<code>is-google</code> <span class="social-hex">#DD4B39</span>
+						<code>.is-gitlab</code> <span class="social-hex">#fc6d26</span>
 					</li>
 					<li data-code="instagram" data-name="Instagram">
-						<code>is-instagram</code> <span class="social-hex">Gradient</span>
+						<code>.is-instagram</code> <span class="social-hex">Gradient</span>
 					</li>
 					<li data-code="linkedin" data-name="LinkedIn">
-						<code>is-linkedin</code> <span class="social-hex">#007BB6</span>
+						<code>.is-linkedin</code> <span class="social-hex">#007BB6</span>
 					</li>
 					<li data-code="microsoft" data-icon="windows" data-name="Microsoft">
-						<code>is-microsoft</code> <span class="social-hex">#2672EC</span>
+						<code>.is-microsoft</code> <span class="social-hex">#2672EC</span>
 					</li>
 					<li data-code="odnoklassniki" data-name="Odnoklassniki">
-						<code>is-odnoklassniki</code> <span class="social-hex">#F4731C</span>
+						<code>.is-odnoklassniki</code> <span class="social-hex">#F4731C</span>
 					</li>
 					<li data-code="openid" data-name="OpenID">
-						<code>is-openid</code> <span class="social-hex">#F7931E</span>
+						<code>.is-openid</code> <span class="social-hex">#F7931E</span>
 					</li>
 					<li data-code="pinterest" data-name="Pinterest">
-						<code>is-pinterest</code> <span class="social-hex">#CB2027</span>
+						<code>.is-pinterest</code> <span class="social-hex">#CB2027</span>
 					</li>
 					<li data-code="reddit" data-name="Reddit">
-						<code>is-reddit</code> <span class="social-hex">#EFF7FF</span>
+						<code>.is-reddit</code> <span class="social-hex">#EFF7FF</span>
 					</li>
 					<li data-code="soundcloud" data-name="SoundCloud">
-						<code>is-soundcloud</code> <span class="social-hex">#FF5500</span>
+						<code>.is-soundcloud</code> <span class="social-hex">#FF5500</span>
 					</li>
 					<li data-code="tumblr" data-name="Tumblr">
-						<code>is-tumblr</code> <span class="social-hex">#CB2027</span>
+						<code>.is-tumblr</code> <span class="social-hex">#CB2027</span>
 					</li>
 					<li data-code="twitter" data-name="Twitter">
-						<code>is-twitter</code> <span class="social-hex">#55ACEE</span>
+						<code>.is-twitter</code> <span class="social-hex">#55ACEE</span>
 					</li>
 					<li data-code="vimeo" data-icon="vimeo-square" data-name="Vimeo">
-						<code>is-vimeo</code> <span class="social-hex">#1AB7EA</span>
+						<code>.is-vimeo</code> <span class="social-hex">#1AB7EA</span>
 					</li>
 					<li data-code="vk" data-name="VK">
-						<code>is-vk</code> <span class="social-hex">#587EA3</span>
+						<code>.is-vk</code> <span class="social-hex">#587EA3</span>
 					</li>
 					<li data-code="yahoo" data-name="Yahoo!">
-						<code>is-yahoo</code> <span class="social-hex">#720E9E</span>
+						<code>.is-yahoo</code> <span class="social-hex">#720E9E</span>
 					</li>
 					<li data-code="youtube" data-name="Youtube">
-						<code>is-youtube</code> <span class="social-hex">#FF0000</span>
+						<code>.is-youtube</code> <span class="social-hex">#FF0000</span>
 					</li>
 				</ul>
 				<hr />
 				<div class="has-text-centered">
 					<p class="subtitle is-4">Disable Hover Animation</p>
-					<code>no-animation</code>
+					<code>.no-animation</code>
 				</div>
 			</div>
 			<div class="column is-4">
@@ -418,197 +402,197 @@
 						<div>
 							<div class="columns tab-content">
 								<div class="column">
-									<a class="button is-large is-google">
+									<a class="button is-large is-github">
 										<span class="icon is-medium">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-medium is-google">
+									<a class="button is-medium is-github">
 										<span class="icon">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-google">
+									<a class="button is-github">
 										<span class="icon">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-small is-google">
+									<a class="button is-small is-github">
 										<span class="icon is-small">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<hr />
 								<div class="column">
-									<a class="button is-large is-google social-icon">
-										<span class="fab fa-google"></span>
+									<a class="button is-large is-github social-icon">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-medium is-google social-icon">
-										<span class="fab fa-google"></span>
+									<a class="button is-medium is-github social-icon">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-google social-icon">
-										<span class="fab fa-google"></span>
+									<a class="button is-github social-icon">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-small is-google social-icon">
-										<span class="fab fa-google"></span>
+									<a class="button is-small is-github social-icon">
+										<span class="fab fa-github"></span>
 									</a>
 								</div>
 							</div>
 							<div class="columns tab-content">
 								<div class="column">
-									<a class="button is-large is-google is-rounded">
+									<a class="button is-large is-github is-rounded">
 										<span class="icon is-medium">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-medium is-google is-rounded">
+									<a class="button is-medium is-github is-rounded">
 										<span class="icon">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-google is-rounded">
+									<a class="button is-github is-rounded">
 										<span class="icon">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-small is-google is-rounded">
+									<a class="button is-small is-github is-rounded">
 										<span class="icon is-small">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<hr />
 								<div class="column">
-									<a class="button is-large is-google social-icon is-rounded">
-										<span class="fab fa-google"></span>
+									<a class="button is-large is-github social-icon is-rounded">
+										<span class="fab fa-lg fa-github"></span>
 									</a>
-									<a class="button is-medium is-google social-icon is-rounded">
-										<span class="fab fa-google"></span>
+									<a class="button is-medium is-github social-icon is-rounded">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-google social-icon is-rounded">
-										<span class="fab fa-google"></span></a>
-									<a class="button is-small is-google social-icon is-rounded">
-										<span class="fab fa-google"></span>
+									<a class="button is-github social-icon is-rounded">
+										<span class="fab fa-github"></span></a>
+									<a class="button is-small is-github social-icon is-rounded">
+										<span class="fab fa-github"></span>
 									</a>
 								</div>
 							</div>
 
 							<div class="columns tab-content">
 								<div class="column">
-									<a class="button is-large is-google is-loading">
+									<a class="button is-large is-github is-loading">
 										<span class="icon is-medium">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-medium is-google is-loading">
+									<a class="button is-medium is-github is-loading">
 										<span class="icon">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-google is-loading">
+									<a class="button is-github is-loading">
 										<span class="icon">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-small is-google is-loading">
+									<a class="button is-small is-github is-loading">
 										<span class="icon is-small">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<hr />
 								<div class="column">
-									<a class="button is-large is-google social-icon is-loading">
-										<span class="fab fa-google"></span>
+									<a class="button is-large is-github social-icon is-loading">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-medium is-google social-icon is-loading">
-										<span class="fab fa-google"></span>
+									<a class="button is-medium is-github social-icon is-loading">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-google social-icon is-loading">
-										<span class="fab fa-google"></span>
+									<a class="button is-github social-icon is-loading">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-small is-google social-icon is-loading">
-										<span class="fab fa-google"></span>
+									<a class="button is-small is-github social-icon is-loading">
+										<span class="fab fa-github"></span>
 									</a>
 								</div>
 							</div>
 							<div class="columns tab-content">
 								<div class="column">
-									<a class="button is-large is-google is-static">
+									<a class="button is-large is-github is-static">
 										<span class="icon is-medium">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-medium is-google is-static">
+									<a class="button is-medium is-github is-static">
 										<span class="icon">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-google is-static">
+									<a class="button is-github is-static">
 										<span class="icon">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<div class="column">
-									<a class="button is-small is-google is-static">
+									<a class="button is-small is-github is-static">
 										<span class="icon is-small">
-											<i class="fab fa-google"></i>
+											<i class="fab fa-github"></i>
 										</span>
 										<span></span>
 									</a>
 								</div>
 								<hr />
 								<div class="buttons">
-									<a class="button is-large is-google social-icon is-static">
-										<span class="fab fa-google"></span>
+									<a class="button is-large is-github social-icon is-static">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-medium is-google social-icon is-static">
-										<span class="fab fa-google"></span>
+									<a class="button is-medium is-github social-icon is-static">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-google social-icon is-static">
-										<span class="fab fa-google"></span>
+									<a class="button is-github social-icon is-static">
+										<span class="fab fa-github"></span>
 									</a>
-									<a class="button is-small is-google social-icon is-static">
-										<span class="fab fa-google"></span>
+									<a class="button is-small is-github social-icon is-static">
+										<span class="fab fa-github"></span>
 									</a>
 								</div>
 							</div>
@@ -619,16 +603,16 @@
 				<div class="has-text-centered">
 					<p class="subtitle is-4 is-spaced">Available Button Sizes</p>
 					<p class="subtitle is-6">
-						<em><code>is-small</code></em>
+						<em><code>.is-small</code></em>
 					</p>
 					<p class="subtitle is-6">
-						<em><code>is-medium</code></em>
+						<em><code>.is-medium</code></em>
 					</p>
 					<p class="subtitle is-6">
-						<em><code>is-normal</code></em>
+						<em><code>.is-normal</code></em>
 					</p>
 					<p class="subtitle is-6">
-						<em><code>is-large</code></em>
+						<em><code>.is-large</code></em>
 					</p>
 				</div>
 				<hr />
@@ -736,7 +720,7 @@
 		<p>The source code is licensed under <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
 		<p>Available in <a target="_blank" href="https://github.com/aldi/bulma-social"><i class="fab fa-github"></i></a>
 			and <a target="_blank" href="https://www.npmjs.com/package/bulma-social"><i class="fab fa-npm"></i></a></p>
-		<p><a target="_blank" href="https://github.com/aldi/bulma-social/blob/master/CHANGELOG.md">View change log</a>
+		<p><a target="_blank" href="https://github.com/aldi/bulma-social/blob/master/CHANGELOG.md">View Changelog</a>
 		</p>
 	</div>
 	<a href="https://github.com/aldi/bulma-social" title="Fork me on GitHub" class="github-corner">
