@@ -45,7 +45,6 @@ A typical header would look like this:
 
 ## Available classes
 
-- `is-adn`
 - `is-apple`
 - `is-bitbucket`
 - `is-dropbox`
@@ -53,7 +52,6 @@ A typical header would look like this:
 - `is-flickr`
 - `is-foursquare`
 - `is-github`
-- `is-google`
 - `is-instagram`
 - `is-linkedin`
 - `is-microsoft`
@@ -68,8 +66,6 @@ A typical header would look like this:
 - `is-vk`
 - `is-yahoo`
 - `is-youtube`
-
- Separate button styles for each brand: Work in progress.
 
 ## Examples
 
