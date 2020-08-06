@@ -8,7 +8,7 @@ $(function () {
     if ($(this).data("icon")) {
       icon_name = $(this).data("icon");
     }
-    var icon = "<span class='icon is-medium'><i class='fab fa-" + icon_name + "'></i></span>";
+    var icon = "<span class='icon is-medium'><i class='fab fa-lg fa-" + icon_name + "'></i></span>";
     $('.button', '.social-sizes').html(icon + "<span>" + $(this).data("name") + "</span");
     $('.social-icon', '.social-sizes').html(icon);
     $('.button', '.social-sizes').removeClass(all_classes);
@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // end of tabs
   function addHighlightControls() {
-    var $highlightButtons = getAll('.highlight .bd-copy, .highlight .bd-expand');
+    var highlightButtons = getAll('.highlight .bd-copy, .highlight .bd-expand');
 
-    $highlightButtons.forEach(function ($el) {
+    highlightButtons.forEach(function ($el) {
       $el.addEventListener('mouseenter', function () {
         $el.parentNode.classList.add('bd-is-hovering');
       });
@@ -90,17 +90,17 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    var $highlightExpands = getAll('.highlight .bd-expand');
+    var highlightExpands = getAll('.highlight .bd-expand');
 
-    $highlightExpands.forEach(function ($el) {
+    highlightExpands.forEach(function ($el) {
       $el.addEventListener('click', function () {
         $el.parentNode.firstElementChild.style.maxHeight = 'none';
       });
     });
 
-    var $highlightShows = getAll('.highlight .bd-show');
+    var lhighlightShows = getAll('.highlight .bd-show');
 
-    $highlightShows.forEach(function ($el) {
+    lhighlightShows.forEach(function ($el) {
       $el.addEventListener('click', function () {
         $el.parentNode.parentNode.classList.remove('bd-is-more-clipped');
       });
