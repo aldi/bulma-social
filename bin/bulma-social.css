@@ -72,6 +72,39 @@
   box-shadow: none;
 }
 
+.button.is-discord {
+  color: #FFFFFF;
+  background-color: #7289da;
+  border-color: transparent;
+}
+
+.button.is-discord:focus,
+.button.is-discord.is-focused {
+  color: #FFFFFF;
+  background-color: #8888DD;
+  border-color: transparent;
+}
+
+.button.is-discord:hover,
+.button.is-discord.is-hovered {
+  color: #FFFFFF;
+  background-color: #8888DD;
+  border-color: transparent;
+}
+
+.button.is-discord:active,
+.button.is-discord.is-active {
+  color: #FFFFFF;
+  background-color: #7777DD;
+  border-color: transparent;
+}
+
+.button.is-discord[disabled],fieldset[disabled] .button.is-discord {
+  background-color: #7289da;
+  border-color: transparent;
+  box-shadow: none;
+}
+
 .button.is-dropbox {
   color: #FFFFFF;
   background-color: #1087dd;
@@ -101,39 +134,6 @@
 
 .button.is-dropbox[disabled],fieldset[disabled] .button.is-dropbox {
   background-color: #1087dd;
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.button.is-discord {
-  color: #FFFFFF;
-  background-color: #7289da;
-  border-color: transparent;
-}
-
-.button.is-discord:focus,
-.button.is-discord.is-focused {
-  color: #FFFFFF;
-  background-color: #2c2f33;
-  border-color: transparent;
-}
-
-.button.is-discord:hover,
-.button.is-discord.is-hovered {
-  color: #FFFFFF;
-  background-color: #2c2f33;
-  border-color: transparent;
-}
-
-.button.is-discord:active,
-.button.is-discord.is-active {
-  color: #FFFFFF;
-  background-color: #2c2f33;
-  border-color: transparent;
-}
-
-.button.is-discord[disabled],fieldset[disabled] .button.is-discord {
-  background-color: #99aab5;
   border-color: transparent;
   box-shadow: none;
 }
