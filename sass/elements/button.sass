@@ -1,0 +1,155 @@
+$button-focus-box-shadow-size: 0 0 0 0.125em !default
+$button-static-color: hsl(0, 0%, 48%) !default
+$button-static-background-color: hsl(0, 0%, 96%) !default
+$button-static-border-color: hsl(0, 0%, 86%) !default
+$button-colors: $socialProvidersList !default
+
+.button
+  // Colors
+  @each $name, $pair in $button-colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: $color
+      border-color: transparent
+      color: $color-invert
+      &:hover,
+      &.is-hovered
+        background-color: bulmaDarken($color, 2.5%)
+        border-color: transparent
+        color: $color-invert
+      &:focus,
+      &.is-focused
+        border-color: transparent
+        color: $color-invert
+        &:not(:active)
+          box-shadow: $button-focus-box-shadow-size bulmaRgba($color, 0.25)
+      &:active,
+      &.is-active
+        background-color: bulmaDarken($color, 5%)
+        border-color: transparent
+        color: $color-invert
+      &[disabled],
+      fieldset[disabled] &
+        background-color: $color
+        border-color: transparent
+        box-shadow: none
+      &.is-inverted
+        background-color: $color-invert
+        color: $color
+        &:hover,
+        &.is-hovered
+          background-color: bulmaDarken($color-invert, 5%)
+        &[disabled],
+        fieldset[disabled] &
+          background-color: $color-invert
+          border-color: transparent
+          box-shadow: none
+          color: $color
+      &.is-loading
+        &::after
+          border-color: transparent transparent $color-invert $color-invert !important
+      &.is-outlined
+        background-color: transparent
+        border-color: $color
+        color: $color
+        &:hover,
+        &.is-hovered,
+        &:focus,
+        &.is-focused
+          background-color: $color
+          border-color: $color
+          color: $color-invert
+        &.is-loading
+          &::after
+            border-color: transparent transparent $color $color !important
+          &:hover,
+          &.is-hovered,
+          &:focus,
+          &.is-focused
+            &::after
+              border-color: transparent transparent $color-invert $color-invert !important
+        &[disabled],
+        fieldset[disabled] &
+          background-color: transparent
+          border-color: $color
+          box-shadow: none
+          color: $color
+      &.is-inverted.is-outlined
+        background-color: transparent
+        border-color: $color-invert
+        color: $color-invert
+        &:hover,
+        &.is-hovered,
+        &:focus,
+        &.is-focused
+          background-color: $color-invert
+          color: $color
+        &.is-loading
+          &:hover,
+          &.is-hovered,
+          &:focus,
+          &.is-focused
+            &::after
+              border-color: transparent transparent $color $color !important
+        &[disabled],
+        fieldset[disabled] &
+          background-color: transparent
+          border-color: $color-invert
+          box-shadow: none
+          color: $color-invert
+      // If light and dark colors are provided
+      @if length($pair) >= 4
+        $color-light: nth($pair, 3)
+        $color-dark: nth($pair, 4)
+        &.is-light
+          background-color: $color-light
+          color: $color-dark
+          &:hover,
+          &.is-hovered
+            background-color: bulmaDarken($color-light, 2.5%)
+            border-color: transparent
+            color: $color-dark
+          &:active,
+          &.is-active
+            background-color: bulmaDarken($color-light, 5%)
+            border-color: transparent
+            color: $color-dark
+  &.is-static
+    background-color: $button-static-background-color
+    border-color: $button-static-border-color
+    color: $button-static-color
+    box-shadow: none
+    pointer-events: none
+
+@each $name, $pair in $socialProvidersList
+  $color: nth($pair, 1)
+  .has-text-#{$name}
+    color: $color !important
+  a.has-text-#{$name}
+    &:hover,
+    &:focus
+      color: bulmaDarken($color, 10%) !important
+  .has-background-#{$name}
+    background-color: $color !important
+  @if length($pair) >= 4
+    $color-light: nth($pair, 3)
+    $color-dark: nth($pair, 4)
+    // Light
+    .has-text-#{$name}-light
+      color: $color-light !important
+    a.has-text-#{$name}-light
+      &:hover,
+      &:focus
+        color: bulmaDarken($color-light, 10%) !important
+    .has-background-#{$name}-light
+      background-color: $color-light !important
+    // Dark
+    .has-text-#{$name}-dark
+      color: $color-dark !important
+    a.has-text-#{$name}-dark
+      &:hover,
+      &:focus
+        color: bulmaLighten($color-dark, 10%) !important
+    .has-background-#{$name}-dark
+      background-color: $color-dark !important
