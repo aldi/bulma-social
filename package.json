@@ -1,13 +1,24 @@
 {
   "name": "bulma-social",
-  "description": "Social Sign-In Buttons made in pure CSS based on Bulma and Font Awesome!",
-  "author": "Aldi Duzha",
-  "version": "1.2.0",
+  "description": "Social Buttons and Colors for Bulma",
+  "author": {
+    "name": "Aldi Duzha",
+    "email": "aldiduzha@gmail.com",
+    "url": "https://aldiduzha.com"
+  },
+  "version": "2.0.0",
+  "homepage": "https://aldi.github.io/bulma-social",
+  "main": "bulma-social.sass",
+  "jsdelivr": "css/all.min.css",
+  "unpkg": "css/all.min.css",
+  "style": "bulma-social/css/all.min.css",
+  "license": "MIT",
   "keywords": [
     "bulma",
     "social",
     "bulma-social",
-    "social-buttons"
+    "social-buttons",
+    "css"
   ],
   "repository": {
     "type": "git",
@@ -16,10 +27,31 @@
   "bugs": {
     "url": "https://github.com/aldi/bulma-social/issues"
   },
-  "homepage": "https://aldi.github.io/bulma-social",
-  "license": "MIT",
-  "dependencies": {
-    "bulma": "^0.9.0",
-    "@fortawesome/fontawesome-free": "^5.14.0"
-  }
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss": "^8.1.7",
+    "postcss-cli": "^8.2.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss css/all.css --use autoprefixer --map false --output css/all.css",
+    "build-cleancss": "cleancss -o css/all.min.css css/all.css",
+    "build-sass": "node-sass --output-style expanded --source-map true bulma-social.sass css/all.css",
+    "clean": "rimraf css",
+    "deploy": "npm run clean && npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "files": [
+    "css",
+    "sass",
+    "bulma-social.sass",
+    "LICENSE",
+    "README.md"
+  ],
+  "browserslist": [
+    "last 3 versions"
+  ]
 }

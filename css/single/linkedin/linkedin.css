@@ -1,0 +1,200 @@
+/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-linkedin {
+  background-color: #0a66c2;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-linkedin:hover, .button.is-linkedin.is-hovered {
+  background-color: #0960b6;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-linkedin:focus, .button.is-linkedin.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-linkedin:focus:not(:active), .button.is-linkedin.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(10, 102, 194, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(10, 102, 194, 0.25);
+}
+
+.button.is-linkedin:active, .button.is-linkedin.is-active {
+  background-color: #0959aa;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-linkedin[disabled],
+fieldset[disabled] .button.is-linkedin {
+  background-color: #0a66c2;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-linkedin.is-inverted {
+  background-color: #fff;
+  color: #0a66c2;
+}
+
+.button.is-linkedin.is-inverted:hover, .button.is-linkedin.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-linkedin.is-inverted[disabled],
+fieldset[disabled] .button.is-linkedin.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #0a66c2;
+}
+
+.button.is-linkedin.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-linkedin.is-outlined {
+  background-color: transparent;
+  border-color: #0a66c2;
+  color: #0a66c2;
+}
+
+.button.is-linkedin.is-outlined:hover, .button.is-linkedin.is-outlined.is-hovered, .button.is-linkedin.is-outlined:focus, .button.is-linkedin.is-outlined.is-focused {
+  background-color: #0a66c2;
+  border-color: #0a66c2;
+  color: #fff;
+}
+
+.button.is-linkedin.is-outlined.is-loading::after {
+  border-color: transparent transparent #0a66c2 #0a66c2 !important;
+}
+
+.button.is-linkedin.is-outlined.is-loading:hover::after, .button.is-linkedin.is-outlined.is-loading.is-hovered::after, .button.is-linkedin.is-outlined.is-loading:focus::after, .button.is-linkedin.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-linkedin.is-outlined[disabled],
+fieldset[disabled] .button.is-linkedin.is-outlined {
+  background-color: transparent;
+  border-color: #0a66c2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #0a66c2;
+}
+
+.button.is-linkedin.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-linkedin.is-inverted.is-outlined:hover, .button.is-linkedin.is-inverted.is-outlined.is-hovered, .button.is-linkedin.is-inverted.is-outlined:focus, .button.is-linkedin.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: #0a66c2;
+}
+
+.button.is-linkedin.is-inverted.is-outlined.is-loading:hover::after, .button.is-linkedin.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-linkedin.is-inverted.is-outlined.is-loading:focus::after, .button.is-linkedin.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #0a66c2 #0a66c2 !important;
+}
+
+.button.is-linkedin.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-linkedin.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-linkedin.is-light {
+  background-color: #ecf5fe;
+  color: #0c7ae9;
+}
+
+.button.is-linkedin.is-light:hover, .button.is-linkedin.is-light.is-hovered {
+  background-color: #dfeefd;
+  border-color: transparent;
+  color: #0c7ae9;
+}
+
+.button.is-linkedin.is-light:active, .button.is-linkedin.is-light.is-active {
+  background-color: #d3e8fd;
+  border-color: transparent;
+  color: #0c7ae9;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-linkedin {
+  color: #0a66c2 !important;
+}
+
+a.has-text-linkedin:hover, a.has-text-linkedin:focus {
+  color: #074d92 !important;
+}
+
+.has-background-linkedin {
+  background-color: #0a66c2 !important;
+}
+
+.has-text-linkedin-light {
+  color: #ecf5fe !important;
+}
+
+a.has-text-linkedin-light:hover, a.has-text-linkedin-light:focus {
+  color: #bbdbfc !important;
+}
+
+.has-background-linkedin-light {
+  background-color: #ecf5fe !important;
+}
+
+.has-text-linkedin-dark {
+  color: #0c7ae9 !important;
+}
+
+a.has-text-linkedin-dark:hover, a.has-text-linkedin-dark:focus {
+  color: #3394f5 !important;
+}
+
+.has-background-linkedin-dark {
+  background-color: #0c7ae9 !important;
+}
+/*# sourceMappingURL=all.css.map */

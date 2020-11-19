@@ -1,0 +1,200 @@
+/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-reddit {
+  background-color: orangered;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-reddit:hover, .button.is-reddit.is-hovered {
+  background-color: #f24100;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-reddit:focus, .button.is-reddit.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-reddit:focus:not(:active), .button.is-reddit.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(255, 69, 0, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(255, 69, 0, 0.25);
+}
+
+.button.is-reddit:active, .button.is-reddit.is-active {
+  background-color: #e63e00;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-reddit[disabled],
+fieldset[disabled] .button.is-reddit {
+  background-color: orangered;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-reddit.is-inverted {
+  background-color: #fff;
+  color: orangered;
+}
+
+.button.is-reddit.is-inverted:hover, .button.is-reddit.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-reddit.is-inverted[disabled],
+fieldset[disabled] .button.is-reddit.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: orangered;
+}
+
+.button.is-reddit.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-reddit.is-outlined {
+  background-color: transparent;
+  border-color: orangered;
+  color: orangered;
+}
+
+.button.is-reddit.is-outlined:hover, .button.is-reddit.is-outlined.is-hovered, .button.is-reddit.is-outlined:focus, .button.is-reddit.is-outlined.is-focused {
+  background-color: orangered;
+  border-color: orangered;
+  color: #fff;
+}
+
+.button.is-reddit.is-outlined.is-loading::after {
+  border-color: transparent transparent orangered orangered !important;
+}
+
+.button.is-reddit.is-outlined.is-loading:hover::after, .button.is-reddit.is-outlined.is-loading.is-hovered::after, .button.is-reddit.is-outlined.is-loading:focus::after, .button.is-reddit.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-reddit.is-outlined[disabled],
+fieldset[disabled] .button.is-reddit.is-outlined {
+  background-color: transparent;
+  border-color: orangered;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: orangered;
+}
+
+.button.is-reddit.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-reddit.is-inverted.is-outlined:hover, .button.is-reddit.is-inverted.is-outlined.is-hovered, .button.is-reddit.is-inverted.is-outlined:focus, .button.is-reddit.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: orangered;
+}
+
+.button.is-reddit.is-inverted.is-outlined.is-loading:hover::after, .button.is-reddit.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-reddit.is-inverted.is-outlined.is-loading:focus::after, .button.is-reddit.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent orangered orangered !important;
+}
+
+.button.is-reddit.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-reddit.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-reddit.is-light {
+  background-color: #fff0eb;
+  color: #d63a00;
+}
+
+.button.is-reddit.is-light:hover, .button.is-reddit.is-light.is-hovered {
+  background-color: #ffe7de;
+  border-color: transparent;
+  color: #d63a00;
+}
+
+.button.is-reddit.is-light:active, .button.is-reddit.is-light.is-active {
+  background-color: #ffddd1;
+  border-color: transparent;
+  color: #d63a00;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-reddit {
+  color: orangered !important;
+}
+
+a.has-text-reddit:hover, a.has-text-reddit:focus {
+  color: #cc3700 !important;
+}
+
+.has-background-reddit {
+  background-color: orangered !important;
+}
+
+.has-text-reddit-light {
+  color: #fff0eb !important;
+}
+
+a.has-text-reddit-light:hover, a.has-text-reddit-light:focus {
+  color: #ffcbb8 !important;
+}
+
+.has-background-reddit-light {
+  background-color: #fff0eb !important;
+}
+
+.has-text-reddit-dark {
+  color: #d63a00 !important;
+}
+
+a.has-text-reddit-dark:hover, a.has-text-reddit-dark:focus {
+  color: #ff4c0a !important;
+}
+
+.has-background-reddit-dark {
+  background-color: #d63a00 !important;
+}
+/*# sourceMappingURL=all.css.map */

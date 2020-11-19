@@ -1,0 +1,200 @@
+/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-soundcloud {
+  background-color: #ff5500;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-soundcloud:hover, .button.is-soundcloud.is-hovered {
+  background-color: #f25100;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-soundcloud:focus, .button.is-soundcloud.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-soundcloud:focus:not(:active), .button.is-soundcloud.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(255, 85, 0, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(255, 85, 0, 0.25);
+}
+
+.button.is-soundcloud:active, .button.is-soundcloud.is-active {
+  background-color: #e64d00;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-soundcloud[disabled],
+fieldset[disabled] .button.is-soundcloud {
+  background-color: #ff5500;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-soundcloud.is-inverted {
+  background-color: #fff;
+  color: #ff5500;
+}
+
+.button.is-soundcloud.is-inverted:hover, .button.is-soundcloud.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-soundcloud.is-inverted[disabled],
+fieldset[disabled] .button.is-soundcloud.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ff5500;
+}
+
+.button.is-soundcloud.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-soundcloud.is-outlined {
+  background-color: transparent;
+  border-color: #ff5500;
+  color: #ff5500;
+}
+
+.button.is-soundcloud.is-outlined:hover, .button.is-soundcloud.is-outlined.is-hovered, .button.is-soundcloud.is-outlined:focus, .button.is-soundcloud.is-outlined.is-focused {
+  background-color: #ff5500;
+  border-color: #ff5500;
+  color: #fff;
+}
+
+.button.is-soundcloud.is-outlined.is-loading::after {
+  border-color: transparent transparent #ff5500 #ff5500 !important;
+}
+
+.button.is-soundcloud.is-outlined.is-loading:hover::after, .button.is-soundcloud.is-outlined.is-loading.is-hovered::after, .button.is-soundcloud.is-outlined.is-loading:focus::after, .button.is-soundcloud.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-soundcloud.is-outlined[disabled],
+fieldset[disabled] .button.is-soundcloud.is-outlined {
+  background-color: transparent;
+  border-color: #ff5500;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ff5500;
+}
+
+.button.is-soundcloud.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-soundcloud.is-inverted.is-outlined:hover, .button.is-soundcloud.is-inverted.is-outlined.is-hovered, .button.is-soundcloud.is-inverted.is-outlined:focus, .button.is-soundcloud.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: #ff5500;
+}
+
+.button.is-soundcloud.is-inverted.is-outlined.is-loading:hover::after, .button.is-soundcloud.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-soundcloud.is-inverted.is-outlined.is-loading:focus::after, .button.is-soundcloud.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #ff5500 #ff5500 !important;
+}
+
+.button.is-soundcloud.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-soundcloud.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-soundcloud.is-light {
+  background-color: #fff1eb;
+  color: #d14600;
+}
+
+.button.is-soundcloud.is-light:hover, .button.is-soundcloud.is-light.is-hovered {
+  background-color: #ffe9de;
+  border-color: transparent;
+  color: #d14600;
+}
+
+.button.is-soundcloud.is-light:active, .button.is-soundcloud.is-light.is-active {
+  background-color: #ffe0d1;
+  border-color: transparent;
+  color: #d14600;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-soundcloud {
+  color: #ff5500 !important;
+}
+
+a.has-text-soundcloud:hover, a.has-text-soundcloud:focus {
+  color: #cc4400 !important;
+}
+
+.has-background-soundcloud {
+  background-color: #ff5500 !important;
+}
+
+.has-text-soundcloud-light {
+  color: #fff1eb !important;
+}
+
+a.has-text-soundcloud-light:hover, a.has-text-soundcloud-light:focus {
+  color: #ffcfb8 !important;
+}
+
+.has-background-soundcloud-light {
+  background-color: #fff1eb !important;
+}
+
+.has-text-soundcloud-dark {
+  color: #d14600 !important;
+}
+
+a.has-text-soundcloud-dark:hover, a.has-text-soundcloud-dark:focus {
+  color: #ff5805 !important;
+}
+
+.has-background-soundcloud-dark {
+  background-color: #d14600 !important;
+}
+/*# sourceMappingURL=all.css.map */

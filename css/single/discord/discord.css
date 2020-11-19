@@ -1,0 +1,200 @@
+/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-discord {
+  background-color: #7289da;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-discord:hover, .button.is-discord.is-hovered {
+  background-color: #6881d7;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-discord:focus, .button.is-discord.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-discord:focus:not(:active), .button.is-discord.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(114, 137, 218, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(114, 137, 218, 0.25);
+}
+
+.button.is-discord:active, .button.is-discord.is-active {
+  background-color: #5e78d5;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-discord[disabled],
+fieldset[disabled] .button.is-discord {
+  background-color: #7289da;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-discord.is-inverted {
+  background-color: #fff;
+  color: #7289da;
+}
+
+.button.is-discord.is-inverted:hover, .button.is-discord.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-discord.is-inverted[disabled],
+fieldset[disabled] .button.is-discord.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #7289da;
+}
+
+.button.is-discord.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-discord.is-outlined {
+  background-color: transparent;
+  border-color: #7289da;
+  color: #7289da;
+}
+
+.button.is-discord.is-outlined:hover, .button.is-discord.is-outlined.is-hovered, .button.is-discord.is-outlined:focus, .button.is-discord.is-outlined.is-focused {
+  background-color: #7289da;
+  border-color: #7289da;
+  color: #fff;
+}
+
+.button.is-discord.is-outlined.is-loading::after {
+  border-color: transparent transparent #7289da #7289da !important;
+}
+
+.button.is-discord.is-outlined.is-loading:hover::after, .button.is-discord.is-outlined.is-loading.is-hovered::after, .button.is-discord.is-outlined.is-loading:focus::after, .button.is-discord.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-discord.is-outlined[disabled],
+fieldset[disabled] .button.is-discord.is-outlined {
+  background-color: transparent;
+  border-color: #7289da;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #7289da;
+}
+
+.button.is-discord.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-discord.is-inverted.is-outlined:hover, .button.is-discord.is-inverted.is-outlined.is-hovered, .button.is-discord.is-inverted.is-outlined:focus, .button.is-discord.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: #7289da;
+}
+
+.button.is-discord.is-inverted.is-outlined.is-loading:hover::after, .button.is-discord.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-discord.is-inverted.is-outlined.is-loading:focus::after, .button.is-discord.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #7289da #7289da !important;
+}
+
+.button.is-discord.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-discord.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-discord.is-light {
+  background-color: #eff1fb;
+  color: #2a45a2;
+}
+
+.button.is-discord.is-light:hover, .button.is-discord.is-light.is-hovered {
+  background-color: #e5e9f8;
+  border-color: transparent;
+  color: #2a45a2;
+}
+
+.button.is-discord.is-light:active, .button.is-discord.is-light.is-active {
+  background-color: #dbe1f5;
+  border-color: transparent;
+  color: #2a45a2;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-discord {
+  color: #7289da !important;
+}
+
+a.has-text-discord:hover, a.has-text-discord:focus {
+  color: #4a67cf !important;
+}
+
+.has-background-discord {
+  background-color: #7289da !important;
+}
+
+.has-text-discord-light {
+  color: #eff1fb !important;
+}
+
+a.has-text-discord-light:hover, a.has-text-discord-light:focus {
+  color: #c6d0f0 !important;
+}
+
+.has-background-discord-light {
+  background-color: #eff1fb !important;
+}
+
+.has-text-discord-dark {
+  color: #2a45a2 !important;
+}
+
+a.has-text-discord-dark:hover, a.has-text-discord-dark:focus {
+  color: #3556ca !important;
+}
+
+.has-background-discord-dark {
+  background-color: #2a45a2 !important;
+}
+/*# sourceMappingURL=all.css.map */
