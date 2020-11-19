@@ -1,0 +1,200 @@
+/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-vk {
+  background-color: #5181b8;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-vk:hover, .button.is-vk.is-hovered {
+  background-color: #497bb3;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-vk:focus, .button.is-vk.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-vk:focus:not(:active), .button.is-vk.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(81, 129, 184, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(81, 129, 184, 0.25);
+}
+
+.button.is-vk:active, .button.is-vk.is-active {
+  background-color: #4674aa;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-vk[disabled],
+fieldset[disabled] .button.is-vk {
+  background-color: #5181b8;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-vk.is-inverted {
+  background-color: #fff;
+  color: #5181b8;
+}
+
+.button.is-vk.is-inverted:hover, .button.is-vk.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-vk.is-inverted[disabled],
+fieldset[disabled] .button.is-vk.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #5181b8;
+}
+
+.button.is-vk.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-vk.is-outlined {
+  background-color: transparent;
+  border-color: #5181b8;
+  color: #5181b8;
+}
+
+.button.is-vk.is-outlined:hover, .button.is-vk.is-outlined.is-hovered, .button.is-vk.is-outlined:focus, .button.is-vk.is-outlined.is-focused {
+  background-color: #5181b8;
+  border-color: #5181b8;
+  color: #fff;
+}
+
+.button.is-vk.is-outlined.is-loading::after {
+  border-color: transparent transparent #5181b8 #5181b8 !important;
+}
+
+.button.is-vk.is-outlined.is-loading:hover::after, .button.is-vk.is-outlined.is-loading.is-hovered::after, .button.is-vk.is-outlined.is-loading:focus::after, .button.is-vk.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-vk.is-outlined[disabled],
+fieldset[disabled] .button.is-vk.is-outlined {
+  background-color: transparent;
+  border-color: #5181b8;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #5181b8;
+}
+
+.button.is-vk.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-vk.is-inverted.is-outlined:hover, .button.is-vk.is-inverted.is-outlined.is-hovered, .button.is-vk.is-inverted.is-outlined:focus, .button.is-vk.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: #5181b8;
+}
+
+.button.is-vk.is-inverted.is-outlined.is-loading:hover::after, .button.is-vk.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-vk.is-inverted.is-outlined.is-loading:focus::after, .button.is-vk.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #5181b8 #5181b8 !important;
+}
+
+.button.is-vk.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-vk.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-vk.is-light {
+  background-color: #f1f5f9;
+  color: #406b9c;
+}
+
+.button.is-vk.is-light:hover, .button.is-vk.is-light.is-hovered {
+  background-color: #e7eef5;
+  border-color: transparent;
+  color: #406b9c;
+}
+
+.button.is-vk.is-light:active, .button.is-vk.is-light.is-active {
+  background-color: #dee7f2;
+  border-color: transparent;
+  color: #406b9c;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-vk {
+  color: #5181b8 !important;
+}
+
+a.has-text-vk:hover, a.has-text-vk:focus {
+  color: #3e6898 !important;
+}
+
+.has-background-vk {
+  background-color: #5181b8 !important;
+}
+
+.has-text-vk-light {
+  color: #f1f5f9 !important;
+}
+
+a.has-text-vk-light:hover, a.has-text-vk-light:focus {
+  color: #ccdaea !important;
+}
+
+.has-background-vk-light {
+  background-color: #f1f5f9 !important;
+}
+
+.has-text-vk-dark {
+  color: #406b9c !important;
+}
+
+a.has-text-vk-dark:hover, a.has-text-vk-dark:focus {
+  color: #5584b9 !important;
+}
+
+.has-background-vk-dark {
+  background-color: #406b9c !important;
+}
+/*# sourceMappingURL=all.css.map */

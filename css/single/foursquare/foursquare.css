@@ -1,0 +1,200 @@
+/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-foursquare {
+  background-color: #f94877;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-foursquare:hover, .button.is-foursquare.is-hovered {
+  background-color: #f93b6e;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-foursquare:focus, .button.is-foursquare.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-foursquare:focus:not(:active), .button.is-foursquare.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(249, 72, 119, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(249, 72, 119, 0.25);
+}
+
+.button.is-foursquare:active, .button.is-foursquare.is-active {
+  background-color: #f82f64;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-foursquare[disabled],
+fieldset[disabled] .button.is-foursquare {
+  background-color: #f94877;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-foursquare.is-inverted {
+  background-color: #fff;
+  color: #f94877;
+}
+
+.button.is-foursquare.is-inverted:hover, .button.is-foursquare.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-foursquare.is-inverted[disabled],
+fieldset[disabled] .button.is-foursquare.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #f94877;
+}
+
+.button.is-foursquare.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-foursquare.is-outlined {
+  background-color: transparent;
+  border-color: #f94877;
+  color: #f94877;
+}
+
+.button.is-foursquare.is-outlined:hover, .button.is-foursquare.is-outlined.is-hovered, .button.is-foursquare.is-outlined:focus, .button.is-foursquare.is-outlined.is-focused {
+  background-color: #f94877;
+  border-color: #f94877;
+  color: #fff;
+}
+
+.button.is-foursquare.is-outlined.is-loading::after {
+  border-color: transparent transparent #f94877 #f94877 !important;
+}
+
+.button.is-foursquare.is-outlined.is-loading:hover::after, .button.is-foursquare.is-outlined.is-loading.is-hovered::after, .button.is-foursquare.is-outlined.is-loading:focus::after, .button.is-foursquare.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-foursquare.is-outlined[disabled],
+fieldset[disabled] .button.is-foursquare.is-outlined {
+  background-color: transparent;
+  border-color: #f94877;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #f94877;
+}
+
+.button.is-foursquare.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-foursquare.is-inverted.is-outlined:hover, .button.is-foursquare.is-inverted.is-outlined.is-hovered, .button.is-foursquare.is-inverted.is-outlined:focus, .button.is-foursquare.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: #f94877;
+}
+
+.button.is-foursquare.is-inverted.is-outlined.is-loading:hover::after, .button.is-foursquare.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-foursquare.is-inverted.is-outlined.is-loading:focus::after, .button.is-foursquare.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #f94877 #f94877 !important;
+}
+
+.button.is-foursquare.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-foursquare.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-foursquare.is-light {
+  background-color: #feebf0;
+  color: #cf073c;
+}
+
+.button.is-foursquare.is-light:hover, .button.is-foursquare.is-light.is-hovered {
+  background-color: #fedfe7;
+  border-color: transparent;
+  color: #cf073c;
+}
+
+.button.is-foursquare.is-light:active, .button.is-foursquare.is-light.is-active {
+  background-color: #fed3de;
+  border-color: transparent;
+  color: #cf073c;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-foursquare {
+  color: #f94877 !important;
+}
+
+a.has-text-foursquare:hover, a.has-text-foursquare:focus {
+  color: #f71652 !important;
+}
+
+.has-background-foursquare {
+  background-color: #f94877 !important;
+}
+
+.has-text-foursquare-light {
+  color: #feebf0 !important;
+}
+
+a.has-text-foursquare-light:hover, a.has-text-foursquare-light:focus {
+  color: #fdbacc !important;
+}
+
+.has-background-foursquare-light {
+  background-color: #feebf0 !important;
+}
+
+.has-text-foursquare-dark {
+  color: #cf073c !important;
+}
+
+a.has-text-foursquare-dark:hover, a.has-text-foursquare-dark:focus {
+  color: #f7124f !important;
+}
+
+.has-background-foursquare-dark {
+  background-color: #cf073c !important;
+}
+/*# sourceMappingURL=all.css.map */

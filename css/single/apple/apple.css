@@ -1,0 +1,200 @@
+/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-apple {
+  background-color: black;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-apple:hover, .button.is-apple.is-hovered {
+  background-color: black;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-apple:focus, .button.is-apple.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-apple:focus:not(:active), .button.is-apple.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(0, 0, 0, 0.25);
+}
+
+.button.is-apple:active, .button.is-apple.is-active {
+  background-color: black;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-apple[disabled],
+fieldset[disabled] .button.is-apple {
+  background-color: black;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-apple.is-inverted {
+  background-color: #fff;
+  color: black;
+}
+
+.button.is-apple.is-inverted:hover, .button.is-apple.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-apple.is-inverted[disabled],
+fieldset[disabled] .button.is-apple.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+}
+
+.button.is-apple.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-apple.is-outlined {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+}
+
+.button.is-apple.is-outlined:hover, .button.is-apple.is-outlined.is-hovered, .button.is-apple.is-outlined:focus, .button.is-apple.is-outlined.is-focused {
+  background-color: black;
+  border-color: black;
+  color: #fff;
+}
+
+.button.is-apple.is-outlined.is-loading::after {
+  border-color: transparent transparent black black !important;
+}
+
+.button.is-apple.is-outlined.is-loading:hover::after, .button.is-apple.is-outlined.is-loading.is-hovered::after, .button.is-apple.is-outlined.is-loading:focus::after, .button.is-apple.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-apple.is-outlined[disabled],
+fieldset[disabled] .button.is-apple.is-outlined {
+  background-color: transparent;
+  border-color: black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+}
+
+.button.is-apple.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-apple.is-inverted.is-outlined:hover, .button.is-apple.is-inverted.is-outlined.is-hovered, .button.is-apple.is-inverted.is-outlined:focus, .button.is-apple.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: black;
+}
+
+.button.is-apple.is-inverted.is-outlined.is-loading:hover::after, .button.is-apple.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-apple.is-inverted.is-outlined.is-loading:focus::after, .button.is-apple.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent black black !important;
+}
+
+.button.is-apple.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-apple.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-apple.is-light {
+  background-color: whitesmoke;
+  color: #919191;
+}
+
+.button.is-apple.is-light:hover, .button.is-apple.is-light.is-hovered {
+  background-color: #eeeeee;
+  border-color: transparent;
+  color: #919191;
+}
+
+.button.is-apple.is-light:active, .button.is-apple.is-light.is-active {
+  background-color: #e8e8e8;
+  border-color: transparent;
+  color: #919191;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-apple {
+  color: black !important;
+}
+
+a.has-text-apple:hover, a.has-text-apple:focus {
+  color: black !important;
+}
+
+.has-background-apple {
+  background-color: black !important;
+}
+
+.has-text-apple-light {
+  color: whitesmoke !important;
+}
+
+a.has-text-apple-light:hover, a.has-text-apple-light:focus {
+  color: #dbdbdb !important;
+}
+
+.has-background-apple-light {
+  background-color: whitesmoke !important;
+}
+
+.has-text-apple-dark {
+  color: #919191 !important;
+}
+
+a.has-text-apple-dark:hover, a.has-text-apple-dark:focus {
+  color: #ababab !important;
+}
+
+.has-background-apple-dark {
+  background-color: #919191 !important;
+}
+/*# sourceMappingURL=all.css.map */

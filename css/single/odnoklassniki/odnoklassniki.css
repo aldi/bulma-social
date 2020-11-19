@@ -1,0 +1,200 @@
+/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-odnoklassniki {
+  background-color: #ec7e09;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-odnoklassniki:hover, .button.is-odnoklassniki.is-hovered {
+  background-color: #e07808;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-odnoklassniki:focus, .button.is-odnoklassniki.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-odnoklassniki:focus:not(:active), .button.is-odnoklassniki.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(236, 126, 9, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(236, 126, 9, 0.25);
+}
+
+.button.is-odnoklassniki:active, .button.is-odnoklassniki.is-active {
+  background-color: #d47108;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-odnoklassniki[disabled],
+fieldset[disabled] .button.is-odnoklassniki {
+  background-color: #ec7e09;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-odnoklassniki.is-inverted {
+  background-color: #fff;
+  color: #ec7e09;
+}
+
+.button.is-odnoklassniki.is-inverted:hover, .button.is-odnoklassniki.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-odnoklassniki.is-inverted[disabled],
+fieldset[disabled] .button.is-odnoklassniki.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ec7e09;
+}
+
+.button.is-odnoklassniki.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-odnoklassniki.is-outlined {
+  background-color: transparent;
+  border-color: #ec7e09;
+  color: #ec7e09;
+}
+
+.button.is-odnoklassniki.is-outlined:hover, .button.is-odnoklassniki.is-outlined.is-hovered, .button.is-odnoklassniki.is-outlined:focus, .button.is-odnoklassniki.is-outlined.is-focused {
+  background-color: #ec7e09;
+  border-color: #ec7e09;
+  color: #fff;
+}
+
+.button.is-odnoklassniki.is-outlined.is-loading::after {
+  border-color: transparent transparent #ec7e09 #ec7e09 !important;
+}
+
+.button.is-odnoklassniki.is-outlined.is-loading:hover::after, .button.is-odnoklassniki.is-outlined.is-loading.is-hovered::after, .button.is-odnoklassniki.is-outlined.is-loading:focus::after, .button.is-odnoklassniki.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-odnoklassniki.is-outlined[disabled],
+fieldset[disabled] .button.is-odnoklassniki.is-outlined {
+  background-color: transparent;
+  border-color: #ec7e09;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ec7e09;
+}
+
+.button.is-odnoklassniki.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-odnoklassniki.is-inverted.is-outlined:hover, .button.is-odnoklassniki.is-inverted.is-outlined.is-hovered, .button.is-odnoklassniki.is-inverted.is-outlined:focus, .button.is-odnoklassniki.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: #ec7e09;
+}
+
+.button.is-odnoklassniki.is-inverted.is-outlined.is-loading:hover::after, .button.is-odnoklassniki.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-odnoklassniki.is-inverted.is-outlined.is-loading:focus::after, .button.is-odnoklassniki.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #ec7e09 #ec7e09 !important;
+}
+
+.button.is-odnoklassniki.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-odnoklassniki.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-odnoklassniki.is-light {
+  background-color: #fef5eb;
+  color: #b66107;
+}
+
+.button.is-odnoklassniki.is-light:hover, .button.is-odnoklassniki.is-light.is-hovered {
+  background-color: #feefdf;
+  border-color: transparent;
+  color: #b66107;
+}
+
+.button.is-odnoklassniki.is-light:active, .button.is-odnoklassniki.is-light.is-active {
+  background-color: #fde9d3;
+  border-color: transparent;
+  color: #b66107;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-odnoklassniki {
+  color: #ec7e09 !important;
+}
+
+a.has-text-odnoklassniki:hover, a.has-text-odnoklassniki:focus {
+  color: #bb6407 !important;
+}
+
+.has-background-odnoklassniki {
+  background-color: #ec7e09 !important;
+}
+
+.has-text-odnoklassniki-light {
+  color: #fef5eb !important;
+}
+
+a.has-text-odnoklassniki-light:hover, a.has-text-odnoklassniki-light:focus {
+  color: #fddcba !important;
+}
+
+.has-background-odnoklassniki-light {
+  background-color: #fef5eb !important;
+}
+
+.has-text-odnoklassniki-dark {
+  color: #b66107 !important;
+}
+
+a.has-text-odnoklassniki-dark:hover, a.has-text-odnoklassniki-dark:focus {
+  color: #e77c08 !important;
+}
+
+.has-background-odnoklassniki-dark {
+  background-color: #b66107 !important;
+}
+/*# sourceMappingURL=all.css.map */
