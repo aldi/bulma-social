@@ -1,0 +1,13 @@
+# Files
+
+.DS_Store
+npm-debug.log
+
+# Folders
+
+.idea/
+.sass-cache
+_gh_pages
+_site
+dev
+node_modules
