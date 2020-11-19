@@ -1,5 +1,6 @@
-# .npmignore
-assets
-bin/bulma-social.css
-.git
-index.html
+# npmignore
+
+docs
+.vscode
+.github
+.editorconfig
