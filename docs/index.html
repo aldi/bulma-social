@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aldi Duzha" />
+    <meta name="description" content="Social Buttons and Colors for Bulma" />
+    <meta
+      name="keywords"
+      content="bulma, social, font-awesome, buttons, colors, colours, icons, socialmedia, addon, media, css, html"
+    />
+    <link rel="canonical" href="http://aldi.github.io/bulma-social" />
+    <title>Bulma-Social - Social Buttons and Colors for Bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0/css/bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="assets/js/scripts.js"></script>
+    <script defer src="assets/js/clipboard.js"></script>
+  </head>
+
+  <body>
+    <div class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title is-2 cont-title">Bulma-Social <span class="tag">v2.0.0</span></p>
+          <p class="subtitle is-4 cont-subtitle">
+            Social Buttons and Colors for
+            <a href="https://bulma.io/">Bulma</a>
+          </p>
+          <a
+            href="https://github.com/aldi/bulma-social"
+            class="button is-medium is-black is-inverted is-outlined"
+            ><span class="icon"><i class="fab fa-github"></i></span><span>View on GitHub</span></a
+          >
+          <a
+            href="https://github.com/aldi/bulma-social/blob/master/css"
+            class="button is-medium is-success is-outlined is-inverted"
+            ><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-5 social-buttons has-text-centered">
+          <p class="subtitle is-3 head-title">Buttons Styles</p>
+          <!-- left tabs -->
+          <div id="tabs-with-content">
+            <div class="left-tabs tabs is-centered">
+              <ul>
+                <li class="is-active"><a>default</a></li>
+                <li><a>.is-outlined</a></li>
+                <li><a>.is-inverted</a></li>
+                <li><a>.is-light</a></li>
+              </ul>
+            </div>
+            <!-- first tab - default -->
+            <div class="columns tab-content left-tabs-content">
+              <!-- add content here -->
+              <div class="buttons">
+                <a class="button is-apple" title=".is-apple">
+                  <span class="icon">
+                    <i class="fab fa-apple"></i>
+                  </span>
+                  <span>Sign in with Apple</span>
+                </a>
+                <br />
+                <a class="button is-bitbucket" title=".is-bitbucket">
+                  <span class="icon">
+                    <i class="fab fa-bitbucket"></i>
+                  </span>
+                  <span>Sign in with Bitbucket</span>
+                </a>
+                <br />
+                <a class="button is-dropbox" title=".is-dropbox">
+                  <span class="icon">
+                    <i class="fab fa-dropbox"></i>
+                  </span>
+                  <span>Sign in with Dropbox</span>
+                </a>
+                <br />
+                <a class="button is-discord" title=".is-discord">
+                  <span class="icon">
+                    <i class="fab fa-discord"></i>
+                  </span>
+                  <span>Sign in with Discord</span>
+                </a>
+                <br />
+                <a class="button is-facebook" title=".is-facebook">
+                  <span class="icon">
+                    <i class="fab fa-facebook"></i>
+                  </span>
+                  <span>Sign in with Facebook</span>
+                </a>
+                <br />
+                <a class="button is-flickr" title=".is-flickr">
+                  <span class="icon">
+                    <i class="fab fa-flickr"></i>
+                  </span>
+                  <span>Sign in with Flickr</span>
+                </a>
+                <br />
+                <a class="button is-foursquare" title=".is-foursquare">
+                  <span class="icon">
+                    <i class="fab fa-foursquare"></i>
+                  </span>
+                  <span>Sign in with Foursquare</span>
+                </a>
+                <br />
+                <a class="button is-github" title=".is-github">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Sign in with GitHub</span>
+                </a>
+                <br />
+                <a class="button is-gitlab" title=".is-gitlab">
+                  <span class="icon">
+                    <i class="fab fa-gitlab"></i>
+                  </span>
+                  <span>Sign in with GitLab</span>
+                </a>
+                <br />
+                <a class="button is-instagram" title=".is-instagram">
+                  <span class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                  <span>Sign in with Instagram</span>
+                </a>
+                <br />
+                <a class="button is-linkedin" title=".is-linkedin">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>Sign in with LinkedIn</span>
+                </a>
+                <br />
+                <a class="button is-microsoft" title=".is-microsoft">
+                  <span class="icon">
+                    <i class="fab fa-microsoft"></i>
+                  </span>
+                  <span>Sign in with Microsoft</span>
+                </a>
+                <br />
+                <a class="button is-odnoklassniki" title=".is-odnoklassniki">
+                  <span class="icon">
+                    <i class="fab fa-odnoklassniki"></i>
+                  </span>
+                  <span>Sign in with OK.ru</span>
+                </a>
+                <br />
+                <a class="button is-openid" title=".is-openid">
+                  <span class="icon">
+                    <i class="fab fa-openid"></i>
+                  </span>
+                  <span>Sign in with OpenID</span>
+                </a>
+                <br />
+                <a class="button is-pinterest" title=".is-pinterest">
+                  <span class="icon">
+                    <i class="fab fa-pinterest"></i>
+                  </span>
+                  <span>Sign in with Pinterest</span>
+                </a>
+                <br />
+                <a class="button is-reddit" title=".is-reddit">
+                  <span class="icon">
+                    <i class="fab fa-reddit"></i>
+                  </span>
+                  <span>Sign in with Reddit</span>
+                </a>
+                <br />
+                <a class="button is-soundcloud" title=".is-soundcloud">
+                  <span class="icon">
+                    <i class="fab fa-soundcloud"></i>
+                  </span>
+                  <span>Sign in with SoundCloud</span>
+                </a>
+                <br />
+                <a class="button is-tumblr" title=".is-tumblr">
+                  <span class="icon">
+                    <i class="fab fa-tumblr"></i>
+                  </span>
+                  <span>Sign in with Tumblr</span>
+                </a>
+                <br />
+                <a class="button is-twitter" title=".is-twitter">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>Sign in with Twitter</span>
+                </a>
+                <br />
+                <a class="button is-vimeo" title=".is-vimeo">
+                  <span class="icon">
+                    <i class="fab fa-vimeo"></i>
+                  </span>
+                  <span>Sign in with Vimeo</span>
+                </a>
+                <br />
+                <a class="button is-vk" title=".is-vk">
+                  <span class="icon">
+                    <i class="fab fa-vk"></i>
+                  </span>
+                  <span>Sign in with VK</span>
+                </a>
+                <br />
+                <a class="button is-yahoo" title=".is-yahoo">
+                  <span class="icon">
+                    <i class="fab fa-yahoo"></i>
+                  </span>
+                  <span>Sign in with Yahoo</span>
+                </a>
+                <br />
+                <a class="button is-youtube" title=".is-youtube">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Sign in with Youtube</span>
+                </a>
+                <br />
+              </div>
+              <hr />
+              <div id="icons" class="text-center">
+                <a class="button is-medium is-apple">
+                  <span class="icon">
+                    <i class="fab fa-apple fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-bitbucket">
+                  <span class="icon">
+                    <i class="fab fa-bitbucket fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-dropbox">
+                  <span class="icon">
+                    <i class="fab fa-dropbox fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-discord">
+                  <span class="icon">
+                    <i class="fab fa-discord fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-facebook">
+                  <span class="icon">
+                    <i class="fab fa-facebook fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-flickr">
+                  <span class="icon">
+                    <i class="fab fa-flickr fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-foursquare">
+                  <span class="icon">
+                    <i class="fab fa-foursquare fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-github">
+                  <span class="icon">
+                    <i class="fab fa-github fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-gitlab">
+                  <span class="icon">
+                    <i class="fab fa-gitlab fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-instagram">
+                  <span class="icon">
+                    <i class="fab fa-instagram fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-linkedin">
+                  <span class="icon">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-microsoft">
+                  <span class="icon">
+                    <i class="fab fa-windows fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-odnoklassniki">
+                  <span class="icon">
+                    <i class="fab fa-odnoklassniki fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-openid">
+                  <span class="icon">
+                    <i class="fab fa-openid fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-pinterest">
+                  <span class="icon">
+                    <i class="fab fa-pinterest fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-reddit">
+                  <span class="icon">
+                    <i class="fab fa-reddit fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-soundcloud">
+                  <span class="icon">
+                    <i class="fab fa-soundcloud fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-tumblr">
+                  <span class="icon">
+                    <i class="fab fa-tumblr fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-twitter">
+                  <span class="icon">
+                    <i class="fab fa-twitter fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-vimeo">
+                  <span class="icon">
+                    <i class="fab fa-vimeo-square fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-vk">
+                  <span class="icon">
+                    <i class="fab fa-vk fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-yahoo">
+                  <span class="icon">
+                    <i class="fab fa-yahoo fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-youtube">
+                  <span class="icon">
+                    <i class="fab fa-youtube fa-lg"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <!-- end of first tab - default -->
+            <!-- second tab - is-outlined -->
+            <div class="columns tab-content left-tabs-content">
+              <div class="buttons">
+                <a class="button is-apple is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-apple"></i>
+                  </span>
+                  <span>Sign in with Apple</span>
+                </a>
+                <br />
+                <a class="button is-bitbucket is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-bitbucket"></i>
+                  </span>
+                  <span>Sign in with Bitbucket</span>
+                </a>
+                <br />
+                <a class="button is-dropbox is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-dropbox"></i>
+                  </span>
+                  <span>Sign in with Dropbox</span>
+                </a>
+                <br />
+                <a class="button is-discord is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-discord"></i>
+                  </span>
+                  <span>Sign in with Discord</span>
+                </a>
+                <br />
+                <a class="button is-facebook is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-facebook"></i>
+                  </span>
+                  <span>Sign in with Facebook</span>
+                </a>
+                <br />
+                <a class="button is-flickr is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-flickr"></i>
+                  </span>
+                  <span>Sign in with Flickr</span>
+                </a>
+                <br />
+                <a class="button is-foursquare is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-foursquare"></i>
+                  </span>
+                  <span>Sign in with Foursquare</span>
+                </a>
+                <br />
+                <a class="button is-github is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Sign in with GitHub</span>
+                </a>
+                <br />
+                <a class="button is-gitlab is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-gitlab"></i>
+                  </span>
+                  <span>Sign in with GitLab</span>
+                </a>
+                <br />
+                <a class="button is-instagram is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                  <span>Sign in with Instagram</span>
+                </a>
+                <br />
+                <a class="button is-linkedin is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>Sign in with LinkedIn</span>
+                </a>
+                <br />
+                <a class="button is-microsoft is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-microsoft"></i>
+                  </span>
+                  <span>Sign in with Microsoft</span>
+                </a>
+                <br />
+                <a class="button is-odnoklassniki is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-odnoklassniki"></i>
+                  </span>
+                  <span>Sign in with OK.ru</span>
+                </a>
+                <br />
+                <a class="button is-openid is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-openid"></i>
+                  </span>
+                  <span>Sign in with OpenID</span>
+                </a>
+                <br />
+                <a class="button is-pinterest is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-pinterest"></i>
+                  </span>
+                  <span>Sign in with Pinterest</span>
+                </a>
+                <br />
+                <a class="button is-reddit is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-reddit"></i>
+                  </span>
+                  <span>Sign in with Reddit</span>
+                </a>
+                <br />
+                <a class="button is-soundcloud is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-soundcloud"></i>
+                  </span>
+                  <span>Sign in with SoundCloud</span>
+                </a>
+                <br />
+                <a class="button is-tumblr is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-tumblr"></i>
+                  </span>
+                  <span>Sign in with Tumblr</span>
+                </a>
+                <br />
+                <a class="button is-twitter is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>Sign in with Twitter</span>
+                </a>
+                <br />
+                <a class="button is-vimeo is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-vimeo"></i>
+                  </span>
+                  <span>Sign in with Vimeo</span>
+                </a>
+                <br />
+                <a class="button is-vk is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-vk"></i>
+                  </span>
+                  <span>Sign in with VK</span>
+                </a>
+                <br />
+                <a class="button is-yahoo is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-yahoo"></i>
+                  </span>
+                  <span>Sign in with Yahoo</span>
+                </a>
+                <br />
+                <a class="button is-youtube is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Sign in with Youtube</span>
+                </a>
+                <br />
+              </div>
+              <hr />
+              <div id="icons" class="text-center">
+                <a class="button is-medium is-apple is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-apple fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-bitbucket is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-bitbucket fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-dropbox is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-dropbox fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-discord is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-discord fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-facebook is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-facebook fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-flickr is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-flickr fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-foursquare is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-foursquare fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-github is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-github fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-gitlab is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-gitlab fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-instagram is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-instagram fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-linkedin is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-microsoft is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-windows fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-odnoklassniki is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-odnoklassniki fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-openid is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-openid fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-pinterest is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-pinterest fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-reddit is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-reddit fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-soundcloud is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-soundcloud fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-tumblr is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-tumblr fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-twitter is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-twitter fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-vimeo is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-vimeo-square fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-vk is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-vk fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-yahoo is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-yahoo fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-youtube is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-youtube fa-lg"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <!-- is-outlined - end of second tab -->
+            <!-- third tab - is-inverted -->
+            <div class="columns tab-content left-tabs-content gradient">
+              <div class="buttons">
+                <a class="button is-apple is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-apple"></i>
+                  </span>
+                  <span>Sign in with Apple</span>
+                </a>
+                <br />
+                <a class="button is-bitbucket is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-bitbucket"></i>
+                  </span>
+                  <span>Sign in with Bitbucket</span>
+                </a>
+                <br />
+                <a class="button is-dropbox is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-dropbox"></i>
+                  </span>
+                  <span>Sign in with Dropbox</span>
+                </a>
+                <br />
+                <a class="button is-discord is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-discord"></i>
+                  </span>
+                  <span>Sign in with Discord</span>
+                </a>
+                <br />
+                <a class="button is-facebook is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-facebook"></i>
+                  </span>
+                  <span>Sign in with Facebook</span>
+                </a>
+                <br />
+                <a class="button is-flickr is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-flickr"></i>
+                  </span>
+                  <span>Sign in with Flickr</span>
+                </a>
+                <br />
+                <a class="button is-foursquare is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-foursquare"></i>
+                  </span>
+                  <span>Sign in with Foursquare</span>
+                </a>
+                <br />
+                <a class="button is-github is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Sign in with GitHub</span>
+                </a>
+                <br />
+                <a class="button is-gitlab is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-gitlab"></i>
+                  </span>
+                  <span>Sign in with GitLab</span>
+                </a>
+                <br />
+                <a class="button is-instagram is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                  <span>Sign in with Instagram</span>
+                </a>
+                <br />
+                <a class="button is-linkedin is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>Sign in with LinkedIn</span>
+                </a>
+                <br />
+                <a class="button is-microsoft is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-microsoft"></i>
+                  </span>
+                  <span>Sign in with Microsoft</span>
+                </a>
+                <br />
+                <a class="button is-odnoklassniki is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-odnoklassniki"></i>
+                  </span>
+                  <span>Sign in with OK.ru</span>
+                </a>
+                <br />
+                <a class="button is-openid is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-openid"></i>
+                  </span>
+                  <span>Sign in with OpenID</span>
+                </a>
+                <br />
+                <a class="button is-pinterest is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-pinterest"></i>
+                  </span>
+                  <span>Sign in with Pinterest</span>
+                </a>
+                <br />
+                <a class="button is-reddit is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-reddit"></i>
+                  </span>
+                  <span>Sign in with Reddit</span>
+                </a>
+                <br />
+                <a class="button is-soundcloud is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-soundcloud"></i>
+                  </span>
+                  <span>Sign in with SoundCloud</span>
+                </a>
+                <br />
+                <a class="button is-tumblr is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-tumblr"></i>
+                  </span>
+                  <span>Sign in with Tumblr</span>
+                </a>
+                <br />
+                <a class="button is-twitter is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>Sign in with Twitter</span>
+                </a>
+                <br />
+                <a class="button is-vimeo is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-vimeo"></i>
+                  </span>
+                  <span>Sign in with Vimeo</span>
+                </a>
+                <br />
+                <a class="button is-vk is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-vk"></i>
+                  </span>
+                  <span>Sign in with VK</span>
+                </a>
+                <br />
+                <a class="button is-yahoo is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-yahoo"></i>
+                  </span>
+                  <span>Sign in with Yahoo</span>
+                </a>
+                <br />
+                <a class="button is-youtube is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Sign in with Youtube</span>
+                </a>
+                <br />
+              </div>
+              <hr />
+              <div id="icons" class="text-center">
+                <a class="button is-medium is-apple is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-apple fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-bitbucket is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-bitbucket fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-dropbox is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-dropbox fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-discord is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-discord fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-facebook is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-facebook fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-flickr is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-flickr fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-foursquare is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-foursquare fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-github is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-github fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-gitlab is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-gitlab fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-instagram is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-instagram fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-linkedin is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-microsoft is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-windows fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-odnoklassniki is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-odnoklassniki fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-openid is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-openid fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-pinterest is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-pinterest fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-reddit is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-reddit fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-soundcloud is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-soundcloud fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-tumblr is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-tumblr fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-twitter is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-twitter fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-vimeo is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-vimeo-square fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-vk is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-vk fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-yahoo is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-yahoo fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-youtube is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-youtube fa-lg"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <!-- end of third tab - is-inverted -->
+            <!-- fourth tab - is-light -->
+            <div class="columns tab-content left-tabs-content gradient">
+              <div class="buttons">
+                <a class="button is-apple is-light">
+                  <span class="icon">
+                    <i class="fab fa-apple"></i>
+                  </span>
+                  <span>Sign in with Apple</span>
+                </a>
+                <br />
+                <a class="button is-bitbucket is-light">
+                  <span class="icon">
+                    <i class="fab fa-bitbucket"></i>
+                  </span>
+                  <span>Sign in with Bitbucket</span>
+                </a>
+                <br />
+                <a class="button is-dropbox is-light">
+                  <span class="icon">
+                    <i class="fab fa-dropbox"></i>
+                  </span>
+                  <span>Sign in with Dropbox</span>
+                </a>
+                <br />
+                <a class="button is-discord is-light">
+                  <span class="icon">
+                    <i class="fab fa-discord"></i>
+                  </span>
+                  <span>Sign in with Discord</span>
+                </a>
+                <br />
+                <a class="button is-facebook is-light">
+                  <span class="icon">
+                    <i class="fab fa-facebook"></i>
+                  </span>
+                  <span>Sign in with Facebook</span>
+                </a>
+                <br />
+                <a class="button is-flickr is-light">
+                  <span class="icon">
+                    <i class="fab fa-flickr"></i>
+                  </span>
+                  <span>Sign in with Flickr</span>
+                </a>
+                <br />
+                <a class="button is-foursquare is-light">
+                  <span class="icon">
+                    <i class="fab fa-foursquare"></i>
+                  </span>
+                  <span>Sign in with Foursquare</span>
+                </a>
+                <br />
+                <a class="button is-github is-light">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Sign in with GitHub</span>
+                </a>
+                <br />
+                <a class="button is-gitlab is-light">
+                  <span class="icon">
+                    <i class="fab fa-gitlab"></i>
+                  </span>
+                  <span>Sign in with GitLab</span>
+                </a>
+                <br />
+                <a class="button is-instagram is-light">
+                  <span class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                  <span>Sign in with Instagram</span>
+                </a>
+                <br />
+                <a class="button is-linkedin is-light">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>Sign in with LinkedIn</span>
+                </a>
+                <br />
+                <a class="button is-microsoft is-light">
+                  <span class="icon">
+                    <i class="fab fa-microsoft"></i>
+                  </span>
+                  <span>Sign in with Microsoft</span>
+                </a>
+                <br />
+                <a class="button is-odnoklassniki is-light">
+                  <span class="icon">
+                    <i class="fab fa-odnoklassniki"></i>
+                  </span>
+                  <span>Sign in with OK.ru</span>
+                </a>
+                <br />
+                <a class="button is-openid is-light">
+                  <span class="icon">
+                    <i class="fab fa-openid"></i>
+                  </span>
+                  <span>Sign in with OpenID</span>
+                </a>
+                <br />
+                <a class="button is-pinterest is-light">
+                  <span class="icon">
+                    <i class="fab fa-pinterest"></i>
+                  </span>
+                  <span>Sign in with Pinterest</span>
+                </a>
+                <br />
+                <a class="button is-reddit is-light">
+                  <span class="icon">
+                    <i class="fab fa-reddit"></i>
+                  </span>
+                  <span>Sign in with Reddit</span>
+                </a>
+                <br />
+                <a class="button is-soundcloud is-light">
+                  <span class="icon">
+                    <i class="fab fa-soundcloud"></i>
+                  </span>
+                  <span>Sign in with SoundCloud</span>
+                </a>
+                <br />
+                <a class="button is-tumblr is-light">
+                  <span class="icon">
+                    <i class="fab fa-tumblr"></i>
+                  </span>
+                  <span>Sign in with Tumblr</span>
+                </a>
+                <br />
+                <a class="button is-twitter is-light">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>Sign in with Twitter</span>
+                </a>
+                <br />
+                <a class="button is-vimeo is-light">
+                  <span class="icon">
+                    <i class="fab fa-vimeo"></i>
+                  </span>
+                  <span>Sign in with Vimeo</span>
+                </a>
+                <br />
+                <a class="button is-vk is-light">
+                  <span class="icon">
+                    <i class="fab fa-vk"></i>
+                  </span>
+                  <span>Sign in with VK</span>
+                </a>
+                <br />
+                <a class="button is-yahoo is-light">
+                  <span class="icon">
+                    <i class="fab fa-yahoo"></i>
+                  </span>
+                  <span>Sign in with Yahoo</span>
+                </a>
+                <br />
+                <a class="button is-youtube is-light">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Sign in with Youtube</span>
+                </a>
+                <br />
+              </div>
+              <hr />
+              <div id="icons" class="text-center">
+                <a class="button is-medium is-apple is-light">
+                  <span class="icon">
+                    <i class="fab fa-apple fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-bitbucket is-light">
+                  <span class="icon">
+                    <i class="fab fa-bitbucket fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-dropbox is-light">
+                  <span class="icon">
+                    <i class="fab fa-dropbox fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-discord is-light">
+                  <span class="icon">
+                    <i class="fab fa-discord fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-facebook is-light">
+                  <span class="icon">
+                    <i class="fab fa-facebook fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-flickr is-light">
+                  <span class="icon">
+                    <i class="fab fa-flickr fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-foursquare is-light">
+                  <span class="icon">
+                    <i class="fab fa-foursquare fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-github is-light">
+                  <span class="icon">
+                    <i class="fab fa-github fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-gitlab is-light">
+                  <span class="icon">
+                    <i class="fab fa-gitlab fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-instagram is-light">
+                  <span class="icon">
+                    <i class="fab fa-instagram fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-linkedin is-light">
+                  <span class="icon">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-microsoft is-light">
+                  <span class="icon">
+                    <i class="fab fa-windows fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-odnoklassniki is-light">
+                  <span class="icon">
+                    <i class="fab fa-odnoklassniki fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-openid is-light">
+                  <span class="icon">
+                    <i class="fab fa-openid fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-pinterest is-light">
+                  <span class="icon">
+                    <i class="fab fa-pinterest fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-reddit is-light">
+                  <span class="icon">
+                    <i class="fab fa-reddit fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-soundcloud is-light">
+                  <span class="icon">
+                    <i class="fab fa-soundcloud fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-tumblr is-light">
+                  <span class="icon">
+                    <i class="fab fa-tumblr fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-twitter is-light">
+                  <span class="icon">
+                    <i class="fab fa-twitter fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-vimeo is-light">
+                  <span class="icon">
+                    <i class="fab fa-vimeo-square fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-vk is-light">
+                  <span class="icon">
+                    <i class="fab fa-vk fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-yahoo is-light">
+                  <span class="icon">
+                    <i class="fab fa-yahoo fa-lg"></i>
+                  </span>
+                </a>
+                <a class="button is-medium is-youtube is-light">
+                  <span class="icon">
+                    <i class="fab fa-youtube fa-lg"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <!-- end of fourth tab - is-light -->
+            <!-- end of left tabs -->
+          </div>
+        </div>
+
+        <div class="column is-3">
+          <p class="subtitle is-3 head-title has-text-centered">Social Classes</p>
+          <div class="tabs is-centered">
+            <ul>
+              <li><a>Social Providers</a></li>
+            </ul>
+          </div>
+          <ul class="social-class list-unstyled">
+            <li data-code="apple" data-name="Apple">
+              <code>.is-apple</code> <span class="social-hex">#000000</span>
+            </li>
+            <li data-code="bitbucket" data-name="Bitbucket">
+              <code>.is-bitbucket</code> <span class="social-hex">#204F7E</span>
+            </li>
+            <li data-code="dropbox" data-name="Dropbox">
+              <code>.is-dropbox</code> <span class="social-hex">#0061FF</span>
+            </li>
+            <li data-code="discord" data-name="Discord">
+              <code>.is-discord</code> <span class="social-hex">#7289DA</span>
+            </li>
+            <li data-code="facebook" data-name="Facebook">
+              <code>.is-facebook</code> <span class="social-hex">#1877F2</span>
+            </li>
+            <li data-code="flickr" data-name="Flickr">
+              <code>.is-flickr</code> <span class="social-hex">#2BA9E1</span>
+            </li>
+            <li data-code="foursquare" data-name="Foursquare">
+              <code>.is-foursquare</code>
+              <span class="social-hex">#F94877</span>
+            </li>
+            <li data-code="github" data-name="GitHub">
+              <code>.is-github</code> <span class="social-hex">#24292E</span>
+            </li>
+            <li data-code="gitlab" data-name="GitLab">
+              <code>.is-gitlab</code> <span class="social-hex">#E65328</span>
+            </li>
+            <li data-code="instagram" data-name="Instagram">
+              <code>.is-instagram</code>
+              <span class="social-hex">#EE5262</span>
+            </li>
+            <li data-code="linkedin" data-name="LinkedIn">
+              <code>.is-linkedin</code> <span class="social-hex">#0A66C2</span>
+            </li>
+            <li data-code="microsoft" data-icon="windows" data-name="Microsoft">
+              <code>.is-microsoft</code> <span class="social-hex">#0067B8</span>
+            </li>
+            <li data-code="odnoklassniki" data-name="Odnoklassniki">
+              <code>.is-odnoklassniki</code>
+              <span class="social-hex">#EC7E09</span>
+            </li>
+            <li data-code="openid" data-name="OpenID">
+              <code>.is-openid</code> <span class="social-hex">#EE7C2B</span>
+            </li>
+            <li data-code="pinterest" data-name="Pinterest">
+              <code>.is-pinterest</code> <span class="social-hex">#E60023</span>
+            </li>
+            <li data-code="reddit" data-name="Reddit">
+              <code>.is-reddit</code> <span class="social-hex">#FF4500</span>
+            </li>
+            <li data-code="soundcloud" data-name="SoundCloud">
+              <code>.is-soundcloud</code>
+              <span class="social-hex">#FF5500</span>
+            </li>
+            <li data-code="tumblr" data-name="Tumblr">
+              <code>.is-tumblr</code> <span class="social-hex">#34526F</span>
+            </li>
+            <li data-code="twitter" data-name="Twitter">
+              <code>.is-twitter</code> <span class="social-hex">#1DA1F2</span>
+            </li>
+            <li data-code="vimeo" data-icon="vimeo-square" data-name="Vimeo">
+              <code>.is-vimeo</code> <span class="social-hex">#00ADEF</span>
+            </li>
+            <li data-code="vk" data-name="VK">
+              <code>.is-vk</code> <span class="social-hex">#5181B8</span>
+            </li>
+            <li data-code="yahoo" data-name="Yahoo!">
+              <code>.is-yahoo</code> <span class="social-hex">#400090</span>
+            </li>
+            <li data-code="youtube" data-name="Youtube">
+              <code>.is-youtube</code> <span class="social-hex">#FF0000</span>
+            </li>
+          </ul>
+          <hr />
+          <div class="has-text-centered">
+            <p class="subtitle is-4">Disable Hover Animation</p>
+            <code>.no-animation</code>
+          </div>
+          <hr />
+          <div class="has-text-centered">
+            <p class="subtitle is-5">Is there a social provider missing?</p>
+            <a
+              class="button is-primary is-outlined is-light"
+              href="https://github.com/aldi/bulma-social/pulls"
+            >
+              Submit a Pull Request!
+            </a>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="social-sizes has-text-centered">
+            <p class="subtitle is-3 head-title">Different Sizes</p>
+            <div id="tabs-with-content">
+              <div class="right-tabs tabs is-centered">
+                <ul>
+                  <li><a>default</a></li>
+                  <li><a>.is-rounded</a></li>
+                  <li><a>.is-loading</a></li>
+                  <li><a>.is-static</a></li>
+                </ul>
+              </div>
+              <div>
+                <div class="columns tab-content right-tabs-content">
+                  <div class="column">
+                    <a class="button is-large is-github" title=".is-large">
+                      <span class="icon is-medium">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-medium is-github" title=".is-medium">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-github" title=".is-normal">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-small is-github" title=".is-small">
+                      <span class="icon is-small">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <hr />
+                  <div class="column">
+                    <a class="button is-large is-github social-icon" title=".is-large">
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a class="button is-medium is-github social-icon" title=".is-medium">
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a class="button is-github social-icon" title=".is-normal">
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a class="button is-small is-github social-icon" title=".is-small">
+                      <span class="fab fa-github"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="columns tab-content right-tabs-content">
+                  <div class="column">
+                    <a class="button is-large is-github is-rounded" title=".is-large .is-rounded">
+                      <span class="icon is-medium">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-medium is-github is-rounded" title=".is-large .is-rounded">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-github is-rounded" title=".is-large .is-rounded">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-small is-github is-rounded" title=".is-large .is-rounded">
+                      <span class="icon is-small">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <hr />
+                  <div class="column">
+                    <a
+                      class="button is-large is-github social-icon is-rounded"
+                      title=".is-large .is-rounded"
+                    >
+                      <span class="fab fa-lg fa-github"></span>
+                    </a>
+                    <a
+                      class="button is-medium is-github social-icon is-rounded"
+                      title=".is-large .is-rounded"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a
+                      class="button is-github social-icon is-rounded"
+                      title=".is-large .is-rounded"
+                    >
+                      <span class="fab fa-github"></span
+                    ></a>
+                    <a
+                      class="button is-small is-github social-icon is-rounded"
+                      title=".is-large .is-rounded"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="columns tab-content right-tabs-content">
+                  <div class="column">
+                    <a class="button is-large is-github is-loading" title=".is-large .is-loading">
+                      <span class="icon is-medium">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-medium is-github is-loading" title=".is-large .is-loading">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-github is-loading" title=".is-large .is-loading">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-small is-github is-loading" title=".is-large .is-loading">
+                      <span class="icon is-small">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <hr />
+                  <div class="column">
+                    <a
+                      class="button is-large is-github social-icon is-loading"
+                      title=".is-large .is-loading"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a
+                      class="button is-medium is-github social-icon is-loading"
+                      title=".is-large .is-loading"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a
+                      class="button is-github social-icon is-loading"
+                      title=".is-large .is-loading"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a
+                      class="button is-small is-github social-icon is-loading"
+                      title=".is-large .is-loading"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="columns tab-content right-tabs-content">
+                  <div class="column">
+                    <a class="button is-large is-github is-static" title=".is-large .is-static">
+                      <span class="icon is-medium">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-medium is-github is-static" title=".is-large .is-static">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-github is-static" title=".is-large .is-static">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a class="button is-small is-github is-static" title=".is-large .is-static">
+                      <span class="icon is-small">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span></span>
+                    </a>
+                  </div>
+                  <hr />
+                  <div class="buttons">
+                    <a
+                      class="button is-large is-github social-icon is-static"
+                      title=".is-large .is-static"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a
+                      class="button is-medium is-github social-icon is-static"
+                      title=".is-large .is-static"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a class="button is-github social-icon is-static" title=".is-large .is-static">
+                      <span class="fab fa-github"></span>
+                    </a>
+                    <a
+                      class="button is-small is-github social-icon is-static"
+                      title=".is-large .is-static"
+                    >
+                      <span class="fab fa-github"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="has-text-left ml-6">
+            <p class="subtitle is-4 is-spaced">Available Text Styles</p>
+            <p class="subtitle is-6 text-styles-regular">
+              <em><code>.has-text-&lt;social-provider&gt;</code></em>
+            </p>
+            <p class="subtitle is-6 text-styles-light">
+              <em><code>.has-text-&lt;social-provider&gt;-light</code></em>
+            </p>
+            <p class="subtitle is-6 text-styles-dark">
+              <em><code>.has-text-&lt;social-provider&gt;-dark</code></em>
+            </p>
+          </div>
+          <hr />
+          <div class="has-text-left pl-6">
+            <p class="subtitle is-4 is-spaced">Available Background Styles</p>
+            <p class="subtitle is-6 background-styles-regular">
+              <em><code>.has-background-&lt;social-provider&gt;</code></em>
+            </p>
+            <p class="subtitle is-6 background-styles-light">
+              <em><code>.has-background-&lt;social-provider&gt;-light</code></em>
+            </p>
+            <p class="subtitle is-6 background-styles-dark">
+              <em><code>.has-background-&lt;social-provider&gt;-dark</code></em>
+            </p>
+          </div>
+          <hr />
+          <div class="has-text-centered">
+            <p class="subtitle is-4 mb-2">Check them out in real projects</p>
+            <p class="subtitle is-6">
+              <a href="https://aldi.github.io/awesome-bulma-templates" target="_blank"
+                >Awesome Bulma Templates</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="how-to">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <!-- <hr /> -->
+            <p class="title is-2 has-text-centered">Install</p>
+            <div class="column is-6 is-offset-3 is-narrow has-text-centered">
+              <div class="highlight-full header-code">
+                <figure class="highlight">
+                  <pre id="npm"><code>npm install bulma-social</code></pre>
+                </figure>
+              </div>
+            </div>
+            <div class="buttons my-4">
+              <a class="button is-large is-link is-outlined is-light" href="pages/index.html">
+                <span class="icon">
+                  <i class="fas fa-book"></i>
+                </span>
+                <span>View docs</span>
+              </a>
+              <a class="button is-large is-success is-outlined is-light" href="pages/start.html">
+                <span class="icon">
+                  <i class="fas fa-rocket"></i>
+                </span>
+                <span>Getting started</span>
+              </a>
+            </div>
+            <hr />
+            <p class="subtitle is-5 has-text-centered">
+              Bulma-Social is compatible with
+              <strong>all icon font libraries</strong>:
+              <a href="https://fontawesome.com/">Font Awesome 5</a>,
+              <a href="http://fontawesome.io/">Font Awesome 4</a>,
+              <a href="https://materialdesignicons.com">Material Design Icons</a>,
+              <a href="http://ionicons.com/">Ionicons</a>, etc.
+            </p>
+            <hr />
+            <p class="title is-2 has-text-centered pb-5">Examples</p>
+            <p class="subtitle is-6 has-text-centered mb-1">
+              In the examples below, we are goint to use Font Awesome 5.
+            </p>
+            <p class="subtitle is-6 has-text-centered mb-4">
+              Start using the buttons as you would normally do adding additionally the social class.
+              For example:
+            </p>
+            <p class="subtitle is-3 has-text-centered pt-2">Buttons with text</p>
+            <div class="column has-text-centered">
+              <a class="button is-medium is-facebook">
+                <span class="icon">
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <span>Facebook</span>
+              </a>
+              <a class="button is-medium is-facebook is-outlined">
+                <span class="icon">
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <span>Facebook</span>
+              </a>
+              <a class="button is-medium is-facebook is-light">
+                <span class="icon">
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <span>Facebook</span>
+              </a>
+            </div>
+            <div class="bd-font-awesome-5 highlight-full header-code">
+              <figure class="highlight">
+                <pre>
+<code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-facebook"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-facebook"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Facebook<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-facebook is-outlined"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-facebook"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Facebook<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-facebook is-light"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-facebook"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Facebook<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code><button class="button is-small bd-copy">Copy</button></pre>
+              </figure>
+            </div>
+            <p class="subtitle is-3 has-text-centered">Icon Buttons</p>
+            <!-- <p class="title is-6 has-text-centered mb-2">
+              Or if you don't like text, use it like this:
+            </p> -->
+            <div class="column has-text-centered">
+              <a class="button is-medium is-facebook">
+                <span class="icon">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </span>
+              </a>
+              <a class="button is-medium is-facebook is-outlined">
+                <span class="icon">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </span>
+              </a>
+              <a class="button is-medium is-facebook is-light">
+                <span class="icon">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </span>
+              </a>
+              <a class="button is-medium is-facebook is-inverted">
+                <span class="icon">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </span>
+              </a>
+            </div>
+            <div class="bd-font-awesome-5 highlight-full header-code">
+              <figure class="highlight">
+                <pre>
+<code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-facebook"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-facebook fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-facebook is-outlined"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-facebook fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-facebook is-light"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-facebook fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-facebook is-inverted"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-facebook fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code><button class="button is-small bd-copy">Copy</button></pre>
+              </figure>
+            </div>
+            <!-- text colors -->
+            <p class="subtitle is-3 has-text-centered">Text colors</p>
+            <div class="column has-text-centered">
+              <div>
+                <a class="is-size-4 has-text-facebook">Hello Facebook</a>
+              </div>
+              <div>
+                <a class="is-size-4 has-text-facebook-light"> Hello Facebook light </a>
+              </div>
+              <div>
+                <a class="is-size-4 has-text-facebook-dark"> Hello Facebook dark </a>
+              </div>
+            </div>
+            <div class="bd-font-awesome-5 highlight-full header-code">
+              <figure class="highlight">
+                <pre>
+<code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"is-size-4 has-text-facebook"</span><span class="nt">&gt;</span>Hello Facebook<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"is-size-4 has-text-facebook-light"</span><span class="nt">&gt;</span>Hello Facebook Light<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"is-size-4 has-text-facebook-dark"</span><span class="nt">&gt;</span>Hello Facebook Dark<span class="nt">&lt;/a&gt;</span>
+</code><button class="button is-small bd-copy">Copy</button></pre>
+              </figure>
+            </div>
+            <!-- background colors -->
+            <p class="subtitle is-3 has-text-centered">Background colors</p>
+            <div class="column has-text-centered">
+              <div class="is-size-4 has-background-facebook has-text-white">Hello Facebook</div>
+              <div class="is-size-4 has-background-facebook-light">Hello Facebook light</div>
+              <div class="is-size-4 has-background-facebook-dark has-text-white">
+                Hello Facebook dark
+              </div>
+            </div>
+            <div class="bd-font-awesome-5 highlight-full header-code">
+              <figure class="highlight">
+                <pre>
+<code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-4 has-background-facebook has-text-white"</span><span class="nt">&gt;</span>Hello Facebook<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-4 has-background-facebook-light"</span><span class="nt">&gt;</span>Hello Facebook Light<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-4 has-background-facebook-dark has-text-white"</span><span class="nt">&gt;</span>Hello Facebook Dark<span class="nt">&lt;/div&gt;</span>
+</code><button class="button is-small bd-copy">Copy</button></pre>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer has-text-centered">
+      <p>
+        Developed with
+        <i class="fa fa-heart fa-fw" style="font-size: 12px; color: red"></i> by
+        <a href="https://aldiduzha.com" style="color: black">Aldi Duzha</a>
+      </p>
+      <p>
+        The source code is licensed under
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+      <p>
+        Available in
+        <a target="_blank" href="https://github.com/aldi/bulma-social"
+          ><i class="fab fa-github"></i
+        ></a>
+        and
+        <a target="_blank" href="https://www.npmjs.com/package/bulma-social"
+          ><i class="fab fa-npm"></i
+        ></a>
+      </p>
+      <p>
+        <a target="_blank" href="https://github.com/aldi/bulma-social/blob/master/CHANGELOG.md"
+          >View Changelog</a
+        >
+      </p>
+    </div>
+    <a href="https://github.com/aldi/bulma-social" title="Fork me on GitHub" class="github-corner">
+      <svg width="80" height="80" viewbox="0 0 250 250">
+        <title>Fork me on GitHub</title>
+        <path d="M0 0h250v250"></path>
+        <path
+          d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2"
+          fill="currentColor"
+          style="transform-origin: 130px 110px"
+          class="octo-arm"
+        ></path>
+        <path
+          d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z"
+          fill="currentColor"
+          class="octo-body"
+        ></path>
+      </svg>
+    </a>
+    <a href="https://github.com/aldi/bulma-social" title="Fork me on GitHub" class="github-corner">
+      <svg width="80" height="80" viewbox="0 0 250 250">
+        <title>Fork me on GitHub</title>
+        <path d="M0 0h250v250"></path>
+        <path
+          d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2"
+          fill="currentColor"
+          style="transform-origin: 130px 110px"
+          class="octo-arm"
+        ></path>
+        <path
+          d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z"
+          fill="currentColor"
+          class="octo-body"
+        ></path>
+      </svg>
+    </a>
+  </body>
+</html>

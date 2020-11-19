@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aldi Duzha" />
+    <meta name="description" content="Social Buttons and Colors for Bulma" />
+    <meta
+      name="keywords"
+      content="bulma, social, font-awesome, buttons, colors, colours, icons, socialmedia, addon, media, css, html"
+    />
+    <link rel="canonical" href="http://aldi.github.io/bulma-social" />
+    <title>Customize - Bulma-Social Docs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"
+    ></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script defer src="../assets/js/clipboard.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title is-2 cont-title">
+            Bulma-Social <span class="tag">v2.0.0</span>
+          </p>
+          <p class="subtitle is-4 cont-subtitle">
+            Social Buttons and Colors for
+            <a href="https://bulma.io/">Bulma</a>
+          </p>
+          <a
+            href="https://github.com/aldi/bulma-social"
+            class="button is-medium is-black is-inverted is-outlined"
+            ><span class="icon"><i class="fab fa-github"></i></span
+            ><span>View on GitHub</span></a
+          >
+          <a
+            href="https://github.com/aldi/bulma-social/blob/master/css"
+            class="button is-medium is-success is-outlined is-inverted"
+            ><span class="icon"><i class="fas fa-download"></i></span
+            ><span>Download</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-10 is-offset-1">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="../index.html">Bulma-Social</a></li>
+                <li><a href="../pages/index.html">Documentation</a></li>
+                <li class="is-active">
+                  <a href="#" aria-current="page">Customize</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="column my-4">
+              <p class="title is-3">Customize</p>
+              <p class="subtitle is-4">
+                Compile your prefered collection of social providers in a single
+                CSS file
+              </p>
+            </div>
+            <div class="mb-3">
+              <p class="subtitle is-5 mb-1">
+                Bulma-Social consists of <strong>3 folders</strong> and
+                <strong>4 SASS files</strong>.
+              </p>
+              <p class="subtitle is-5 mb-1">
+                The <code>social-providers/all.sass</code> file is where the
+                magic happens.
+              </p>
+              <p class="subtitle is-5 mb-5">
+                For now, we are going to see how we can create our own custom pack.
+              </p>
+              <figure class="image">
+                <img src="../assets/images/sass-folder.png" />
+              </figure>
+              <br />
+              <p class="title is-3">Steps to follow:</p>
+              <ol class="subtitle is-5">
+                <li class="pt-2">
+                  Download or clone Bulma-Social from <strong>Github</strong>
+                </li>
+                <li class="pt-1">
+                  Open the <strong>Bulma-Social</strong> folder in your favourite Code Editor
+                </li>
+                <li class="pt-1">
+                  Open the <strong>all.sass</strong> that is located in <code>sass/social-providers</code> folder
+                </li>
+                <li class="pt-1">
+                  Scroll throught the bottom of the file and find the <strong>$socialProvidersList</strong> variable
+                </li>
+                <li class="pt-1 pb-4">
+                  Delete the social providers variables (colored in blue) that you don't need (e.g. $discordColours):
+                </li>
+                <figure class="highlight mb-3">
+                  <pre>
+<code class="language-html" data-lang="html"><span class="c">// Remove the social providers you don't need and then run "npm run build"</span>
+<span class="c">// Merge social provider maps to a single variable</span>
+<span>$socialProvidersList: </span><span class="na">combineSocialProviders(</span><span class="nt">$appleColours, $bitbucketColours, $discordColours, $dropboxColours, $facebookColours, $flickrColours, $foursquareColours, $githubColours, $gitlabColours, $instagramColours, $linkedinColours, $microsoftColours,$odnoklassnikiColours, $openidColours, $pinterestColours, $redditColours, $soundcloudColours, $tumblrColours, $twitterColours, $vimeoColours, $vkColours, $yahooColours, $youtubeColours</span><span class="na">)</span>
+</code></pre>
+                </figure>
+              <li class="pt-2">
+                Save the file
+              </li>
+              <li class="pt-2">
+                Open your console and run <code class="has-background-dark has-text-white">npm run build</code>
+              </li>
+              <li class="py-2">
+                Done! Your files are ready for use in the CSS folder.
+              </li>
+              </ol>
+              <figure class="image">
+                <img src="../assets/images/files-ready.png" />
+              </figure>
+            </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer has-text-centered">
+      <p>
+        Developed with
+        <i class="fa fa-heart fa-fw" style="font-size: 12px; color: red"></i>
+        by
+        <a href="https://aldiduzha.com" style="color: black">Aldi Duzha</a>
+      </p>
+      <p>
+        The source code is licensed under
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+      <p>
+        Available in
+        <a target="_blank" href="https://github.com/aldi/bulma-social"
+          ><i class="fab fa-github"></i
+        ></a>
+        and
+        <a target="_blank" href="https://www.npmjs.com/package/bulma-social"
+          ><i class="fab fa-npm"></i
+        ></a>
+      </p>
+      <p>
+        <a
+          target="_blank"
+          href="https://github.com/aldi/bulma-social/blob/master/CHANGELOG.md"
+          >View Changelog</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

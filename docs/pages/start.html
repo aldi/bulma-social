@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aldi Duzha" />
+    <meta name="description" content="Social Buttons and Colors for Bulma" />
+    <meta
+      name="keywords"
+      content="bulma, social, font-awesome, buttons, colors, colours, icons, socialmedia, addon, media, css, html"
+    />
+    <link rel="canonical" href="http://aldi.github.io/bulma-social" />
+    <title>Start - Bulma-Social Docs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0/css/bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="../assets/js/clipboard.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title is-2 cont-title">Bulma-Social <span class="tag">v2.0.0</span></p>
+          <p class="subtitle is-4 cont-subtitle">
+            Social Buttons and Colors for
+            <a href="https://bulma.io/">Bulma</a>
+          </p>
+          <a
+            href="https://github.com/aldi/bulma-social"
+            class="button is-medium is-black is-inverted is-outlined"
+            ><span class="icon"><i class="fab fa-github"></i></span><span>View on GitHub</span></a
+          >
+          <a
+            href="https://github.com/aldi/bulma-social/blob/master/css"
+            class="button is-medium is-success is-outlined is-inverted"
+            ><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-10 is-offset-1">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="../index.html">Bulma-Social</a></li>
+                <li><a href="../pages/index.html">Documentation</a></li>
+                <li class="is-active">
+                  <a href="#" aria-current="page">Start</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="column my-4">
+              <p class="title is-3">Getting started with Bulma-Social</p>
+              <p class="subtitle is-4">1 CSS file to use Bulma-Social</p>
+            </div>
+            <div class="content">
+              <p class="subtitle is-4">
+                There are several ways to <strong>get started</strong> with Bulma-Social. You can
+                either:
+              </p>
+              <ol>
+                <li class="subtitle is-5">
+                  use <strong>npm</strong> to install the Bulma-Social package
+                </li>
+                <li class="subtitle is-5">
+                  use the <strong>jsDelivr CDN</strong> to link to the Bulma-Social stylesheet
+                </li>
+                <li class="subtitle is-5">
+                  use the <strong>GitHub repository</strong> to get the latest development version
+                </li>
+              </ol>
+            </div>
+            <article class="media is-large">
+              <div class="media-left">
+                <p class="title is-5">1</p>
+              </div>
+              <div class="media-content">
+                <p class="title is-5">Use <strong>NPM</strong> <em>(recommended)</em>:</p>
+                <div class="highlight-full header-code">
+                  <figure class="highlight">
+                    <pre><code class="language-bash" data-lang="bash">npm <span class="nb">install </span>bulma-social</code></pre>
+                  </figure>
+                </div>
+              </div>
+            </article>
+            <article class="media is-large">
+              <div class="media-left">
+                <p class="title is-5">2</p>
+              </div>
+              <div class="media-content">
+                <p class="title is-5">
+                  Use the
+                  <a href="https://www.jsdelivr.com/" target="_blank">jsDelivr</a>
+                  <strong>CDN</strong>
+                  <br />
+                  <a href="https://www.jsdelivr.com/package/npm/bulma-social"
+                    >https://www.jsdelivr.com/package/npm/bulma-social</a
+                  >
+                </p>
+                <figure class="highlight">
+                  <pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css"</span><span class="nt">&gt;</span></code></pre>
+                </figure>
+              </div>
+            </article>
+            <article class="media is-large">
+              <div class="media-left">
+                <p class="title is-5">3</p>
+              </div>
+              <div class="media-content">
+                <p class="title is-5">
+                  Download from the <strong>repository</strong>
+                  <br />
+                  <a href="https://github.com/aldi/bulma-social/tree/master/css"
+                    >https://github.com/aldi/bulma-social/tree/master/css</a
+                  >
+                </p>
+              </div>
+            </article>
+            <hr />
+            <div class="message is-info">
+              <div class="message-header">Font Awesome icons</div>
+              <div class="message-body">
+                <p>
+                  If you want to use icons with Bulma-Social, don't forget to include
+                  <a href="https://fontawesome.com">Font Awesome 5</a>:
+                </p>
+                <div class="highlight-full header-code">
+                  <figure class="highlight">
+                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"</span><span class="nt">&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <hr class="hr" style="margin-bottom: 0" />
+
+            <p class="title is-3 pt-5">Starter Template</p>
+            <p class="subtitle is-5">
+              If you want to get started right away, you can use this HTML starter template. <br />
+              Just copy/paste this code in a file and save it on your computer.
+            </p>
+            <div class="bd-snippet highlight-full header-code">
+              <figure class="highlight">
+                <pre>
+<code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;title&gt;</span>Social Buttons and Colors for Bulma!<span class="nt">&lt;/title&gt;</span>
+<span class="cp">&lt;!-- Bulma --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/bulma@0/css/bulma.min.css"</span><span class="nt">&gt;</span>
+<span class="cp">&lt;!-- Your preferred icon library here --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"</span><span class="nt">&gt;</span>
+<span class="cp">&lt;!-- Import all social provider styles from Bulma-Social --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre>
+              </figure>
+            </div>
+            <hr />
+            <div class="column">
+              <p class="title is-4">Are you worried about the bundle size?</p>
+              <p class="subtitle is-5">
+                In the next page, you will learn how to import certain social providers.
+              </p>
+              <a class="button is-link is-outlined is-light mt-2" href="modularity.html"
+                ><span>Next Section</span
+                ><span class="icon"><i class="fas fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer has-text-centered">
+      <p>
+        Developed with
+        <i class="fa fa-heart fa-fw" style="font-size: 12px; color: red"></i>
+        by
+        <a href="https://aldiduzha.com" style="color: black">Aldi Duzha</a>
+      </p>
+      <p>
+        The source code is licensed under
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+      <p>
+        Available in
+        <a target="_blank" href="https://github.com/aldi/bulma-social"
+          ><i class="fab fa-github"></i
+        ></a>
+        and
+        <a target="_blank" href="https://www.npmjs.com/package/bulma-social"
+          ><i class="fab fa-npm"></i
+        ></a>
+      </p>
+      <p>
+        <a target="_blank" href="https://github.com/aldi/bulma-social/blob/master/CHANGELOG.md"
+          >View Changelog</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
