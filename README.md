@@ -30,14 +30,14 @@ After installation, you can import the CSS files into your project using these c
 
 Import all social providers:
 
-```sh
-@import 'bulma-social/css/all.min.css';
+```js
+import "bulma-social/css/all.min.css";
 ```
 
 or import certain social providers:
 
-```sh
-@import 'bulma-social/css/single/apple/apple.min.css'
+```js
+import "bulma-social/css/single/apple/apple.min.css";
 ```
 
 ### CDN
@@ -47,7 +47,10 @@ or import certain social providers:
 Link all social providers:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css"
+/>
 ```
 
 or link certain social providers:
@@ -173,7 +176,9 @@ Replace &lt;social-provider&gt;
 <!-- Background Colors -->
 <div class="is-size-4 has-background-facebook has-text-white">Hi Facebook</div>
 <div class="is-size-4 has-background-facebook-light">Hi Facebook Light</div>
-<div class="is-size-4 has-background-facebook-dark has-text-white">Hi Facebook Dark</div>
+<div class="is-size-4 has-background-facebook-dark has-text-white">
+  Hi Facebook Dark
+</div>
 ```
 
 ## Licence 📜
