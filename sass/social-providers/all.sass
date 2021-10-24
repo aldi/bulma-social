@@ -96,6 +96,12 @@ $reddit-light: findLightColor($reddit)
 $reddit-dark: findDarkColor($reddit)
 $redditColours: ("reddit": ($reddit, $reddit-invert, $reddit-light, $reddit-dark))
 
+$slack: hsl(294, 54%, 27%) !default
+$slack-invert: findColorInvert($slack)
+$slack-light: findLightColor($slack)
+$slack-dark: findDarkColor($slack)
+$slackColours: ("slack": ($slack, $slack-invert, $slack-light, $slack-dark))
+
 $soundcloud: hsl(20, 100%, 50%) !default
 $soundcloud-invert: findColorInvert($soundcloud)
 $soundcloud-light: findLightColor($soundcloud)
@@ -148,4 +154,4 @@ $youtubeColours: ("youtube": ($youtube, $youtube-invert, $youtube-light, $youtub
 
 // Remove the Social Providers you don't need and then run "npm run build"
 // Merge Social Provider maps to a single variable
-$socialProvidersList: combineSocialProviders($appleColours, $bitbucketColours, $discordColours, $dropboxColours, $facebookColours, $flickrColours, $foursquareColours, $githubColours, $gitlabColours, $instagramColours, $linkedinColours, $microsoftColours,$odnoklassnikiColours, $openidColours, $pinterestColours, $redditColours, $soundcloudColours, $tumblrColours, $twitterColours, $vimeoColours, $vkColours, $yahooColours, $youtubeColours)
+$socialProvidersList: combineSocialProviders($appleColours, $bitbucketColours, $discordColours, $dropboxColours, $facebookColours, $flickrColours, $foursquareColours, $githubColours, $gitlabColours, $instagramColours, $linkedinColours, $microsoftColours,$odnoklassnikiColours, $openidColours, $pinterestColours, $redditColours, $slackColours, $soundcloudColours, $tumblrColours, $twitterColours, $vimeoColours, $vkColours, $yahooColours, $youtubeColours)
