@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$reddit: hsl(16.2, 100%, 50%) !default
+$reddit-invert: findColorInvert($reddit)
+$reddit-light: findLightColor($reddit)
+$reddit-dark: findDarkColor($reddit)
+$redditColours: ("reddit": ($reddit, $reddit-invert, $reddit-light, $reddit-dark))
+$socialProvidersList: combineSocialProviders($redditColours)
+
+@import "sass/elements/button"

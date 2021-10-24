@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$facebook: hsl(213.9, 89.3%, 52.2%) !default
+$facebook-invert: findColorInvert($facebook)
+$facebook-light: findLightColor($facebook)
+$facebook-dark: findDarkColor($facebook)
+$facebookColours: ("facebook": ($facebook, $facebook-invert, $facebook-light, $facebook-dark))
+$socialProvidersList: combineSocialProviders($facebookColours)
+
+@import "sass/elements/button"

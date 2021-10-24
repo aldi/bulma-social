@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$vk: hsl(212, 42%, 52%) !default
+$vk-invert: findColorInvert($vk)
+$vk-light: findLightColor($vk)
+$vk-dark: findDarkColor($vk)
+$vkColours: ("vk": ($vk, $vk-invert, $vk-light, $vk-dark))
+$socialProvidersList: combineSocialProviders($vkColours)
+
+@import "sass/elements/button"

@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$flickr: hsl(329, 100%, 50%) !default
+$flickr-invert: findColorInvert($flickr)
+$flickr-light: findLightColor($flickr)
+$flickr-dark: findDarkColor($flickr)
+$flickrColours: ("flickr": ($flickr, $flickr-invert, $flickr-light, $flickr-dark))
+$socialProvidersList: combineSocialProviders($flickrColours)
+
+@import "sass/elements/button"

@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$yahoo: hsl(266.7, 100%, 28.2%) !default
+$yahoo-invert: findColorInvert($yahoo)
+$yahoo-light: findLightColor($yahoo)
+$yahoo-dark: findDarkColor($yahoo)
+$yahooColours: ("yahoo": ($yahoo, $yahoo-invert, $yahoo-light, $yahoo-dark))
+$socialProvidersList: combineSocialProviders($yahooColours)
+
+@import "sass/elements/button"

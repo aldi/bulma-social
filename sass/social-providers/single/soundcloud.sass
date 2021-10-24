@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$soundcloud: hsl(20, 100%, 50%) !default
+$soundcloud-invert: findColorInvert($soundcloud)
+$soundcloud-light: findLightColor($soundcloud)
+$soundcloud-dark: findDarkColor($soundcloud)
+$soundcloudColours: ("soundcloud": ($soundcloud, $soundcloud-invert, $soundcloud-light, $soundcloud-dark))
+$socialProvidersList: combineSocialProviders($soundcloudColours)
+
+@import "sass/elements/button"

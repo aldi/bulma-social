@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$tumblr: hsl(209.5, 36.2%, 32%) !default
+$tumblr-invert: findColorInvert($tumblr)
+$tumblr-light: findLightColor($tumblr)
+$tumblr-dark: findDarkColor($tumblr)
+$tumblrColours: ("tumblr": ($tumblr, $tumblr-invert, $tumblr-light, $tumblr-dark))
+$socialProvidersList: combineSocialProviders($tumblrColours)
+
+@import "sass/elements/button"

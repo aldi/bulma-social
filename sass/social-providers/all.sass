@@ -1,4 +1,7 @@
-// Social Providers
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
 
 $apple: hsl(0, 0%, 0%) !default
 $apple-invert: findColorInvert($apple)
@@ -155,3 +158,5 @@ $youtubeColours: ("youtube": ($youtube, $youtube-invert, $youtube-light, $youtub
 // Remove the Social Providers you don't need and then run "npm run build"
 // Merge Social Provider maps to a single variable
 $socialProvidersList: combineSocialProviders($appleColours, $bitbucketColours, $discordColours, $dropboxColours, $facebookColours, $flickrColours, $foursquareColours, $githubColours, $gitlabColours, $instagramColours, $linkedinColours, $microsoftColours,$odnoklassnikiColours, $openidColours, $pinterestColours, $redditColours, $slackColours, $soundcloudColours, $tumblrColours, $twitterColours, $vimeoColours, $vkColours, $yahooColours, $youtubeColours)
+
+@import "sass/elements/button"

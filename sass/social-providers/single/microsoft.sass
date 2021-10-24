@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$microsoft: hsl(206.4, 100%, 36.1%) !default
+$microsoft-invert: findColorInvert($microsoft)
+$microsoft-light: findLightColor($microsoft)
+$microsoft-dark: findDarkColor($microsoft)
+$microsoftColours: ("microsoft": ($microsoft, $microsoft-invert, $microsoft-light, $microsoft-dark))
+$socialProvidersList: combineSocialProviders($microsoftColours)
+
+@import "sass/elements/button"
