@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$discord: hsl(226.7, 58.4%, 65.1%) !default
+$discord-invert: findColorInvert($discord)
+$discord-light: findLightColor($discord)
+$discord-dark: findDarkColor($discord)
+$discordColours: ("discord": ($discord, $discord-invert, $discord-light, $discord-dark))
+$socialProvidersList: combineSocialProviders($discordColours)
+
+@import "sass/elements/button"

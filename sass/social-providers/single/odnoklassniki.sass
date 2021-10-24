@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$odnoklassniki: hsl(31, 93%, 48%) !default
+$odnoklassniki-invert: findColorInvert($odnoklassniki)
+$odnoklassniki-light: findLightColor($odnoklassniki)
+$odnoklassniki-dark: findDarkColor($odnoklassniki)
+$odnoklassnikiColours: ("odnoklassniki": ($odnoklassniki, $odnoklassniki-invert, $odnoklassniki-light, $odnoklassniki-dark))
+$socialProvidersList: combineSocialProviders($odnoklassnikiColours)
+
+@import "sass/elements/button"

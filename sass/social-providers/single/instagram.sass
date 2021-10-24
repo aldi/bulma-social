@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$instagram: hsl(353.8, 82.1%, 62.7%) !default
+$instagram-invert: findColorInvert($instagram)
+$instagram-light: findLightColor($instagram)
+$instagram-dark: findDarkColor($instagram)
+$instagramColours: ("instagram": ($instagram, $instagram-invert, $instagram-light, $instagram-dark))
+$socialProvidersList: combineSocialProviders($instagramColours)
+
+@import "sass/elements/button"

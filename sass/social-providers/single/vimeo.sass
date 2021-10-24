@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$vimeo: hsl(196.6, 100%, 46.9%) !default
+$vimeo-invert: findColorInvert($vimeo)
+$vimeo-light: findLightColor($vimeo)
+$vimeo-dark: findDarkColor($vimeo)
+$vimeoColours: ("vimeo": ($vimeo, $vimeo-invert, $vimeo-light, $vimeo-dark))
+$socialProvidersList: combineSocialProviders($vimeoColours)
+
+@import "sass/elements/button"

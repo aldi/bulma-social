@@ -1,0 +1,13 @@
+@charset "utf-8"
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+@import "sass/utilities/animations.sass"
+@import "sass/utilities/functions.sass"
+
+$linkedin: hsl(210, 90.2%, 40%) !default
+$linkedin-invert: findColorInvert($linkedin)
+$linkedin-light: findLightColor($linkedin)
+$linkedin-dark: findDarkColor($linkedin)
+$linkedinColours: ("linkedin": ($linkedin, $linkedin-invert, $linkedin-light, $linkedin-dark))
+$socialProvidersList: combineSocialProviders($linkedinColours)
+
+@import "sass/elements/button"
