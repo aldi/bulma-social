@@ -85,6 +85,7 @@ Browse the [online documentation here.](https://aldi.github.io/bulma-social/inde
 - `.is-openid`
 - `.is-pinterest`
 - `.is-reddit`
+- `.is-slack`
 - `.is-soundcloud`
 - `.is-tumblr`
 - `.is-twitter`

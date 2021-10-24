@@ -1,4 +1,4 @@
-/*! bulma-social v2.0.0 | MIT License | github.com/aldi/bulma-social */
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
 .button {
   -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
        -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -197,4 +197,3 @@ a.has-text-twitter-dark:hover, a.has-text-twitter-dark:focus {
 .has-background-twitter-dark {
   background-color: #0a73b2 !important;
 }
-/*# sourceMappingURL=all.css.map */
