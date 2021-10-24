@@ -1,0 +1,199 @@
+/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
+.button {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.no-animation {
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition-property: none !important;
+}
+
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.button.is-slack {
+  background-color: #63206a;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-slack:hover, .button.is-slack.is-hovered {
+  background-color: #591d60;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-slack:focus, .button.is-slack.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-slack:focus:not(:active), .button.is-slack.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(99, 32, 106, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(99, 32, 106, 0.25);
+}
+
+.button.is-slack:active, .button.is-slack.is-active {
+  background-color: #501a56;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-slack[disabled],
+fieldset[disabled] .button.is-slack {
+  background-color: #63206a;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button.is-slack.is-inverted {
+  background-color: #fff;
+  color: #63206a;
+}
+
+.button.is-slack.is-inverted:hover, .button.is-slack.is-inverted.is-hovered {
+  background-color: #f2f2f2;
+}
+
+.button.is-slack.is-inverted[disabled],
+fieldset[disabled] .button.is-slack.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #63206a;
+}
+
+.button.is-slack.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-slack.is-outlined {
+  background-color: transparent;
+  border-color: #63206a;
+  color: #63206a;
+}
+
+.button.is-slack.is-outlined:hover, .button.is-slack.is-outlined.is-hovered, .button.is-slack.is-outlined:focus, .button.is-slack.is-outlined.is-focused {
+  background-color: #63206a;
+  border-color: #63206a;
+  color: #fff;
+}
+
+.button.is-slack.is-outlined.is-loading::after {
+  border-color: transparent transparent #63206a #63206a !important;
+}
+
+.button.is-slack.is-outlined.is-loading:hover::after, .button.is-slack.is-outlined.is-loading.is-hovered::after, .button.is-slack.is-outlined.is-loading:focus::after, .button.is-slack.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.button.is-slack.is-outlined[disabled],
+fieldset[disabled] .button.is-slack.is-outlined {
+  background-color: transparent;
+  border-color: #63206a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #63206a;
+}
+
+.button.is-slack.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-slack.is-inverted.is-outlined:hover, .button.is-slack.is-inverted.is-outlined.is-hovered, .button.is-slack.is-inverted.is-outlined:focus, .button.is-slack.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: #63206a;
+}
+
+.button.is-slack.is-inverted.is-outlined.is-loading:hover::after, .button.is-slack.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-slack.is-inverted.is-outlined.is-loading:focus::after, .button.is-slack.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #63206a #63206a !important;
+}
+
+.button.is-slack.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-slack.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.button.is-slack.is-light {
+  background-color: #f9effa;
+  color: #bb46c8;
+}
+
+.button.is-slack.is-light:hover, .button.is-slack.is-light.is-hovered {
+  background-color: #f6e5f7;
+  border-color: transparent;
+  color: #bb46c8;
+}
+
+.button.is-slack.is-light:active, .button.is-slack.is-light.is-active {
+  background-color: #f2dcf4;
+  border-color: transparent;
+  color: #bb46c8;
+}
+
+.button.is-static {
+  background-color: whitesmoke;
+  border-color: #dbdbdb;
+  color: #7a7a7a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+
+.has-text-slack {
+  color: #63206a !important;
+}
+
+a.has-text-slack:hover, a.has-text-slack:focus {
+  color: #3e1443 !important;
+}
+
+.has-background-slack {
+  background-color: #63206a !important;
+}
+
+.has-text-slack-light {
+  color: #f9effa !important;
+}
+
+a.has-text-slack-light:hover, a.has-text-slack-light:focus {
+  color: #ebc8ef !important;
+}
+
+.has-background-slack-light {
+  background-color: #f9effa !important;
+}
+
+.has-text-slack-dark {
+  color: #bb46c8 !important;
+}
+
+a.has-text-slack-dark:hover, a.has-text-slack-dark:focus {
+  color: #c96ed4 !important;
+}
+
+.has-background-slack-dark {
+  background-color: #bb46c8 !important;
+}

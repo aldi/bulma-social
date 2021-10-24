@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
     />
-    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../../css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <script
       defer
@@ -37,7 +37,7 @@
       <div class="hero-body">
         <div class="container">
           <p class="title is-2 cont-title">
-            Bulma-Social <span class="tag">v2.0.0</span>
+            Bulma-Social <span class="tag">v2.1.0</span>
           </p>
           <p class="subtitle is-4 cont-subtitle">
             Social Buttons and Colors for
@@ -80,15 +80,11 @@
             </div>
             <div class="mb-3">
               <p class="subtitle is-5 mb-1">
-                Bulma-Social consists of <strong>3 folders</strong> and
-                <strong>4 SASS files</strong>.
-              </p>
-              <p class="subtitle is-5 mb-1">
                 The <code>social-providers/all.sass</code> file is where the
                 magic happens.
               </p>
               <p class="subtitle is-5 mb-5">
-                For now, we are going to see how we can create our own custom pack.
+                In this page, we are going to see how we can create our own custom CSS file.
               </p>
               <figure class="image">
                 <img src="../assets/images/sass-folder.png" />
@@ -115,7 +111,7 @@
                   <pre>
 <code class="language-html" data-lang="html"><span class="c">// Remove the social providers you don't need and then run "npm run build"</span>
 <span class="c">// Merge social provider maps to a single variable</span>
-<span>$socialProvidersList: </span><span class="na">combineSocialProviders(</span><span class="nt">$appleColours, $bitbucketColours, $discordColours, $dropboxColours, $facebookColours, $flickrColours, $foursquareColours, $githubColours, $gitlabColours, $instagramColours, $linkedinColours, $microsoftColours,$odnoklassnikiColours, $openidColours, $pinterestColours, $redditColours, $soundcloudColours, $tumblrColours, $twitterColours, $vimeoColours, $vkColours, $yahooColours, $youtubeColours</span><span class="na">)</span>
+<span>$socialProvidersList: </span><span class="na">combineSocialProviders(</span><span class="nt">$appleColours, $bitbucketColours, $discordColours, $dropboxColours, $facebookColours, $flickrColours, $foursquareColours, $githubColours, $gitlabColours, $instagramColours, $linkedinColours, $microsoftColours,$odnoklassnikiColours, $openidColours, $pinterestColours, $redditColours, $slackColours, $soundcloudColours, $tumblrColours, $twitterColours, $vimeoColours, $vkColours, $yahooColours, $youtubeColours</span><span class="na">)</span>
 </code></pre>
                 </figure>
               <li class="pt-2">
@@ -140,7 +136,7 @@
         Developed with
         <i class="fa fa-heart fa-fw" style="font-size: 12px; color: red"></i>
         by
-        <a href="https://aldiduzha.com" style="color: black">Aldi Duzha</a>
+        <a href="https://aldi.st" style="color: black">Aldi Duzha</a>
       </p>
       <p>
         The source code is licensed under

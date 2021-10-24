@@ -1,5 +1,11 @@
 # Bulma-Social Changelog
 
+## [2.1.0](https://github.com/aldi/bulma-social/tree/2.1.0) (2021-10-24)
+
+### New features
+
+- Slack colors (Pull Request [#18](https://github.com/aldi/bulma-social/pull/18) by [@mariotaddeucci](https://github.com/mariotaddeucci))
+
 ## [2.0.0](https://github.com/aldi/bulma-social/tree/2.0.0) (2020-11-19)
 
 ### BIG UPDATE - BREAKING CHANGES
@@ -24,7 +30,8 @@ You can now use:
 `.is-inverted`  
 `.is-outlined`  
 `.is-light`  
-along with the Social Providers classes.  
+along with the Social Providers classes.
+
 In addition, you can use these classes independently:  
 `.has-text-<socialprovider>`  
 `.has-text-<socialprovider>-light`  
@@ -42,7 +49,7 @@ New vendor prefixes for the most popular browsers (thanks to Autoprefixer)
 
 ### Updated
 
-- Discord colors (Pull Request #7 by @nathanchere - Fixes Issue #6)
+- Discord colors (Pull Request [#7](https://github.com/aldi/bulma-social/pull/7) by [@nathanchere](https://github.com/nathanchere) - Fixes Issue [#6](https://github.com/aldi/bulma-social/issues/6))
 - Facebook colors
 - Github colors
 - Gitlab colors
@@ -63,7 +70,7 @@ New vendor prefixes for the most popular browsers (thanks to Autoprefixer)
 
 ### New features
 
-- Apple colors. (Pull Request #5 by @mariotaddeucci)
+- Apple colors. (Pull Request [#5](https://github.com/aldi/bulma-social/pull/5) by [@mariotaddeucci](https://github.com/mariotaddeucci))
 
 ### Improvements
 
@@ -87,13 +94,13 @@ New vendor prefixes for the most popular browsers (thanks to Autoprefixer)
 
 ### Improvements
 
-- #4 Bin directory missing when installing version 1.1.0 on NPM (Issue #4 by @chrisgacsal)
+- #4 Bin directory missing when installing version 1.1.0 on NPM (Issue [#4](https://github.com/aldi/bulma-social/issues/4) by [@chrisgacsal](https://github.com/chrisgacsal))
 
 ## [1.1.0](https://github.com/aldi/bulma-social/tree/1.1.0) (2020-02-11)
 
 ### New features
 
-- GitLab buttons. (Pull Request #1 by @nathanchere)
+- Gitlab buttons (Pull Request [#1](https://github.com/aldi/bulma-social/pull/1) by [@nathanchere](https://github.com/nathanchere))
 - Button animations (by default) on button hover (cubic-bezier effect)
 - `no-animation` class to disable button animations
 - New tabs on the right column to preview normal/rounded/loading and static button types
