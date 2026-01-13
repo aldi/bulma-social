@@ -1,0 +1,117 @@
+@use "sass:math";
+@use "sass:color";
+@use "sass:meta";
+@use "sass:map";
+
+@function powerNumber($number, $exp) {
+  $value: 1;
+
+  @if $exp >0 {
+    @for $i from 1 through $exp {
+      $value: $value * $number;
+    }
+  }
+
+  @else if $exp < 0 {
+    @for $i from 1 through -$exp {
+      $value: math.div($value, $number);
+    }
+  }
+
+  @return $value;
+}
+
+@function colorLuminance($color) {
+  @if meta.type-of($color) !='color' {
+    @return 0.55;
+  }
+
+  $color-rgb: (
+    'red': color.channel($color, "red", $space: rgb),
+    'green': color.channel($color, "green", $space: rgb),
+    'blue': color.channel($color, "blue", $space: rgb)
+  );
+
+@each $name, $value in $color-rgb {
+  $adjusted: 0;
+  $value: math.div($value, 255);
+
+  @if $value < 0.03928 {
+    $value: math.div($value, 12.92);
+  }
+
+  @else {
+    $value: math.div($value + 0.055, 1.055);
+    $value: powerNumber($value, 2);
+  }
+
+  $color-rgb: map.merge($color-rgb, ($name: $value));
+}
+
+@return (map.get($color-rgb, 'red') * .2126)+(map.get($color-rgb, 'green') * .7152)+(map.get($color-rgb, 'blue') * .0722);
+}
+
+@function findColorInvert($color) {
+  @if (colorLuminance($color) > 0.55) {
+    @return rgba(#000, 0.7);
+  }
+
+  @else {
+    @return #fff;
+  }
+}
+
+@function findLightColor($color) {
+  @if meta.type-of($color)=='color' {
+    $l: 96%;
+
+    @if color.channel($color, "lightness", $space: hsl)>96% {
+      $l: color.channel($color, "lightness", $space: hsl);
+    }
+
+    @return color.change($color, $lightness: $l);
+  }
+
+  @return $color;
+}
+
+@function findDarkColor($color) {
+  @if meta.type-of($color)=='color' {
+    $base-l: 29%;
+    $current-l: color.channel($color, "lightness", $space: hsl);
+    $luminance: colorLuminance($color);
+    $luminance-delta: (
+      0.53 - $luminance
+    );
+  $target-l: math.round($base-l + ($luminance-delta * 53));
+  // Use the darker of: calculated target or original lightness
+  // This ensures already-dark colors don't become lighter
+  @return color.change($color, $lightness: min($current-l, max($base-l, $target-l)));
+}
+
+@return $color;
+}
+
+@function bulmaRgba($color, $alpha) {
+  @if meta.type-of($color) !='color' {
+    @return $color;
+  }
+
+  @return color.change($color, $alpha: $alpha);
+}
+
+@function bulmaDarken($color, $amount) {
+  @if meta.type-of($color) !='color' {
+    @return $color;
+  }
+
+  @return color.adjust($color, $lightness: -$amount);
+}
+
+@function bulmaLighten($color, $amount) {
+  @if meta.type-of($color) !='color' {
+    @return $color;
+  }
+
+  @return color.adjust($color, $lightness: $amount);
+}
