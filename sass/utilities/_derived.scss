@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "sass:list";
+@use "providers" as p;
+@use "functions" as fn;
+
+@function build-provider-colors($provider-list: p.$providers) {
+  $colors: ();
+
+  @each $name, $color in $provider-list {
+    $colors: map.set($colors, $name, (
+      $color,
+      fn.findColorInvert($color),
+      fn.findLightColor($color),
+      fn.findDarkColor($color)
+    ));
+  }
+
+  @return $colors;
+}
+
+@function get-provider-color($name) {
+  $color: map.get(p.$providers, $name);
+  @if $color == null {
+    @error "Unknown provider: #{$name}";
+  }
+  @return (
+    $name: (
+      $color,
+      fn.findColorInvert($color),
+      fn.findLightColor($color),
+      fn.findDarkColor($color)
+    )
+  );
+}
+
+$all-provider-colors: build-provider-colors() !default;

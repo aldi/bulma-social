@@ -1,5 +1,67 @@
 # Bulma-Social Changelog
 
+## [3.0.0](https://github.com/aldi/bulma-social/tree/3.0.0) (2026-01-13)
+
+### ⚠️ Breaking Changes
+
+- **Button transitions disabled by default** — use `.is-animated` class to opt-in
+- SCSS files now use underscore prefix convention (e.g., `_button.scss`)
+- Removed `combineSocialProviders()` function — colors are now centralized
+- Single provider files moved to `sass/social-providers/single/`
+
+### ✨ New Features
+
+**Opt-in Button Animations (`.is-animated`)**  
+Add smooth background-color transitions with `prefers-reduced-motion` support:
+
+```html
+<button class="button is-facebook is-animated">Facebook</button>
+```
+
+**Dark Button Variant (`.is-dark`)**  
+Creates darker button variants. Already-dark providers (Apple, GitHub) remain unchanged:
+
+```html
+<button class="button is-facebook is-dark">Facebook</button>
+```
+
+### 🏗️ Architecture Overhaul
+
+**Centralized Color System**  
+All provider colors defined in `sass/utilities/_providers.scss`. Adding a provider is now a one-liner.
+
+**Simplified File Structure**
+
+| File | Purpose |
+|------|---------|
+| `sass/utilities/_providers.scss` | Single source of truth for provider colors |
+| `sass/utilities/_derived.scss` | Generates color variants (base, invert, light, dark) |
+| `sass/utilities/_functions.scss` | Color manipulation functions |
+| `sass/elements/_button.scss` | Button styles with configurable `$button-colors` |
+| `sass/social-providers/_all.scss` | Entry point (8 lines) |
+
+Single provider files reduced from 16+ lines to just 3 lines each.
+
+### 🔧 Build System
+
+- **Unified build script** — Single `scripts/build.js` using Sass JS API + PostCSS
+- **Reduced dependencies** — 7 → 5 packages
+- **Faster builds** — ~0.7s for all 50 CSS files
+
+### 📦 Dependencies
+
+| Package | Version |
+|---------|---------|
+| `sass` | ^1.97.2 |
+| `rimraf` | ^6.1.2 |
+| `postcss` | ^8.4.49 |
+| `autoprefixer` | ^10.4.20 |
+| `cssnano` | ^7.0.6 |
+
+Browserslist expanded to include iOS ≥ 10 and Safari ≥ 10.
+
+---
+
 ## [2.1.0](https://github.com/aldi/bulma-social/tree/2.1.0) (2021-10-24)
 
 ### New features

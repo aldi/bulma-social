@@ -1,199 +1,153 @@
-/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
-.button {
-  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -webkit-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
-.no-animation {
-  -webkit-transition-property: none !important;
-  -o-transition-property: none !important;
-  transition-property: none !important;
-}
-
-a {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  -o-transition: transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
+/*! bulma-social v3.0.0 | MIT License | github.com/aldi/bulma-social */
 
 .button.is-pinterest {
-  background-color: #e60023;
+  background-color: hsl(350.9, 100%, 45.1%);
   border-color: transparent;
   color: #fff;
 }
-
 .button.is-pinterest:hover, .button.is-pinterest.is-hovered {
-  background-color: #d90021;
+  background-color: hsl(350.9, 100%, 42.6%);
   border-color: transparent;
   color: #fff;
 }
-
 .button.is-pinterest:focus, .button.is-pinterest.is-focused {
   border-color: transparent;
   color: #fff;
 }
-
 .button.is-pinterest:focus:not(:active), .button.is-pinterest.is-focused:not(:active) {
-  -webkit-box-shadow: 0 0 0 0.125em rgba(230, 0, 35, 0.25);
-          box-shadow: 0 0 0 0.125em rgba(230, 0, 35, 0.25);
+  box-shadow: 0 0 0 0.125em hsla(350.9, 100%, 45.1%, 0.25);
 }
-
 .button.is-pinterest:active, .button.is-pinterest.is-active {
-  background-color: #cd001f;
+  background-color: hsl(350.9, 100%, 40.1%);
   border-color: transparent;
   color: #fff;
 }
-
-.button.is-pinterest[disabled],
-fieldset[disabled] .button.is-pinterest {
-  background-color: #e60023;
+.button.is-pinterest[disabled], fieldset[disabled] .button.is-pinterest {
+  background-color: hsl(350.9, 100%, 45.1%);
   border-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
 .button.is-pinterest.is-inverted {
   background-color: #fff;
-  color: #e60023;
+  color: hsl(350.9, 100%, 45.1%);
 }
-
 .button.is-pinterest.is-inverted:hover, .button.is-pinterest.is-inverted.is-hovered {
-  background-color: #f2f2f2;
+  background-color: rgb(242.25, 242.25, 242.25);
 }
-
-.button.is-pinterest.is-inverted[disabled],
-fieldset[disabled] .button.is-pinterest.is-inverted {
+.button.is-pinterest.is-inverted[disabled], fieldset[disabled] .button.is-pinterest.is-inverted {
   background-color: #fff;
   border-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #e60023;
+  box-shadow: none;
+  color: hsl(350.9, 100%, 45.1%);
 }
-
 .button.is-pinterest.is-loading::after {
   border-color: transparent transparent #fff #fff !important;
 }
-
 .button.is-pinterest.is-outlined {
   background-color: transparent;
-  border-color: #e60023;
-  color: #e60023;
+  border-color: hsl(350.9, 100%, 45.1%);
+  color: hsl(350.9, 100%, 45.1%);
 }
-
 .button.is-pinterest.is-outlined:hover, .button.is-pinterest.is-outlined.is-hovered, .button.is-pinterest.is-outlined:focus, .button.is-pinterest.is-outlined.is-focused {
-  background-color: #e60023;
-  border-color: #e60023;
+  background-color: hsl(350.9, 100%, 45.1%);
+  border-color: hsl(350.9, 100%, 45.1%);
   color: #fff;
 }
-
 .button.is-pinterest.is-outlined.is-loading::after {
-  border-color: transparent transparent #e60023 #e60023 !important;
+  border-color: transparent transparent hsl(350.9, 100%, 45.1%) hsl(350.9, 100%, 45.1%) !important;
 }
-
 .button.is-pinterest.is-outlined.is-loading:hover::after, .button.is-pinterest.is-outlined.is-loading.is-hovered::after, .button.is-pinterest.is-outlined.is-loading:focus::after, .button.is-pinterest.is-outlined.is-loading.is-focused::after {
   border-color: transparent transparent #fff #fff !important;
 }
-
-.button.is-pinterest.is-outlined[disabled],
-fieldset[disabled] .button.is-pinterest.is-outlined {
+.button.is-pinterest.is-outlined[disabled], fieldset[disabled] .button.is-pinterest.is-outlined {
   background-color: transparent;
-  border-color: #e60023;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #e60023;
+  border-color: hsl(350.9, 100%, 45.1%);
+  box-shadow: none;
+  color: hsl(350.9, 100%, 45.1%);
 }
-
 .button.is-pinterest.is-inverted.is-outlined {
   background-color: transparent;
   border-color: #fff;
   color: #fff;
 }
-
 .button.is-pinterest.is-inverted.is-outlined:hover, .button.is-pinterest.is-inverted.is-outlined.is-hovered, .button.is-pinterest.is-inverted.is-outlined:focus, .button.is-pinterest.is-inverted.is-outlined.is-focused {
   background-color: #fff;
-  color: #e60023;
+  color: hsl(350.9, 100%, 45.1%);
 }
-
 .button.is-pinterest.is-inverted.is-outlined.is-loading:hover::after, .button.is-pinterest.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-pinterest.is-inverted.is-outlined.is-loading:focus::after, .button.is-pinterest.is-inverted.is-outlined.is-loading.is-focused::after {
-  border-color: transparent transparent #e60023 #e60023 !important;
+  border-color: transparent transparent hsl(350.9, 100%, 45.1%) hsl(350.9, 100%, 45.1%) !important;
 }
-
-.button.is-pinterest.is-inverted.is-outlined[disabled],
-fieldset[disabled] .button.is-pinterest.is-inverted.is-outlined {
+.button.is-pinterest.is-inverted.is-outlined[disabled], fieldset[disabled] .button.is-pinterest.is-inverted.is-outlined {
   background-color: transparent;
   border-color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+}
+.button.is-pinterest.is-light {
+  background-color: hsl(350.9, 100%, 96%);
+  color: hsl(350.9, 100%, 45.1%);
+}
+.button.is-pinterest.is-light:hover, .button.is-pinterest.is-light.is-hovered {
+  background-color: hsl(350.9, 100%, 93.5%);
+  border-color: transparent;
+  color: hsl(350.9, 100%, 45.1%);
+}
+.button.is-pinterest.is-light:active, .button.is-pinterest.is-light.is-active {
+  background-color: hsl(350.9, 100%, 91%);
+  border-color: transparent;
+  color: hsl(350.9, 100%, 45.1%);
+}
+.button.is-pinterest.is-dark {
+  background-color: hsl(350.9, 100%, 45.1%);
+  color: #fff;
+}
+.button.is-pinterest.is-dark:hover, .button.is-pinterest.is-dark.is-hovered {
+  background-color: hsl(350.9, 100%, 42.6%);
+  border-color: transparent;
+  color: #fff;
+}
+.button.is-pinterest.is-dark:active, .button.is-pinterest.is-dark.is-active {
+  background-color: hsl(350.9, 100%, 40.1%);
+  border-color: transparent;
   color: #fff;
 }
 
-.button.is-pinterest.is-light {
-  background-color: #ffebee;
-  color: #f50025;
-}
-
-.button.is-pinterest.is-light:hover, .button.is-pinterest.is-light.is-hovered {
-  background-color: #ffdee3;
-  border-color: transparent;
-  color: #f50025;
-}
-
-.button.is-pinterest.is-light:active, .button.is-pinterest.is-light.is-active {
-  background-color: #ffd1d8;
-  border-color: transparent;
-  color: #f50025;
-}
-
-.button.is-static {
-  background-color: whitesmoke;
-  border-color: #dbdbdb;
-  color: #7a7a7a;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  pointer-events: none;
-}
-
 .has-text-pinterest {
-  color: #e60023 !important;
+  color: hsl(350.9, 100%, 45.1%) !important;
 }
 
 a.has-text-pinterest:hover, a.has-text-pinterest:focus {
-  color: #b3001b !important;
+  color: hsl(350.9, 100%, 35.1%) !important;
 }
 
 .has-background-pinterest {
-  background-color: #e60023 !important;
+  background-color: hsl(350.9, 100%, 45.1%) !important;
 }
 
 .has-text-pinterest-light {
-  color: #ffebee !important;
+  color: hsl(350.9, 100%, 96%) !important;
 }
 
 a.has-text-pinterest-light:hover, a.has-text-pinterest-light:focus {
-  color: #ffb8c2 !important;
+  color: hsl(350.9, 100%, 86%) !important;
 }
 
 .has-background-pinterest-light {
-  background-color: #ffebee !important;
+  background-color: hsl(350.9, 100%, 96%) !important;
 }
 
 .has-text-pinterest-dark {
-  color: #f50025 !important;
+  color: hsl(350.9, 100%, 45.1%) !important;
 }
 
 a.has-text-pinterest-dark:hover, a.has-text-pinterest-dark:focus {
-  color: #ff2949 !important;
+  color: hsl(350.9, 100%, 55.1%) !important;
 }
 
 .has-background-pinterest-dark {
-  background-color: #f50025 !important;
+  background-color: hsl(350.9, 100%, 45.1%) !important;
+}
+
+.no-animation {
+  transition-property: none !important;
 }

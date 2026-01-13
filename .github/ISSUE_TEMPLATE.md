@@ -1,29 +1,24 @@
 <!-- PLEASE READ THE FOLLOWING INSTRUCTIONS -->
 
-<!-- Choose one of the following: -->
+### Issue Type
 
-This is about **Bulma-Social | the Docs**.
+<!-- Check one: -->
+- [ ] Bug report
+- [ ] Feature request
+- [ ] Question
 
-<!-- Is it about Bulma-Social or about the Docs? -->
-<!-- Is it a bug/feature/question or do you need help? -->
-<!-- If it's a bug, is it a browser bug? -->
+### Environment
 
-### Overview of the problem
-
-<!-- UNCOMMENT THE APPROPRIATE LINES -->
-
-<!-- This is about the Bulma-Social -->
-<!-- This is about the Bulma-Social **Docs** -->
-<!-- I'm using Bulma-Social **version** [x.x.x] -->
-<!-- My **browser** is: -->
-<!-- This is a **Sass** issue: I'm using version [x.x.x] -->
-<!-- I am sure this issue is **not a duplicate**? -->
+<!-- Fill in the relevant details: -->
+- **Bulma-Social version**: [e.g., 3.0.0]
+- **Browser**: [e.g., Chrome 120, Safari 17]
+- **OS**: [e.g., macOS, Windows, iOS]
 
 ### Description
 
-<!-- Description of the bug, enhancement, or question -->
+<!-- Clear description of the bug, feature request, or question -->
 
-### Steps to Reproduce
+### Steps to Reproduce (for bugs)
 
 <!--
 1. First Step
@@ -38,3 +33,15 @@ This is about **Bulma-Social | the Docs**.
 ### Actual behavior
 
 <!-- What actually happened -->
+
+### Code Sample
+
+<!-- If applicable, provide a minimal code sample or link to a reproduction -->
+
+```html
+<!-- Your code here -->
+```
+
+### Screenshots
+
+<!-- If applicable, add screenshots to help explain your problem -->
