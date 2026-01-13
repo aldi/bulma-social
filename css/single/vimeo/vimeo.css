@@ -1,199 +1,153 @@
-/*! bulma-social v2.1.0 | MIT License | github.com/aldi/bulma-social */
-.button {
-  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-       -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -webkit-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
-.no-animation {
-  -webkit-transition-property: none !important;
-  -o-transition-property: none !important;
-  transition-property: none !important;
-}
-
-a {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  -o-transition: transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
+/*! bulma-social v3.0.0 | MIT License | github.com/aldi/bulma-social */
 
 .button.is-vimeo {
-  background-color: #00adef;
+  background-color: hsl(196.6, 100%, 46.9%);
   border-color: transparent;
   color: #fff;
 }
-
 .button.is-vimeo:hover, .button.is-vimeo.is-hovered {
-  background-color: #00a4e2;
+  background-color: hsl(196.6, 100%, 44.4%);
   border-color: transparent;
   color: #fff;
 }
-
 .button.is-vimeo:focus, .button.is-vimeo.is-focused {
   border-color: transparent;
   color: #fff;
 }
-
 .button.is-vimeo:focus:not(:active), .button.is-vimeo.is-focused:not(:active) {
-  -webkit-box-shadow: 0 0 0 0.125em rgba(0, 173, 239, 0.25);
-          box-shadow: 0 0 0 0.125em rgba(0, 173, 239, 0.25);
+  box-shadow: 0 0 0 0.125em hsla(196.6, 100%, 46.9%, 0.25);
 }
-
 .button.is-vimeo:active, .button.is-vimeo.is-active {
-  background-color: #009bd6;
+  background-color: hsl(196.6, 100%, 41.9%);
   border-color: transparent;
   color: #fff;
 }
-
-.button.is-vimeo[disabled],
-fieldset[disabled] .button.is-vimeo {
-  background-color: #00adef;
+.button.is-vimeo[disabled], fieldset[disabled] .button.is-vimeo {
+  background-color: hsl(196.6, 100%, 46.9%);
   border-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
 .button.is-vimeo.is-inverted {
   background-color: #fff;
-  color: #00adef;
+  color: hsl(196.6, 100%, 46.9%);
 }
-
 .button.is-vimeo.is-inverted:hover, .button.is-vimeo.is-inverted.is-hovered {
-  background-color: #f2f2f2;
+  background-color: rgb(242.25, 242.25, 242.25);
 }
-
-.button.is-vimeo.is-inverted[disabled],
-fieldset[disabled] .button.is-vimeo.is-inverted {
+.button.is-vimeo.is-inverted[disabled], fieldset[disabled] .button.is-vimeo.is-inverted {
   background-color: #fff;
   border-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #00adef;
+  box-shadow: none;
+  color: hsl(196.6, 100%, 46.9%);
 }
-
 .button.is-vimeo.is-loading::after {
   border-color: transparent transparent #fff #fff !important;
 }
-
 .button.is-vimeo.is-outlined {
   background-color: transparent;
-  border-color: #00adef;
-  color: #00adef;
+  border-color: hsl(196.6, 100%, 46.9%);
+  color: hsl(196.6, 100%, 46.9%);
 }
-
 .button.is-vimeo.is-outlined:hover, .button.is-vimeo.is-outlined.is-hovered, .button.is-vimeo.is-outlined:focus, .button.is-vimeo.is-outlined.is-focused {
-  background-color: #00adef;
-  border-color: #00adef;
+  background-color: hsl(196.6, 100%, 46.9%);
+  border-color: hsl(196.6, 100%, 46.9%);
   color: #fff;
 }
-
 .button.is-vimeo.is-outlined.is-loading::after {
-  border-color: transparent transparent #00adef #00adef !important;
+  border-color: transparent transparent hsl(196.6, 100%, 46.9%) hsl(196.6, 100%, 46.9%) !important;
 }
-
 .button.is-vimeo.is-outlined.is-loading:hover::after, .button.is-vimeo.is-outlined.is-loading.is-hovered::after, .button.is-vimeo.is-outlined.is-loading:focus::after, .button.is-vimeo.is-outlined.is-loading.is-focused::after {
   border-color: transparent transparent #fff #fff !important;
 }
-
-.button.is-vimeo.is-outlined[disabled],
-fieldset[disabled] .button.is-vimeo.is-outlined {
+.button.is-vimeo.is-outlined[disabled], fieldset[disabled] .button.is-vimeo.is-outlined {
   background-color: transparent;
-  border-color: #00adef;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #00adef;
+  border-color: hsl(196.6, 100%, 46.9%);
+  box-shadow: none;
+  color: hsl(196.6, 100%, 46.9%);
 }
-
 .button.is-vimeo.is-inverted.is-outlined {
   background-color: transparent;
   border-color: #fff;
   color: #fff;
 }
-
 .button.is-vimeo.is-inverted.is-outlined:hover, .button.is-vimeo.is-inverted.is-outlined.is-hovered, .button.is-vimeo.is-inverted.is-outlined:focus, .button.is-vimeo.is-inverted.is-outlined.is-focused {
   background-color: #fff;
-  color: #00adef;
+  color: hsl(196.6, 100%, 46.9%);
 }
-
 .button.is-vimeo.is-inverted.is-outlined.is-loading:hover::after, .button.is-vimeo.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-vimeo.is-inverted.is-outlined.is-loading:focus::after, .button.is-vimeo.is-inverted.is-outlined.is-loading.is-focused::after {
-  border-color: transparent transparent #00adef #00adef !important;
+  border-color: transparent transparent hsl(196.6, 100%, 46.9%) hsl(196.6, 100%, 46.9%) !important;
 }
-
-.button.is-vimeo.is-inverted.is-outlined[disabled],
-fieldset[disabled] .button.is-vimeo.is-inverted.is-outlined {
+.button.is-vimeo.is-inverted.is-outlined[disabled], fieldset[disabled] .button.is-vimeo.is-inverted.is-outlined {
   background-color: transparent;
   border-color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+}
+.button.is-vimeo.is-light {
+  background-color: hsl(196.6, 100%, 96%);
+  color: hsl(196.6, 100%, 35%);
+}
+.button.is-vimeo.is-light:hover, .button.is-vimeo.is-light.is-hovered {
+  background-color: hsl(196.6, 100%, 93.5%);
+  border-color: transparent;
+  color: hsl(196.6, 100%, 35%);
+}
+.button.is-vimeo.is-light:active, .button.is-vimeo.is-light.is-active {
+  background-color: hsl(196.6, 100%, 91%);
+  border-color: transparent;
+  color: hsl(196.6, 100%, 35%);
+}
+.button.is-vimeo.is-dark {
+  background-color: hsl(196.6, 100%, 35%);
+  color: #fff;
+}
+.button.is-vimeo.is-dark:hover, .button.is-vimeo.is-dark.is-hovered {
+  background-color: hsl(196.6, 100%, 32.5%);
+  border-color: transparent;
+  color: #fff;
+}
+.button.is-vimeo.is-dark:active, .button.is-vimeo.is-dark.is-active {
+  background-color: hsl(196.6, 100%, 30%);
+  border-color: transparent;
   color: #fff;
 }
 
-.button.is-vimeo.is-light {
-  background-color: #ebf9ff;
-  color: #0081b3;
-}
-
-.button.is-vimeo.is-light:hover, .button.is-vimeo.is-light.is-hovered {
-  background-color: #def6ff;
-  border-color: transparent;
-  color: #0081b3;
-}
-
-.button.is-vimeo.is-light:active, .button.is-vimeo.is-light.is-active {
-  background-color: #d1f2ff;
-  border-color: transparent;
-  color: #0081b3;
-}
-
-.button.is-static {
-  background-color: whitesmoke;
-  border-color: #dbdbdb;
-  color: #7a7a7a;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  pointer-events: none;
-}
-
 .has-text-vimeo {
-  color: #00adef !important;
+  color: hsl(196.6, 100%, 46.9%) !important;
 }
 
 a.has-text-vimeo:hover, a.has-text-vimeo:focus {
-  color: #0088bc !important;
+  color: hsl(196.6, 100%, 36.9%) !important;
 }
 
 .has-background-vimeo {
-  background-color: #00adef !important;
+  background-color: hsl(196.6, 100%, 46.9%) !important;
 }
 
 .has-text-vimeo-light {
-  color: #ebf9ff !important;
+  color: hsl(196.6, 100%, 96%) !important;
 }
 
 a.has-text-vimeo-light:hover, a.has-text-vimeo-light:focus {
-  color: #b8ebff !important;
+  color: hsl(196.6, 100%, 86%) !important;
 }
 
 .has-background-vimeo-light {
-  background-color: #ebf9ff !important;
+  background-color: hsl(196.6, 100%, 96%) !important;
 }
 
 .has-text-vimeo-dark {
-  color: #0081b3 !important;
+  color: hsl(196.6, 100%, 35%) !important;
 }
 
 a.has-text-vimeo-dark:hover, a.has-text-vimeo-dark:focus {
-  color: #00a6e6 !important;
+  color: hsl(196.6, 100%, 45%) !important;
 }
 
 .has-background-vimeo-dark {
-  background-color: #0081b3 !important;
+  background-color: hsl(196.6, 100%, 35%) !important;
+}
+
+.no-animation {
+  transition-property: none !important;
 }
