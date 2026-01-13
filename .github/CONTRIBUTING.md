@@ -9,31 +9,51 @@
 - Use the **present** tense ("Add youtube" not "Added youtube")
 - Limit the first line to 72 characters or fewer
 
-If you are going to add a new social provider, got to the `sass/social-providers/all.sass` file and add your new social provider after the last entry but before function  
-Replace the "replaceme" text with the social provider's text (e.g. youtube).
+### Adding a new social provider
 
-```
-// Your new social provider color
-$replaceme: hsl(0, 100%, 50%) !default
-$replaceme-invert: findColorInvert($replaceme)
-$replaceme-light: findLightColor($replaceme)
-$replaceme-dark: findDarkColor($replaceme)
-$replacemeColours: ("replaceme": ($replaceme, $replaceme-invert, $replaceme-light, $replaceme-dark))
+To add a new social provider, follow these steps:
+
+1. **Add the provider color** to `sass/utilities/_providers.scss`:
+
+```scss
+$providers: (
+  // ... existing providers
+  "newprovider": hsl(210, 80%, 50%),  // Add alphabetically
+);
 ```
 
-Remember to add your new variable in the **\$socialProvidersList** afterwards.
+2. **Create a single provider file** at `sass/social-providers/single/_newprovider.scss`:
+
+```scss
+@use "../../utilities" as *;
+
+$button-colors: get-provider-color("newprovider");
+@use "../../elements/button";
+```
+
+3. **Import it in the all providers file** `sass/social-providers/_all.scss`:
+
+```scss
+@forward "single/newprovider";
+```
 
 ### Try your changes
 
-When modifying any `.sass`, you will need to rebuild the css. You can do this by running:
+When modifying any `.scss` file, rebuild the CSS by running:
 
 ```
 npm install
 npm run build
 ```
 
+This will generate:
+- `css/all.css` and `css/all.min.css` - All providers bundled
+- `css/single/<provider>/<provider>.css` - Individual provider files
+
 ### Sass styleguide
 
-- **No semi-colons** `;` or **curly braces** `{` `}`
-- **Make sure your new variables are in camelCase**
-- Order the your variables **alphabetically**
+- Use **SCSS syntax** (with semicolons and curly braces)
+- Use the **@use/@forward** module system (not @import)
+- Add provider colors in **HSL format**
+- Order providers **alphabetically** in `_providers.scss`
+- Use **kebab-case** for file names (e.g., `_new-provider.scss`)
