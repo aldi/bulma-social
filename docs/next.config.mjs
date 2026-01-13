@@ -1,31 +1,25 @@
 import rootPackage from '../package.json' with { type: 'json' };
 
 const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/bulma-social' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/bulma-social' : '',
+  basePath,
   reactStrictMode: true,
 
-  turbopack: {
-    root: process.cwd(),
-  },
-
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
+    removeConsole: isProd,
   },
 
   experimental: {
     optimizePackageImports: ['shiki'],
   },
 
-  images: {
-    formats: ['image/avif', 'image/webp'],
-  },
-
   env: {
     BULMA_SOCIAL_VERSION: rootPackage.version,
+    BASE_PATH: basePath,
   },
 };
 

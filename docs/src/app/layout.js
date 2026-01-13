@@ -47,8 +47,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css"
         />
-        <link rel="stylesheet" href="/all.min.css" />
-        <link rel="stylesheet" href="/globals.css" />
+        <link rel="stylesheet" href={`${process.env.BASE_PATH}/all.min.css`} />
+        <link rel="stylesheet" href={`${process.env.BASE_PATH}/globals.css`} />
       </head>
       <body>
         <ThemeProvider>
