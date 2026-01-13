@@ -1,23 +1,27 @@
-<!-- PLEASE READ THE FOLLOWING INSTRUCTIONS -->
-<!-- DO NOT REBUILD THE CSS OUTPUT IN YOUR PR -->
+### Type of Change
 
-<!-- Choose one of the following: -->
+<!-- Check one: -->
+- [ ] New social provider
+- [ ] Bug fix
+- [ ] Improvement
+- [ ] Documentation update
 
-### This is a **new social provider color | improvement | bugfix | documentation fix**.
+### Description
 
-<!-- New color? Update the SASS file and the Docs too. -->
-<!-- Improvement? Explain how and why. -->
-<!-- Bugfix? Reference that issue as well. -->
+<!-- Describe your changes. If adding a new provider, include the brand color source. -->
 
-### Proposed solution
+### Related Issue
 
-<!-- Which specific problem does this PR solve and how?  -->
-<!-- If it fixes a particular Issue, add "Fixes #ISSUE_NUMBER" in your title -->
+<!-- If this fixes an issue, add "Fixes #ISSUE_NUMBER" -->
 
-<!-- BEFORE SUBMITTING YOUR PR, MAKE SURE TO FOLLOW THESE STEPS: -->
-<!-- 1. Pull the latest `master` branch -->
-<!-- 3. Make sure your PR only affects `.sass` or documentation files -->
-<!-- 4. [Try your changes](https://github.com/aldi/bulma-social/blob/master/.github/CONTRIBUTING.md#try-your-changes). -->
+### Checklist
 
-<!-- How have you confirmed this feature works? -->
-<!-- Please explain more than "Yes". -->
+- [ ] I have pulled the latest `master` branch
+- [ ] I have run `npm run build` and verified the CSS output
+- [ ] My changes only affect `.scss` files or documentation
+- [ ] I have tested the changes in a browser
+- [ ] I have followed the [contributing guidelines](https://github.com/aldi/bulma-social/blob/master/.github/CONTRIBUTING.md)
+
+### Screenshots
+
+<!-- If applicable, add screenshots showing the new/changed buttons -->
