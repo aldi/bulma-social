@@ -27,6 +27,20 @@ export default function StartPage() {
                 Choose your preferred installation method:
               </p>
 
+              <div className="message is-warning">
+                <div className="message-header">Requirement</div>
+                <div className="message-body">
+                  <p>
+                    Bulma-Social is an add-on stylesheet for{" "}
+                    <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">
+                      Bulma
+                    </a>
+                    , so Bulma (<code>&gt;= 1.0.0</code>) must be installed and its
+                    CSS loaded <strong>before</strong> Bulma-Social.
+                  </p>
+                </div>
+              </div>
+
               <article className="media is-large">
                 <div className="media-left">
                   <p className="title is-5">1</p>

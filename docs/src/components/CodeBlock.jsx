@@ -1,22 +1,26 @@
+import { cache } from 'react';
 import { codeToHtml } from 'shiki';
 import CopyButton from './CopyButton';
 
-export default async function CodeBlock({ children, className, language = "html" }) {
-  let highlightedCode;
-  
+const highlightCode = cache(async (code, language) => {
   try {
-    highlightedCode = await codeToHtml(children, {
+    return await codeToHtml(code, {
       lang: language,
       theme: "slack-dark",
     });
   } catch (error) {
     console.error("Shiki highlighting error:", error);
-    highlightedCode = `<pre><code>${children}</code></pre>`;
+    return `<pre><code>${code}</code></pre>`;
   }
+});
+
+export default async function CodeBlock({ children, className, language = "html" }) {
+  const code = typeof children === "string" ? children : String(children);
+  const highlightedCode = await highlightCode(code, language);
 
   return (
     <figure className={`highlight ${className || ""}`}>
-      <CopyButton code={children} />
+      <CopyButton code={code} />
       <div
         className="shiki-wrapper"
         dangerouslySetInnerHTML={{ __html: highlightedCode }}

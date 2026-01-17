@@ -28,8 +28,10 @@
 - 🔧 **Framework Agnostic** — Works with React, Vue, Angular, Svelte, or plain HTML
 - 🎯 **Any Icon Library** — Compatible with Font Awesome, Material Icons, Ionicons, and more
 
-
 ## 📦 Installation
+
+Bulma-Social is an add-on stylesheet for Bulma, so **Bulma is required** (peer dependency: `bulma >= 1.0.0`).
+Make sure Bulma’s CSS is loaded **before** Bulma-Social.
 
 ### NPM
 
@@ -52,6 +54,9 @@ pnpm add bulma-social
 After installation, import the CSS in your project:
 
 ```js
+// Bulma (required)
+import "bulma/css/bulma.min.css";
+
 // Import all social providers
 import "bulma-social/css/all.min.css";
 
