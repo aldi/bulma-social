@@ -13,9 +13,8 @@
 </p>
 
 <p align="center">
-  <a href="https://aldi.github.io/bulma-social"><strong>📖 View Documentation</strong></a> · 
-  <a href="https://aldi.github.io/bulma-social"><strong>🎨 Live Demo</strong></a> · 
-  <a href="https://github.com/aldi/bulma-social/issues"><strong>🐛 Report Bug</strong></a>
+  <a href="https://aldi.github.io/bulma-social/docs/providers"><strong>🎨 Live Demo</strong></a> ·
+  <a href="https://aldi.github.io/bulma-social"><strong>📖 Documentation</strong></a>
 </p>
 
 ![bulma-social-preview](media/preview.webp)
