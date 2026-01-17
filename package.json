@@ -37,6 +37,9 @@
   "bugs": {
     "url": "https://github.com/aldi/bulma-social/issues"
   },
+  "peerDependencies": {
+    "bulma": ">=1.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
