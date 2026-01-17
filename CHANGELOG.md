@@ -1,5 +1,24 @@
 # Bulma-Social Changelog
 
+## [3.0.1](https://github.com/aldi/bulma-social/tree/3.0.1) (2026-01-17)
+
+### 📦 Dependencies
+
+- Add `bulma` as a peer dependency (`>=1.0.0`)
+
+### 🛠️ Tooling
+
+- Add `.nvmrc` files for consistent Node.js versions
+
+### 📚 Docs
+
+- Extract install command UI into a reusable component
+- Cache Shiki highlighting and harden copy-to-clipboard behavior
+- Clarify Bulma requirement in docs
+- Simplify README header links and minor docs layout tweaks
+
+---
+
 ## [3.0.0](https://github.com/aldi/bulma-social/tree/3.0.0) (2026-01-13)
 
 ### ⚠️ Breaking Changes

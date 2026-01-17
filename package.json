@@ -5,7 +5,7 @@
     "name": "aldi",
     "url": "https://github.com/aldi"
   },
-  "version": "3.0.0",
+  "version": "3.0.1",
   "homepage": "https://aldi.github.io/bulma-social",
   "jsdelivr": "css/all.min.css",
   "unpkg": "css/all.min.css",
