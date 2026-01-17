@@ -1,10 +1,18 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function CopyButton({ code }) {
   const [copied, setCopied] = useState(false);
-  const [isHovering, setIsHovering] = useState(false);
+  const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
 
   const handleCopy = async (e) => {
     try {
@@ -22,7 +30,10 @@ export default function CopyButton({ code }) {
 
       await navigator.clipboard.writeText(code);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      timeoutRef.current = setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error("Failed to copy:", err);
     }
@@ -32,10 +43,7 @@ export default function CopyButton({ code }) {
     <button
       className="button is-small bd-copy"
       onClick={handleCopy}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
       title={copied ? "Copied!" : "Copy to clipboard"}
-      data-hovering={isHovering}
     >
       {copied ? "Copied!" : "Copy"}
     </button>

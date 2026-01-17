@@ -29,6 +29,13 @@ export default function ModularityPage() {
                   Bulma-Social consists of <code>.css</code> files that you can
                   import <strong>individually.</strong>
                 </p>
+                <p className="subtitle is-6">
+                  Requirement:{" "}
+                  <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">
+                    Bulma
+                  </a>{" "}
+                  <code>&gt;= 1.0.0</code> must be loaded before Bulma-Social.
+                </p>
                 <p className="subtitle is-5">
                   You can import them directly from <strong>node_modules</strong>:
                 </p>
@@ -49,10 +56,10 @@ export default function ModularityPage() {
               <hr />
               <div className="column">
                 <p className="title is-4">
-                  Need multiple providers in one file?
+                  Want to see all available providers?
                 </p>
                 <p className="subtitle is-5">
-                  Learn how to build a custom CSS bundle with only the providers you need.
+                  Browse the complete list of social media buttons you can import.
                 </p>
                 <Link
                   className="button is-link is-outlined is-light mt-2"

@@ -1235,7 +1235,7 @@ hr {
 
 .home-features {
   background: linear-gradient(180deg, #e2e8f0 0%, var(--color-bg-alt) 100%);
-  padding: 96px 32px;
+  padding: 96px 32px 0px 32px;
   position: relative;
 }
 

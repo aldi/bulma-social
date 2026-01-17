@@ -1,8 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
 import { socialProviders } from "@/data/socialProviders";
+import InstallCommand from "@/components/InstallCommand";
 
 const INSTALL_COMMAND = "npm install bulma-social";
 
@@ -14,22 +12,23 @@ function getOrbitPosition(index, total, radius, offsetAngle = 0) {
 }
 
 export default function Home() {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(INSTALL_COMMAND);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   const totalProviders = socialProviders.length;
   const orbit1Count = Math.floor(totalProviders * 0.5);
   const orbit2Count = Math.floor(totalProviders * 0.3);
-  
+
   const orbits = [
-    { providers: socialProviders.slice(0, orbit1Count), className: "social-orbit" },
-    { providers: socialProviders.slice(orbit1Count, orbit1Count + orbit2Count), className: "social-orbit orbit-2" },
-    { providers: socialProviders.slice(orbit1Count + orbit2Count), className: "social-orbit orbit-3" },
+    {
+      providers: socialProviders.slice(0, orbit1Count),
+      className: "social-orbit",
+    },
+    {
+      providers: socialProviders.slice(orbit1Count, orbit1Count + orbit2Count),
+      className: "social-orbit orbit-2",
+    },
+    {
+      providers: socialProviders.slice(orbit1Count + orbit2Count),
+      className: "social-orbit orbit-3",
+    },
   ];
 
   const renderOrbit = (providers, orbitClassName) => (
@@ -108,14 +107,18 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="home-install-box">
-              <code>{INSTALL_COMMAND}</code>
-              <button className="copy-btn" onClick={handleCopy}>
-                <i
-                  className={copied ? "fa-solid fa-check" : "fa-solid fa-copy"}
-                ></i>
-              </button>
-            </div>
+            <InstallCommand command={INSTALL_COMMAND} />
+            <p className="is-size-7 has-text-grey mt-3">
+              Requires{" "}
+              <a
+                href="https://bulma.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bulma
+              </a>{" "}
+              <code>&gt;= 1.0.0</code>
+            </p>
           </div>
         </div>
       </section>
@@ -137,7 +140,8 @@ export default function Home() {
               {socialProviders.length} Providers
             </h3>
             <p className="feature-card-description">
-              All major social platforms included, from Facebook and YouTube to WhatsApp and Reddit.
+              All major social platforms included, from Facebook and YouTube to
+              WhatsApp and Reddit.
             </p>
           </div>
 
@@ -147,7 +151,8 @@ export default function Home() {
             </div>
             <h3 className="feature-card-title">Bulma Native</h3>
             <p className="feature-card-description">
-              Seamlessly integrates with Bulma's class naming conventions and design system.
+              Seamlessly integrates with Bulma&apos;s class naming conventions and
+              design system.
             </p>
           </div>
 
@@ -207,7 +212,11 @@ export default function Home() {
             <p className="button-showcase-title">Default Style</p>
             <div className="button-showcase-grid">
               {socialProviders.map((provider) => (
-                <Link key={provider.code} href={`/docs/providers/${provider.code}`} className={`button is-${provider.code}`}>
+                <Link
+                  key={provider.code}
+                  href={`/docs/providers/${provider.code}`}
+                  className={`button is-${provider.code}`}
+                >
                   <span className="icon">
                     <i className={`fa-brands ${provider.icon}`}></i>
                   </span>
@@ -293,7 +302,11 @@ export default function Home() {
             <p className="button-showcase-title">Icon Buttons</p>
             <div className="button-showcase-grid">
               {socialProviders.map((provider) => (
-                <Link key={provider.code} href={`/docs/providers/${provider.code}`} className={`button is-${provider.code}`}>
+                <Link
+                  key={provider.code}
+                  href={`/docs/providers/${provider.code}`}
+                  className={`button is-${provider.code}`}
+                >
                   <span className="icon">
                     <i className={`fa-brands ${provider.icon} fa-lg`}></i>
                   </span>
@@ -308,9 +321,8 @@ export default function Home() {
         <div className="home-footer-content">
           <div className="home-footer-left">
             <p>
-              Developed with{" "}
-              <i className="fa-solid fa-heart heart-icon"></i>{" "}
-              by <a href="https://aldi.st">aldi</a>
+              Developed with <i className="fa-solid fa-heart heart-icon"></i> by{" "}
+              <a href="https://aldi.st">aldi</a>
             </p>
             <p className="mt-xs">
               Licensed under{" "}
