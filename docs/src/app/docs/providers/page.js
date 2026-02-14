@@ -39,12 +39,12 @@ export default function ProvidersPage() {
                         <i className={`fa-brands ${provider.icon} fa-2x`}></i>
                       </span>
                       <p className="title is-5 mt-3">{provider.name}</p>
-                      <button className={`button is-${provider.code} is-small`}>
+                      <span className={`button is-${provider.code} is-small`}>
                         <span className="icon">
                           <i className={`fa-brands ${provider.icon}`}></i>
                         </span>
                         <span>View Styles</span>
-                      </button>
+                      </span>
                     </Link>
                   </div>
                 ))}

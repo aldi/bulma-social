@@ -248,12 +248,12 @@ export default async function ProviderPage({ params }) {
                     </span>
                     <span>Loading</span>
                   </a>
-                  <a className={`button is-${provider}`} disabled>
+                  <button className={`button is-${provider}`} type="button" disabled>
                     <span className="icon">
                       <i className={`fa-brands ${icon}`}></i>
                     </span>
                     <span>Disabled</span>
-                  </a>
+                  </button>
                 </div>
 
                 <CodeBlock language="html">{`<a class="button is-${provider} is-hovered">
@@ -280,12 +280,12 @@ export default async function ProviderPage({ params }) {
   </span>
   <span>Loading</span>
 </a>
-<a class="button is-${provider}" disabled>
+<button class="button is-${provider}" type="button" disabled>
   <span class="icon">
     <i class="fa-brands ${icon}"></i>
   </span>
   <span>Disabled</span>
-</a>`}</CodeBlock>
+</button>`}</CodeBlock>
               </div>
 
               <div className="box">

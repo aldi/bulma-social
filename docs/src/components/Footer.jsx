@@ -29,6 +29,7 @@ export default function Footer() {
         <a
           target="_blank"
           href="https://github.com/aldi/bulma-social/blob/master/CHANGELOG.md"
+          rel="noopener noreferrer"
         >
           View Changelog
         </a>

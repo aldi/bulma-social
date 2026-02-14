@@ -121,6 +121,7 @@ export default function InteractivePlayground() {
             <a
               href="https://aldi.github.io/awesome-bulma-templates"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Awesome Bulma Templates
             </a>
