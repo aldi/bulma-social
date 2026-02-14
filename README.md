@@ -223,6 +223,10 @@ Full documentation with interactive examples is available at:
 
 **👉 [aldi.github.io/bulma-social](https://aldi.github.io/bulma-social)**
 
+Upgrading from an older version?
+
+**👉 [Migration Guide](https://aldi.github.io/bulma-social/docs/migration)**
+
 ---
 
 ## 🤝 Contributing

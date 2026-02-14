@@ -141,7 +141,7 @@ export default function Home() {
             </h3>
             <p className="feature-card-description">
               All major social platforms included, from Facebook and YouTube to
-              WhatsApp and Reddit.
+              Slack and Reddit.
             </p>
           </div>
 

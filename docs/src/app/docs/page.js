@@ -102,6 +102,21 @@ export default function DocsIndex() {
                 </p>
               </Link>
             </div>
+            <div className="column is-half">
+              <Link className="glass-card is-fullheight" href="/docs/migration">
+                <div className="glass-card-icon is-warning">
+                  <i className="fa-solid fa-code-branch"></i>
+                </div>
+                <h2 className="glass-card-title">
+                  Migration Guide
+                  <span className="arrow">→</span>
+                </h2>
+                <p className="glass-card-description">
+                  Upgrading from <strong>v1 or v2</strong>? Follow the checklist for
+                  breaking changes in <strong>v3</strong>.
+                </p>
+              </Link>
+            </div>
           </div>
           <div className="brand-strip">
             <p className="brand-strip-title">Supported Platforms</p>

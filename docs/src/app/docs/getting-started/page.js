@@ -41,6 +41,19 @@ export default function StartPage() {
                 </div>
               </div>
 
+              <div className="message is-info">
+                <div className="message-header">Already using an older version?</div>
+                <div className="message-body">
+                  <p>
+                    Follow the{" "}
+                    <Link href="/docs/migration">
+                      Migration Guide
+                    </Link>{" "}
+                    for v1/v2 to v3 upgrade steps and breaking changes.
+                  </p>
+                </div>
+              </div>
+
               <article className="media is-large">
                 <div className="media-left">
                   <p className="title is-5">1</p>
@@ -64,7 +77,7 @@ export default function StartPage() {
                 <div className="media-content">
                   <p className="title is-5">
                     Use the{" "}
-                    <a href="https://www.jsdelivr.com/" target="_blank">
+                    <a href="https://www.jsdelivr.com/" target="_blank" rel="noopener noreferrer">
                       jsDelivr
                     </a>{" "}
                     <strong>CDN</strong>

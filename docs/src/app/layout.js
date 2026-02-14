@@ -13,7 +13,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Bulma-Social - Social Buttons and Colors for Bulma',
-    description: 'Lightweight, customizable social buttons for Bulma CSS framework. Supports 24+ social platforms with 4 button styles.',
+    description: 'Lightweight, customizable social buttons for Bulma CSS framework. Supports all major social platforms with multiple button styles.',
     url: 'https://aldi.github.io/bulma-social',
     siteName: 'Bulma-Social',
     locale: 'en_US',
@@ -59,4 +59,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
