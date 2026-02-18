@@ -1,0 +1,164 @@
+/*! bulma-social v3.0.1 | MIT License | github.com/aldi/bulma-social */
+
+.button.is-animated {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button.is-animated {
+    transition-duration: 0.01ms;
+  }
+}
+.button.is-x {
+  background-color: hsl(0, 0%, 0%);
+  border-color: transparent;
+  color: #fff;
+}
+.button.is-x:hover, .button.is-x.is-hovered {
+  background-color: hsl(0, 0%, -2.5%);
+  border-color: transparent;
+  color: #fff;
+}
+.button.is-x:focus, .button.is-x.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+.button.is-x:focus:not(:active), .button.is-x.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em hsla(0, 0%, 0%, 0.25);
+}
+.button.is-x:active, .button.is-x.is-active {
+  background-color: hsl(0, 0%, -5%);
+  border-color: transparent;
+  color: #fff;
+}
+.button.is-x[disabled], fieldset[disabled] .button.is-x {
+  background-color: hsl(0, 0%, 0%);
+  border-color: transparent;
+  box-shadow: none;
+}
+.button.is-x.is-inverted {
+  background-color: #fff;
+  color: hsl(0, 0%, 0%);
+}
+.button.is-x.is-inverted:hover, .button.is-x.is-inverted.is-hovered {
+  background-color: rgb(242.25, 242.25, 242.25);
+}
+.button.is-x.is-inverted[disabled], fieldset[disabled] .button.is-x.is-inverted {
+  background-color: #fff;
+  border-color: transparent;
+  box-shadow: none;
+  color: hsl(0, 0%, 0%);
+}
+.button.is-x.is-loading::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+.button.is-x.is-outlined {
+  background-color: transparent;
+  border-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 0%);
+}
+.button.is-x.is-outlined:hover, .button.is-x.is-outlined.is-hovered, .button.is-x.is-outlined:focus, .button.is-x.is-outlined.is-focused {
+  background-color: hsl(0, 0%, 0%);
+  border-color: hsl(0, 0%, 0%);
+  color: #fff;
+}
+.button.is-x.is-outlined.is-loading::after {
+  border-color: transparent transparent hsl(0, 0%, 0%) hsl(0, 0%, 0%) !important;
+}
+.button.is-x.is-outlined.is-loading:hover::after, .button.is-x.is-outlined.is-loading.is-hovered::after, .button.is-x.is-outlined.is-loading:focus::after, .button.is-x.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #fff #fff !important;
+}
+.button.is-x.is-outlined[disabled], fieldset[disabled] .button.is-x.is-outlined {
+  background-color: transparent;
+  border-color: hsl(0, 0%, 0%);
+  box-shadow: none;
+  color: hsl(0, 0%, 0%);
+}
+.button.is-x.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.button.is-x.is-inverted.is-outlined:hover, .button.is-x.is-inverted.is-outlined.is-hovered, .button.is-x.is-inverted.is-outlined:focus, .button.is-x.is-inverted.is-outlined.is-focused {
+  background-color: #fff;
+  color: hsl(0, 0%, 0%);
+}
+.button.is-x.is-inverted.is-outlined.is-loading:hover::after, .button.is-x.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-x.is-inverted.is-outlined.is-loading:focus::after, .button.is-x.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent hsl(0, 0%, 0%) hsl(0, 0%, 0%) !important;
+}
+.button.is-x.is-inverted.is-outlined[disabled], fieldset[disabled] .button.is-x.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  box-shadow: none;
+  color: #fff;
+}
+.button.is-x.is-light {
+  background-color: hsl(0, 0%, 96%);
+  color: hsl(0, 0%, 0%);
+}
+.button.is-x.is-light:hover, .button.is-x.is-light.is-hovered {
+  background-color: hsl(0, 0%, 93.5%);
+  border-color: transparent;
+  color: hsl(0, 0%, 0%);
+}
+.button.is-x.is-light:active, .button.is-x.is-light.is-active {
+  background-color: hsl(0, 0%, 91%);
+  border-color: transparent;
+  color: hsl(0, 0%, 0%);
+}
+.button.is-x.is-dark {
+  background-color: hsl(0, 0%, 0%);
+  color: #fff;
+}
+.button.is-x.is-dark:hover, .button.is-x.is-dark.is-hovered {
+  background-color: hsl(0, 0%, -2.5%);
+  border-color: transparent;
+  color: #fff;
+}
+.button.is-x.is-dark:active, .button.is-x.is-dark.is-active {
+  background-color: hsl(0, 0%, -5%);
+  border-color: transparent;
+  color: #fff;
+}
+
+.has-text-x {
+  color: hsl(0, 0%, 0%) !important;
+}
+
+a.has-text-x:hover, a.has-text-x:focus {
+  color: hsl(0, 0%, -10%) !important;
+}
+
+.has-background-x {
+  background-color: hsl(0, 0%, 0%) !important;
+}
+
+.has-text-x-light {
+  color: hsl(0, 0%, 96%) !important;
+}
+
+a.has-text-x-light:hover, a.has-text-x-light:focus {
+  color: hsl(0, 0%, 86%) !important;
+}
+
+.has-background-x-light {
+  background-color: hsl(0, 0%, 96%) !important;
+}
+
+.has-text-x-dark {
+  color: hsl(0, 0%, 0%) !important;
+}
+
+a.has-text-x-dark:hover, a.has-text-x-dark:focus {
+  color: hsl(0, 0%, 10%) !important;
+}
+
+.has-background-x-dark {
+  background-color: hsl(0, 0%, 0%) !important;
+}
+
+.no-animation {
+  transition-property: none !important;
+}
