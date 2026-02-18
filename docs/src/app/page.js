@@ -77,7 +77,7 @@ export default function Home() {
             <h1 className="home-hero-title">
               <span className="gradient-text">Social Buttons</span>
               <br />
-              <span className="subtitle-text">for Bulma</span>
+              <span className="subtitle-text">for Bulma</span><sup className="version-badge">v{process.env.BULMA_SOCIAL_VERSION}</sup>
             </h1>
 
             <p className="home-hero-subtitle">
