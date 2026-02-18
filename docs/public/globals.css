@@ -8,6 +8,8 @@
   --color-bg: #f8fafc;
   --color-bg-alt: #f1f5f9;
   --color-border: rgba(0, 0, 0, 0.08);
+  --selection-bg: rgba(99, 102, 241, 0.22);
+  --selection-text: #0f172a;
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
@@ -22,6 +24,23 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
   color: var(--color-text);
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+::-moz-selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+.docs-hero-title::selection,
+.home-hero-title .gradient-text::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
+  -webkit-text-fill-color: var(--selection-text);
 }
 
 .hero-body {
@@ -1038,6 +1057,20 @@ hr {
   position: relative;
 }
 
+.home-hero-title .version-badge {
+  font-size: 0.28em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+  -webkit-text-fill-color: var(--color-text-muted);
+  background: none;
+  padding: 0;
+  margin-left: 0.15em;
+  vertical-align: super;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
 .home-hero-title .subtitle-text::after {
   content: '';
   position: absolute;
@@ -1612,6 +1645,8 @@ print {
   --color-text-dark: #fff;
   --color-text-muted: rgba(255, 255, 255, 0.6);
   --color-border: rgba(255, 255, 255, 0.1);
+  --selection-bg: rgba(96, 165, 250, 0.4);
+  --selection-text: #f8fafc;
   color-scheme: dark;
 }
 

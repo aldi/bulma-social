@@ -22,6 +22,7 @@ export const socialProviders = [
   { code: "twitter", name: "Twitter", hsl: "hsl(202.8, 89.1%, 53.1%)", icon: "fa-twitter" },
   { code: "vimeo", name: "Vimeo", hsl: "hsl(196.6, 100%, 46.9%)", icon: "fa-vimeo" },
   { code: "vk", name: "VK", hsl: "hsl(212, 42%, 52%)", icon: "fa-vk" },
+  { code: "x", name: "X", hsl: "hsl(0, 0%, 0%)", icon: "fa-x-twitter" },
   { code: "yahoo", name: "Yahoo", hsl: "hsl(266.7, 100%, 28.2%)", icon: "fa-yahoo" },
   { code: "youtube", name: "YouTube", hsl: "hsl(360, 100%, 50%)", icon: "fa-youtube" },
 ];
