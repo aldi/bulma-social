@@ -21,7 +21,7 @@
 
 ## ✨ Features
 
-- 🎨 **24 Providers** — All major social platforms included
+- 🎨 **25 Providers** — All major social platforms included
 - 🧩 **Bulma Native** — Seamlessly integrates with Bulma's class naming conventions
 - 📦 **Modular Imports** — Import only what you need, keep your bundle minimal
 - 🌙 **Dark Mode Ready** — Fully optimized for light and dark themes
@@ -122,7 +122,13 @@ Use via [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-social) — no ins
     <td><code>.is-soundcloud</code></td>
     <td><code>.is-tumblr</code></td>
     <td><code>.is-vk</code></td>
+    <td><code>.is-x</code></td>
+  </tr>
+  <tr>
     <td><code>.is-yahoo</code></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 
@@ -191,11 +197,11 @@ Use via [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-social) — no ins
   <span>Continue with GitHub</span>
 </a>
 
-<a class="button is-google is-light">
+<a class="button is-x is-light">
   <span class="icon">
-    <i class="fa-brands fa-google"></i>
+    <i class="fa-brands fa-x-twitter"></i>
   </span>
-  <span>Sign in with Google</span>
+  <span>Sign in with X</span>
 </a>
 ```
 
