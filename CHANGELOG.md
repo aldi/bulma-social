@@ -1,5 +1,29 @@
 # Bulma-Social Changelog
 
+## [3.1.0](https://github.com/aldi/bulma-social/tree/3.1.0) (2026-02-18)
+
+### ✨ New
+
+-  Add X provider
+
+### 🛠️ Tooling
+
+-  Add a new CI workflow for pull requests (library + docs validation)
+-  Add provider sync validation (npm run check:providers)
+-  Add CI guard to verify generated CSS assets are committed
+-  Move docs deploy workflow to Node.js 24
+
+### 📚 Docs
+
+-  Add a dedicated Migration Guide for upgrading from v1/v2 to v3
+-  Add homepage version badge and text-selection styling polish
+
+### 📦 Dependencies
+
+-  Update build dependencies (autoprefixer, rimraf, sass)
+
+---
+
 ## [3.0.1](https://github.com/aldi/bulma-social/tree/3.0.1) (2026-01-17)
 
 ### 📦 Dependencies
