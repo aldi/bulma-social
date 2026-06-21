@@ -1,5 +1,29 @@
 # Bulma-Social Changelog
 
+## [3.1.1](https://github.com/aldi/bulma-social/tree/3.1.1) (2026-06-21)
+
+### 🐛 Fixes
+
+- Fix single-provider CSS bundles so `.button.is-animated` is included consistently for every provider
+
+### 🛠️ Tooling
+
+- Strengthen provider sync validation to check Sass entrypoints, generated CSS, docs provider data, and committed build output
+- Add unified package and docs verification scripts for CI
+- Fix Next.js docs build root detection by setting an explicit Turbopack root
+
+### 📚 Docs
+
+- Escape fallback code-block HTML when syntax highlighting fails
+- Improve copy button accessibility states
+
+### 📦 Dependencies
+
+- Update build dependencies (`cssnano`, `sass`)
+- Update docs dependencies (`next`, `react`, `react-dom`, `eslint-config-next`, `shiki`)
+
+---
+
 ## [3.1.0](https://github.com/aldi/bulma-social/tree/3.1.0) (2026-02-18)
 
 ### ✨ New
