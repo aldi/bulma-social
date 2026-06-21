@@ -42,7 +42,10 @@ export default function CopyButton({ code }) {
   return (
     <button
       className="button is-small bd-copy"
+      type="button"
       onClick={handleCopy}
+      aria-label={copied ? "Code copied" : "Copy code to clipboard"}
+      aria-live="polite"
       title={copied ? "Copied!" : "Copy to clipboard"}
     >
       {copied ? "Copied!" : "Copy"}

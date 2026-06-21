@@ -36,9 +36,9 @@ jobs:
         working-directory: docs
         run: npm ci
 
-      - name: Build Next.js
+      - name: Verify and build Next.js
         working-directory: docs
-        run: npm run build
+        run: npm run check
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

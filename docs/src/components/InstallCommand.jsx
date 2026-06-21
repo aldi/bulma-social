@@ -36,8 +36,10 @@ export default function InstallCommand({ command }) {
       <code>{command}</code>
       <button
         className="copy-btn"
+        type="button"
         onClick={handleCopy}
-        aria-label="Copy install command"
+        aria-label={copied ? "Install command copied" : "Copy install command"}
+        aria-live="polite"
       >
         <i className={copied ? "fa-solid fa-check" : "fa-solid fa-copy"}></i>
       </button>

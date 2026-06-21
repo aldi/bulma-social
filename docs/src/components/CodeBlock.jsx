@@ -2,6 +2,15 @@ import { cache } from 'react';
 import { codeToHtml } from 'shiki';
 import CopyButton from './CopyButton';
 
+function escapeHtml(value) {
+  return value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
+}
+
 const highlightCode = cache(async (code, language) => {
   try {
     return await codeToHtml(code, {
@@ -10,7 +19,7 @@ const highlightCode = cache(async (code, language) => {
     });
   } catch (error) {
     console.error("Shiki highlighting error:", error);
-    return `<pre><code>${code}</code></pre>`;
+    return `<pre><code>${escapeHtml(code)}</code></pre>`;
   }
 });
 

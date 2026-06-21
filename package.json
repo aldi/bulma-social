@@ -20,7 +20,7 @@
     "*.scss"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   },
   "license": "MIT",
   "keywords": [
@@ -41,16 +41,19 @@
     "bulma": ">=1.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.24",
-    "cssnano": "^7.0.6",
-    "postcss": "^8.4.49",
+    "autoprefixer": "^10.5.0",
+    "cssnano": "^8.0.2",
+    "postcss": "^8.5.15",
     "rimraf": "^6.1.3",
-    "sass": "^1.97.3"
+    "sass": "^1.101.0"
   },
   "scripts": {
+    "audit": "npm audit --audit-level=moderate",
     "build": "npm run clean && node scripts/build.js",
+    "check": "npm run check:providers && npm run build && npm run audit",
     "clean": "rimraf css",
     "check:providers": "node scripts/check-provider-sync.js",
+    "version": "npm run build",
     "watch": "sass --watch sass/social-providers/_all.scss:css/all.css"
   },
   "files": [

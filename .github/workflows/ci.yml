@@ -24,11 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Verify provider data sync
-        run: npm run check:providers
-
-      - name: Build package CSS
-        run: npm run build
+      - name: Verify package
+        run: npm run check
 
       - name: Verify generated assets are committed
         run: git diff --exit-code -- css docs/public/all.min.css
@@ -50,10 +47,6 @@ jobs:
         working-directory: docs
         run: npm ci
 
-      - name: Lint docs
+      - name: Verify docs
         working-directory: docs
-        run: npm run lint
-
-      - name: Build docs
-        working-directory: docs
-        run: npm run build
+        run: npm run check
