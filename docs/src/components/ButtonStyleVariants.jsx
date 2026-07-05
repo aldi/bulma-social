@@ -18,7 +18,7 @@ export default function ButtonStyleVariants() {
             title={`.is-${provider.code}`}
           >
             <span className="icon">
-              <i className={`fa-brands fa-${provider.icon || provider.code}`}></i>
+              <i className={`fa-brands ${provider.icon || `fa-${provider.code}`}`}></i>
             </span>
             <span>Sign in with {provider.name}</span>
           </a>
@@ -36,7 +36,7 @@ export default function ButtonStyleVariants() {
         >
           <span className="icon">
             <i
-              className={`fa-brands fa-${provider.icon || provider.code} fa-lg`}
+              className={`fa-brands ${provider.icon || `fa-${provider.code}`} fa-lg`}
             ></i>
           </span>
         </a>

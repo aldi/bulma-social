@@ -8,7 +8,7 @@ const modifiers = ["", "is-rounded", "is-loading"];
 export default function ButtonSizeVariants({ activeProvider }) {
   const [activeTab, setActiveTab] = useState(0);
 
-  const iconName = activeProvider?.icon || activeProvider?.code || "github";
+  const iconClass = activeProvider?.icon || `fa-${activeProvider?.code || "github"}`;
   const providerName = activeProvider?.name || "GitHub";
   const providerCode = activeProvider?.code || "github";
 
@@ -21,7 +21,7 @@ export default function ButtonSizeVariants({ activeProvider }) {
             title={`.is-large ${modifier ? "." + modifier : ""}`}
           >
             <span className="icon is-medium">
-              <i className={`fa-brands fa-${iconName}`}></i>
+              <i className={`fa-brands ${iconClass}`}></i>
             </span>
             <span>{providerName}</span>
           </a>
@@ -32,7 +32,7 @@ export default function ButtonSizeVariants({ activeProvider }) {
             title={`.is-medium ${modifier ? "." + modifier : ""}`}
           >
             <span className="icon">
-              <i className={`fa-brands fa-${iconName}`}></i>
+              <i className={`fa-brands ${iconClass}`}></i>
             </span>
             <span>{providerName}</span>
           </a>
@@ -43,7 +43,7 @@ export default function ButtonSizeVariants({ activeProvider }) {
             title={`.is-normal ${modifier ? "." + modifier : ""}`}
           >
             <span className="icon">
-              <i className={`fa-brands fa-${iconName}`}></i>
+              <i className={`fa-brands ${iconClass}`}></i>
             </span>
             <span>{providerName}</span>
           </a>
@@ -54,7 +54,7 @@ export default function ButtonSizeVariants({ activeProvider }) {
             title={`.is-small ${modifier ? "." + modifier : ""}`}
           >
             <span className="icon is-small">
-              <i className={`fa-brands fa-${iconName}`}></i>
+              <i className={`fa-brands ${iconClass}`}></i>
             </span>
             <span>{providerName}</span>
           </a>
@@ -67,7 +67,7 @@ export default function ButtonSizeVariants({ activeProvider }) {
           title={`.is-large ${modifier ? "." + modifier : ""}`}
         >
           <span className="icon">
-            <span className={`fa-brands fa-fw fa-${iconName}`}></span>
+            <span className={`fa-brands fa-fw ${iconClass}`}></span>
           </span>
         </a>
         <a
@@ -75,7 +75,7 @@ export default function ButtonSizeVariants({ activeProvider }) {
           title={`.is-medium ${modifier ? "." + modifier : ""}`}
         >
           <span className="icon">
-            <span className={`fa-brands fa-${iconName}`}></span>
+            <span className={`fa-brands ${iconClass}`}></span>
           </span>
         </a>
         <a
@@ -83,7 +83,7 @@ export default function ButtonSizeVariants({ activeProvider }) {
           title={`.is-normal ${modifier ? "." + modifier : ""}`}
         >
           <span className="icon">
-            <span className={`fa-brands fa-${iconName}`}></span>
+            <span className={`fa-brands ${iconClass}`}></span>
           </span>
         </a>
         <a
@@ -91,7 +91,7 @@ export default function ButtonSizeVariants({ activeProvider }) {
           title={`.is-small ${modifier ? "." + modifier : ""}`}
         >
           <span className="icon">
-            <span className={`fa-brands fa-${iconName}`}></span>
+            <span className={`fa-brands ${iconClass}`}></span>
           </span>
         </a>
       </div>
