@@ -1,5 +1,23 @@
 # Bulma-Social Changelog
 
+## [3.2.0](https://github.com/aldi/bulma-social/tree/3.2.0) (2026-07-05)
+
+### ✨ New
+
+- Add Twitch provider
+
+### 📚 Docs
+
+- Update provider documentation and README provider list for Twitch
+- Fix docs provider icon rendering for full Font Awesome class names
+
+### 📦 Dependencies
+
+- Update build dependencies (`autoprefixer`, `postcss`)
+- Update docs dependencies (`next`, `eslint-config-next`, `shiki`)
+
+---
+
 ## [3.1.1](https://github.com/aldi/bulma-social/tree/3.1.1) (2026-06-21)
 
 ### 🐛 Fixes
