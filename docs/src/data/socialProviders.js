@@ -19,6 +19,7 @@ export const socialProviders = [
   { code: "slack", name: "Slack", hsl: "hsl(294, 54%, 27%)", icon: "fa-slack" },
   { code: "soundcloud", name: "SoundCloud", hsl: "hsl(20, 100%, 50%)", icon: "fa-soundcloud" },
   { code: "tumblr", name: "Tumblr", hsl: "hsl(209.5, 36.2%, 32%)", icon: "fa-tumblr" },
+  { code: "twitch", name: "Twitch", hsl: "hsl(264.3, 100%, 63.7%)", icon: "fa-twitch" },
   { code: "twitter", name: "Twitter", hsl: "hsl(202.8, 89.1%, 53.1%)", icon: "fa-twitter" },
   { code: "vimeo", name: "Vimeo", hsl: "hsl(196.6, 100%, 46.9%)", icon: "fa-vimeo" },
   { code: "vk", name: "VK", hsl: "hsl(212, 42%, 52%)", icon: "fa-vk" },

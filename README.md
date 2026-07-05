@@ -21,7 +21,7 @@
 
 ## ✨ Features
 
-- 🎨 **25 Providers** — All major social platforms included
+- 🎨 **26 Providers** — All major social platforms included
 - 🧩 **Bulma Native** — Seamlessly integrates with Bulma's class naming conventions
 - 📦 **Modular Imports** — Import only what you need, keep your bundle minimal
 - 🌙 **Dark Mode Ready** — Fully optimized for light and dark themes
@@ -70,7 +70,7 @@ import "bulma-social/css/single/github/github.min.css";
 Use via [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-social) — no installation required:
 
 ```html
-<!-- All social providers (~8KB minified) -->
+<!-- All social providers (~9KB gzipped) -->
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma-social@3/css/all.min.css"
@@ -90,8 +90,14 @@ Use via [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-social) — no ins
 <table>
   <tr>
     <td><code>.is-apple</code></td>
+    <td><code>.is-bitbucket</code></td>
     <td><code>.is-discord</code></td>
+    <td><code>.is-dropbox</code></td>
+  </tr>
+  <tr>
     <td><code>.is-facebook</code></td>
+    <td><code>.is-flickr</code></td>
+    <td><code>.is-foursquare</code></td>
     <td><code>.is-github</code></td>
   </tr>
   <tr>
@@ -101,32 +107,26 @@ Use via [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-social) — no ins
     <td><code>.is-microsoft</code></td>
   </tr>
   <tr>
-    <td><code>.is-pinterest</code></td>
-    <td><code>.is-reddit</code></td>
-    <td><code>.is-slack</code></td>
-    <td><code>.is-twitter</code></td>
-  </tr>
-  <tr>
-    <td><code>.is-youtube</code></td>
-    <td><code>.is-vimeo</code></td>
-    <td><code>.is-dropbox</code></td>
-    <td><code>.is-bitbucket</code></td>
-  </tr>
-  <tr>
-    <td><code>.is-flickr</code></td>
-    <td><code>.is-foursquare</code></td>
     <td><code>.is-odnoklassniki</code></td>
     <td><code>.is-openid</code></td>
+    <td><code>.is-pinterest</code></td>
+    <td><code>.is-reddit</code></td>
   </tr>
   <tr>
+    <td><code>.is-slack</code></td>
     <td><code>.is-soundcloud</code></td>
     <td><code>.is-tumblr</code></td>
+    <td><code>.is-twitch</code></td>
+  </tr>
+  <tr>
+    <td><code>.is-twitter</code></td>
+    <td><code>.is-vimeo</code></td>
     <td><code>.is-vk</code></td>
     <td><code>.is-x</code></td>
   </tr>
   <tr>
     <td><code>.is-yahoo</code></td>
-    <td></td>
+    <td><code>.is-youtube</code></td>
     <td></td>
     <td></td>
   </tr>
