@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-reddit {
   background-color: hsl(16.2, 100%, 50%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-reddit-dark:hover, a.has-text-reddit-dark:focus {
 
 .has-background-reddit-dark {
   background-color: hsl(16.2, 100%, 42%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

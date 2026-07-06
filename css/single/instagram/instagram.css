@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-instagram {
   background-color: hsl(353.8, 82.1%, 62.7%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-instagram-dark:hover, a.has-text-instagram-dark:focus {
 
 .has-background-instagram-dark {
   background-color: hsl(353.8, 82.1%, 42%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

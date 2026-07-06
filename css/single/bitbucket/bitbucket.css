@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-bitbucket {
   background-color: hsl(210, 60%, 31%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-bitbucket-dark:hover, a.has-text-bitbucket-dark:focus {
 
 .has-background-bitbucket-dark {
   background-color: hsl(210, 60%, 31%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

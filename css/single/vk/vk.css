@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-vk {
   background-color: hsl(212, 42%, 52%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-vk-dark:hover, a.has-text-vk-dark:focus {
 
 .has-background-vk-dark {
   background-color: hsl(212, 42%, 43%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

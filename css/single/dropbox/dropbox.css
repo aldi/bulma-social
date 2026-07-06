@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-dropbox {
   background-color: hsl(217.2, 100%, 50%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-dropbox-dark:hover, a.has-text-dropbox-dark:focus {
 
 .has-background-dropbox-dark {
   background-color: hsl(217.2, 100%, 47%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

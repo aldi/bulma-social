@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-youtube {
   background-color: hsl(0, 100%, 50%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-youtube-dark:hover, a.has-text-youtube-dark:focus {
 
 .has-background-youtube-dark {
   background-color: hsl(0, 100%, 46%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

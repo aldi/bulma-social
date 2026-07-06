@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-gitlab {
   background-color: hsl(13.6, 79.2%, 52.9%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-gitlab-dark:hover, a.has-text-gitlab-dark:focus {
 
 .has-background-gitlab-dark {
   background-color: hsl(13.6, 79.2%, 43%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

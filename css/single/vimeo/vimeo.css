@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-vimeo {
   background-color: hsl(196.6, 100%, 46.9%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-vimeo-dark:hover, a.has-text-vimeo-dark:focus {
 
 .has-background-vimeo-dark {
   background-color: hsl(196.6, 100%, 35%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

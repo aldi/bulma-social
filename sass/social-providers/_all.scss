@@ -2,6 +2,6 @@
 
 @use "../elements/animations";
 @use "../utilities/derived" as dv;
-@use "../elements/button" with (
-  $button-colors: dv.$all-provider-colors
-);
+@use "../elements/button";
+
+@include button.renderButtonColors(dv.$all-provider-colors);

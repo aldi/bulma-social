@@ -25,17 +25,20 @@ $providers: (
 2. **Create a single provider file** at `sass/social-providers/single/_newprovider.scss`:
 
 ```scss
-@use "../../utilities" as *;
-
-$button-colors: get-provider-color("newprovider");
+@charset "utf-8";
+@use "../../utilities/derived" as dv;
+@use "../../elements/animations";
 @use "../../elements/button";
+@include button.renderButtonColors(dv.get-provider-color("newprovider"));
 ```
 
-3. **Import it in the all providers file** `sass/social-providers/_all.scss`:
+3. **Add the provider metadata** to `docs/src/data/socialProviders.js` (alphabetically ordered):
 
-```scss
-@forward "single/newprovider";
+```js
+{ code: "newprovider", name: "New Provider", hsl: "hsl(210, 80%, 50%)", icon: "fa-newprovider" },
 ```
+
+4. **Update `README.md`** with the provider count and `.is-newprovider` table entry.
 
 ### Try your changes
 
@@ -44,11 +47,13 @@ When modifying any `.scss` file, rebuild the CSS by running:
 ```
 npm install
 npm run build
+npm run check:providers
 ```
 
 This will generate:
 - `css/all.css` and `css/all.min.css` - All providers bundled
-- `css/single/<provider>/<provider>.css` - Individual provider files
+- `css/single/<provider>/<provider>.css` and `.min.css` - Individual provider files
+- `docs/public/all.min.css` - Documentation bundle
 
 ### Sass styleguide
 

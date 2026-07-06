@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-odnoklassniki {
   background-color: hsl(31, 93%, 48%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-odnoklassniki-dark:hover, a.has-text-odnoklassniki-dark:focus {
 
 .has-background-odnoklassniki-dark {
   background-color: hsl(31, 93%, 37%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

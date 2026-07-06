@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-soundcloud {
   background-color: hsl(20, 100%, 50%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-soundcloud-dark:hover, a.has-text-soundcloud-dark:focus {
 
 .has-background-soundcloud-dark {
   background-color: hsl(20, 100%, 41%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

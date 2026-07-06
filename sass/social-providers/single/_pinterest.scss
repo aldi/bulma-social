@@ -1,4 +1,5 @@
 @charset "utf-8";
 @use "../../utilities/derived" as dv;
 @use "../../elements/animations";
-@use "../../elements/button" with ($button-colors: dv.get-provider-color("pinterest"));
+@use "../../elements/button";
+@include button.renderButtonColors(dv.get-provider-color("pinterest"));

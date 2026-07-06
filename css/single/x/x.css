@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-x {
   background-color: hsl(0, 0%, 0%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-x-dark:hover, a.has-text-x-dark:focus {
 
 .has-background-x-dark {
   background-color: hsl(0, 0%, 0%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

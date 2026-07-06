@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-facebook {
   background-color: hsl(213.9, 89.3%, 52.2%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-facebook-dark:hover, a.has-text-facebook-dark:focus {
 
 .has-background-facebook-dark {
   background-color: hsl(213.9, 89.3%, 44%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-pinterest {
   background-color: hsl(350.9, 100%, 45.1%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-pinterest-dark:hover, a.has-text-pinterest-dark:focus {
 
 .has-background-pinterest-dark {
   background-color: hsl(350.9, 100%, 45.1%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

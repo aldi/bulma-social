@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-microsoft {
   background-color: hsl(206.4, 100%, 36.1%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-microsoft-dark:hover, a.has-text-microsoft-dark:focus {
 
 .has-background-microsoft-dark {
   background-color: hsl(206.4, 100%, 36.1%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

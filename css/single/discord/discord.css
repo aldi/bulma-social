@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-discord {
   background-color: hsl(226.7, 58.4%, 65.1%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-discord-dark:hover, a.has-text-discord-dark:focus {
 
 .has-background-discord-dark {
   background-color: hsl(226.7, 58.4%, 40%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

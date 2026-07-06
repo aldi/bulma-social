@@ -152,7 +152,7 @@ Use via [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-social) — no ins
 | `.is-hovered`     | Hover state    |
 | `.is-focused`     | Focus state    |
 | `.is-active`      | Active state   |
-| `.is-disabled`    | Disabled state |
+| `disabled`        | Disabled state |
 
 ---
 

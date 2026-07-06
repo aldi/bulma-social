@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const sass = require("sass");
 
 const ROOT = path.join(__dirname, "..");
 const PROVIDERS_SCSS_PATH = path.join(ROOT, "sass", "utilities", "_providers.scss");
@@ -8,6 +9,7 @@ const SINGLE_SCSS_DIR = path.join(ROOT, "sass", "social-providers", "single");
 const CSS_DIR = path.join(ROOT, "css");
 const DOCS_PROVIDERS_PATH = path.join(ROOT, "docs", "src", "data", "socialProviders.js");
 const DOCS_CSS_PATH = path.join(ROOT, "docs", "public", "all.min.css");
+const README_PATH = path.join(ROOT, "README.md");
 
 function readFile(filePath) {
   return fs.readFileSync(filePath, "utf8");
@@ -103,8 +105,8 @@ function checkSingleProviderSources(providerCodes, errors) {
       errors.push(`Single-provider Sass entrypoint omits animations: "_${code}.scss"`);
     }
 
-    if (!content.includes(`dv.get-provider-color("${code}")`)) {
-      errors.push(`Single-provider Sass entrypoint uses wrong provider color: "_${code}.scss"`);
+    if (!content.includes(`@include button.renderButtonColors(dv.get-provider-color("${code}"));`)) {
+      errors.push(`Single-provider Sass entrypoint uses the wrong renderer or provider color: "_${code}.scss"`);
     }
   }
 
@@ -122,15 +124,57 @@ function checkAllEntrypoint(errors) {
     errors.push("_all.scss omits shared animations");
   }
 
-  if (!content.includes("$button-colors: dv.$all-provider-colors")) {
+  if (!content.includes("@include button.renderButtonColors(dv.$all-provider-colors);")) {
     errors.push("_all.scss does not build buttons from all provider colors");
+  }
+}
+
+function checkReadme(providerCodes, errors) {
+  const content = readFile(README_PATH);
+  const countMatch = content.match(/\*\*(\d+) Providers\*\*/);
+
+  if (!countMatch || Number(countMatch[1]) !== providerCodes.length) {
+    errors.push(`README provider count does not match ${providerCodes.length}`);
+  }
+
+  for (const code of providerCodes) {
+    if (!content.includes(`<code>.is-${code}</code>`)) {
+      errors.push(`README provider table omits .is-${code}`);
+    }
+  }
+}
+
+function checkComposableSass(errors) {
+  try {
+    const result = sass.compileString(
+      '@use "sass/social-providers/single/facebook";\n@use "sass/social-providers/single/github";',
+      { loadPaths: [ROOT] }
+    );
+
+    for (const code of ["facebook", "github"]) {
+      if (!result.css.includes(`.button.is-${code}`)) {
+        errors.push(`Combined Sass output omits .button.is-${code}`);
+      }
+    }
+
+    const configuredResult = sass.compileString(
+      '@use "sass/utilities/derived" as dv;\n@use "sass/elements/button" with ($button-colors: dv.get-provider-color("facebook"));',
+      { loadPaths: [ROOT] }
+    );
+
+    if (!configuredResult.css.includes(".button.is-facebook")) {
+      errors.push("Legacy $button-colors configuration omits .button.is-facebook");
+    }
+  } catch (error) {
+    errors.push(`Sass entrypoint contract check failed: ${error.message}`);
   }
 }
 
 function checkGeneratedCss(providerCodes, errors) {
   const allCssPath = path.join(CSS_DIR, "all.css");
+  const allMinCssPath = path.join(CSS_DIR, "all.min.css");
 
-  for (const filePath of [allCssPath, DOCS_CSS_PATH]) {
+  for (const filePath of [allCssPath, allMinCssPath, DOCS_CSS_PATH]) {
     if (!fs.existsSync(filePath)) {
       errors.push(`Missing generated CSS file: ${path.relative(ROOT, filePath)}`);
       continue;
@@ -145,6 +189,25 @@ function checkGeneratedCss(providerCodes, errors) {
 
     if (!hasClass(css, ".button.is-animated")) {
       errors.push(`${path.relative(ROOT, filePath)} omits .button.is-animated`);
+    }
+  }
+
+  if (fs.existsSync(allMinCssPath) && fs.existsSync(DOCS_CSS_PATH)) {
+    if (!fs.readFileSync(allMinCssPath).equals(fs.readFileSync(DOCS_CSS_PATH))) {
+      errors.push("docs/public/all.min.css does not match css/all.min.css");
+    }
+  }
+
+  const outputCodes = fs.existsSync(path.join(CSS_DIR, "single"))
+    ? fs.readdirSync(path.join(CSS_DIR, "single"), { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name)
+      .sort()
+    : [];
+
+  for (const code of outputCodes) {
+    if (!providerCodes.includes(code)) {
+      errors.push(`Unexpected generated provider directory: "${code}"`);
     }
   }
 
@@ -167,6 +230,15 @@ function checkGeneratedCss(providerCodes, errors) {
         errors.push(`${path.relative(ROOT, filePath)} omits .button.is-animated`);
       }
     }
+
+    const outputDir = path.dirname(cssPath);
+    if (fs.existsSync(outputDir)) {
+      const actualFiles = fs.readdirSync(outputDir).sort();
+      const expectedFiles = [`${code}.css`, `${code}.min.css`].sort();
+      if (actualFiles.join("\n") !== expectedFiles.join("\n")) {
+        errors.push(`Unexpected generated files for "${code}": ${actualFiles.join(", ")}`);
+      }
+    }
   }
 }
 
@@ -179,6 +251,8 @@ function main() {
   checkProviderData(sassProviders, docsProviders, errors);
   checkSingleProviderSources(providerCodes, errors);
   checkAllEntrypoint(errors);
+  checkReadme(providerCodes, errors);
+  checkComposableSass(errors);
   checkGeneratedCss(providerCodes, errors);
 
   if (errors.length > 0) {

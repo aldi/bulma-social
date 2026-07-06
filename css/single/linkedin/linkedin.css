@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-linkedin {
   background-color: hsl(210, 90.2%, 40%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-linkedin-dark:hover, a.has-text-linkedin-dark:focus {
 
 .has-background-linkedin-dark {
   background-color: hsl(210, 90.2%, 40%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

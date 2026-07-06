@@ -33,8 +33,8 @@ async function buildCSS(input, outputDir, outputName) {
 
   fs.writeFileSync(outputFile, BANNER + processed.css);
 
-  const minified = await postcss([autoprefixer, cssnano]).process(result.css, {
-    from: input,
+  const minified = await postcss([cssnano]).process(processed.css, {
+    from: outputFile,
     to: outputMinFile,
   });
 
@@ -52,14 +52,16 @@ async function buildAll() {
 async function buildSingle() {
   const singleDir = path.join(SASS_DIR, "social-providers", "single");
 
-  for (const file of fs.readdirSync(singleDir)) {
-    if (file.startsWith("_") && file.endsWith(".scss")) {
-      const provider = file.replace(/^_/, "").replace(".scss", "");
-      const input = path.join(singleDir, file);
-      const outputDir = path.join(CSS_DIR, "single", provider);
+  const files = fs.readdirSync(singleDir)
+    .filter((file) => file.startsWith("_") && file.endsWith(".scss"))
+    .sort();
 
-      await buildCSS(input, outputDir, provider);
-    }
+  for (const file of files) {
+    const provider = file.replace(/^_/, "").replace(".scss", "");
+    const input = path.join(singleDir, file);
+    const outputDir = path.join(CSS_DIR, "single", provider);
+
+    await buildCSS(input, outputDir, provider);
   }
 }
 

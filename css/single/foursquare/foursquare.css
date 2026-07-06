@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-foursquare {
   background-color: hsl(344.1, 93.7%, 62.9%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-foursquare-dark:hover, a.has-text-foursquare-dark:focus {
 
 .has-background-foursquare-dark {
   background-color: hsl(344.1, 93.7%, 42%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

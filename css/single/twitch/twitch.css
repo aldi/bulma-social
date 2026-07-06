@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-twitch {
   background-color: hsl(264.3, 100%, 63.7%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-twitch-dark:hover, a.has-text-twitch-dark:focus {
 
 .has-background-twitch-dark {
   background-color: hsl(264.3, 100%, 46%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }

@@ -11,6 +11,10 @@
     transition-duration: 0.01ms;
   }
 }
+.no-animation {
+  transition-property: none !important;
+}
+
 .button.is-flickr {
   background-color: hsl(329, 100%, 50%);
   border-color: transparent;
@@ -157,8 +161,4 @@ a.has-text-flickr-dark:hover, a.has-text-flickr-dark:focus {
 
 .has-background-flickr-dark {
   background-color: hsl(329, 100%, 45%) !important;
-}
-
-.no-animation {
-  transition-property: none !important;
 }
