@@ -19,9 +19,6 @@
     "*.css",
     "*.scss"
   ],
-  "engines": {
-    "node": ">=24"
-  },
   "license": "MIT",
   "keywords": [
     "bulma",
@@ -32,7 +29,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/aldi/bulma-social.git"
+    "url": "git+https://github.com/aldi/bulma-social.git"
   },
   "bugs": {
     "url": "https://github.com/aldi/bulma-social/issues"
