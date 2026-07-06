@@ -4,6 +4,9 @@ import { socialProviders } from '@/data/socialProviders';
 
 export const metadata = {
   title: 'Bulma-Social - Documentation',
+  alternates: {
+    canonical: '/bulma-social/docs',
+  },
 };
 
 export default function DocsIndex() {

@@ -6,6 +6,9 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Customize - Bulma-Social Docs',
+  alternates: {
+    canonical: '/bulma-social/docs/customization',
+  },
 };
 
 export default function CustomizePage() {
@@ -68,6 +71,7 @@ $providers: (
                   The <code>_derived.scss</code> file automatically generates light, dark, and inverted color variants:
                 </p>
                 <CodeBlock className="mb-3" language="scss">{`// sass/utilities/_derived.scss
+@use "sass:map";
 @use "providers" as p;
 @use "functions" as fn;
 

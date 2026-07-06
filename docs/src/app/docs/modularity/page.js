@@ -7,6 +7,9 @@ import { socialProviders } from '@/data/socialProviders';
 
 export const metadata = {
   title: 'Modularity - Bulma-Social Docs',
+  alternates: {
+    canonical: '/bulma-social/docs/modularity',
+  },
 };
 
 export default function ModularityPage() {

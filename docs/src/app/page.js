@@ -4,6 +4,12 @@ import InstallCommand from "@/components/InstallCommand";
 
 const INSTALL_COMMAND = "npm install bulma-social";
 
+export const metadata = {
+  alternates: {
+    canonical: "/bulma-social",
+  },
+};
+
 function getOrbitPosition(index, total, radius, offsetAngle = 0) {
   const angle = (index / total) * 2 * Math.PI + offsetAngle - Math.PI / 2;
   const x = Math.round((Math.cos(angle) * radius + 50) * 100) / 100;
@@ -39,6 +45,7 @@ export default function Home() {
           <Link
             key={provider.code}
             href={`/docs/providers/${provider.code}`}
+            prefetch={false}
             className={`button is-${provider.code} orbit-icon`}
             style={{
               left: `${pos.x}%`,
@@ -215,6 +222,7 @@ export default function Home() {
                 <Link
                   key={provider.code}
                   href={`/docs/providers/${provider.code}`}
+                  prefetch={false}
                   className={`button is-${provider.code}`}
                 >
                   <span className="icon">
@@ -233,6 +241,7 @@ export default function Home() {
                 <Link
                   key={provider.code}
                   href={`/docs/providers/${provider.code}`}
+                  prefetch={false}
                   className={`button is-${provider.code} is-outlined`}
                 >
                   <span className="icon">
@@ -251,6 +260,7 @@ export default function Home() {
                 <Link
                   key={provider.code}
                   href={`/docs/providers/${provider.code}`}
+                  prefetch={false}
                   className={`button is-${provider.code} is-inverted`}
                 >
                   <span className="icon">
@@ -269,6 +279,7 @@ export default function Home() {
                 <Link
                   key={provider.code}
                   href={`/docs/providers/${provider.code}`}
+                  prefetch={false}
                   className={`button is-${provider.code} is-light`}
                 >
                   <span className="icon">
@@ -287,6 +298,7 @@ export default function Home() {
                 <Link
                   key={provider.code}
                   href={`/docs/providers/${provider.code}`}
+                  prefetch={false}
                   className={`button is-${provider.code} is-dark`}
                 >
                   <span className="icon">
@@ -305,6 +317,7 @@ export default function Home() {
                 <Link
                   key={provider.code}
                   href={`/docs/providers/${provider.code}`}
+                  prefetch={false}
                   className={`button is-${provider.code}`}
                 >
                   <span className="icon">

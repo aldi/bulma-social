@@ -18,6 +18,9 @@ export async function generateMetadata({ params }) {
   if (!providerData) return { title: 'Not Found' };
   return {
     title: `${providerData.name} - Bulma-Social Docs`,
+    alternates: {
+      canonical: `/bulma-social/docs/providers/${providerData.code}`,
+    },
   };
 }
 

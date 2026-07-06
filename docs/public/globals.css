@@ -1971,6 +1971,17 @@ print {
   color: #fff;
 }
 
+.breadcrumb li.is-active span {
+  color: var(--bulma-breadcrumb-item-active-color);
+  cursor: default;
+  padding: var(--bulma-breadcrumb-item-padding-vertical)
+    var(--bulma-breadcrumb-item-padding-horizontal);
+}
+
+.breadcrumb li:first-child span {
+  padding-inline-start: 0;
+}
+
 [data-theme="dark"] .breadcrumb a {
   color: #94a3b8;
 }
@@ -1979,7 +1990,8 @@ print {
   color: #60a5fa;
 }
 
-[data-theme="dark"] .breadcrumb li.is-active a {
+[data-theme="dark"] .breadcrumb li.is-active a,
+[data-theme="dark"] .breadcrumb li.is-active span {
   color: #fff;
 }
 

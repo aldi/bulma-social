@@ -6,6 +6,9 @@ import Link from 'next/link';
 
 export const metadata = {
   title: "Getting Started - Bulma-Social Docs",
+  alternates: {
+    canonical: "/bulma-social/docs/getting-started",
+  },
 };
 
 export default function StartPage() {

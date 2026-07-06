@@ -8,13 +8,9 @@ export const metadata = {
     "bulma, social, font-awesome, buttons, colors, colours, icons, socialmedia, addon, media, css, html",
   authors: [{ name: "aldi" }],
   metadataBase: new URL('https://aldi.github.io'),
-  alternates: {
-    canonical: '/bulma-social',
-  },
   openGraph: {
     title: 'Bulma-Social - Social Buttons and Colors for Bulma',
     description: 'Lightweight, customizable social buttons for Bulma CSS framework. Supports all major social platforms with multiple button styles.',
-    url: 'https://aldi.github.io/bulma-social',
     siteName: 'Bulma-Social',
     locale: 'en_US',
     type: 'website',
@@ -41,11 +37,15 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bulma@1/css/bulma.min.css"
+          href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+          integrity="sha384-DCY3M8xLkMu6c9IKcKbe+jHKMjelnwC0p+SBaxfHxoBYZWdJF2X400UdBCgATtAB"
+          crossOrigin="anonymous"
         />
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.0/css/all.min.css"
+          integrity="sha384-sTlsophtwz/I4myskS3OIJf5VvEojkXKZyBTWZm0YD/K1pN7C5wpBPLyrsbr1SU2"
+          crossOrigin="anonymous"
         />
         <link rel="stylesheet" href={`${process.env.BASE_PATH}/all.min.css`} />
         <link rel="stylesheet" href={`${process.env.BASE_PATH}/globals.css`} />

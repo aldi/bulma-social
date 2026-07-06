@@ -6,6 +6,9 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Migration Guide - Bulma-Social Docs',
+  alternates: {
+    canonical: '/bulma-social/docs/migration',
+  },
 };
 
 export default function MigrationPage() {

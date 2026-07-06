@@ -7,9 +7,9 @@ export default function Breadcrumb({ items }) {
         {items.map((item, index) => (
           <li key={index} className={item.active ? 'is-active' : ''}>
             {item.active ? (
-              <a href="#" aria-current="page">
+              <span aria-current="page">
                 {item.label}
-              </a>
+              </span>
             ) : item.href ? (
               <Link href={item.href}>{item.label}</Link>
             ) : (

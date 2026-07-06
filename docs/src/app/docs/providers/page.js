@@ -6,6 +6,9 @@ import { socialProviders } from "@/data/socialProviders";
 
 export const metadata = {
   title: "Providers - Bulma-Social Docs",
+  alternates: {
+    canonical: "/bulma-social/docs/providers",
+  },
 };
 
 export default function ProvidersPage() {
@@ -31,6 +34,7 @@ export default function ProvidersPage() {
                   <div key={provider.code} className="column is-4">
                     <Link
                       href={`/docs/providers/${provider.code}`}
+                      prefetch={false}
                       className="box has-text-centered provider-card"
                     >
                       <span
